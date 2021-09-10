@@ -42,7 +42,7 @@ void MethodTwo()
   }
   
   // Print the name of the weekday here: 
-  if(weekend == false){
+  if(!weekend){
   
     if(weekDay == 0){
       println("It's Monday!");
@@ -61,7 +61,7 @@ void MethodTwo()
     }
   } 
   // Print if it is weekend here:
-  if(weekend == true){
+  if(weekend){
     
     if(weekDay == 5){
       println("It's Saturday!");
