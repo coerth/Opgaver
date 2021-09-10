@@ -1,42 +1,38 @@
 int diameter = 40;
 
 //rød cirkel 
-int xPos;
-int yPos;
-int xSpeed;
-int ySpeed;
-int acceleration;
-int direction;
-float xPosCollision = xPos;
-float yPosCollision = yPos;
+int xPosRed;
+int yPosRed;
+int xSpeedRed;
+int ySpeedRed;
+int accelerationRed;
+int directionRed;
 
 //grøn cirkel
-int xPosNew, yPosNew;
-int xSpeedNew;
-int ySpeedNew;
-int accelerationNew;
-int directionNew;
-float xPosNewCollision = xPosNew;
-float yPosNewCollision = yPosNew;
+int xPosGreen, yPosGreen;
+int xSpeedGreen;
+int ySpeedGreen;
+int accelerationGreen;
+int directionGreen;
 
-float collision = diameter/2+5;
+float collision = diameter/2+15;
 
 
 void setup() {
   size(400, 400);
-  xPos=200;
-  yPos=200;
-  xSpeed=1;
-  xSpeedNew=2;
-  ySpeed=1;
-  ySpeedNew=2;
-  acceleration=2;
-  accelerationNew=4;
-  direction=-1;
-  directionNew=-1;
-  //xPosNew=1;
-  xPosNew=(int) random(0, width);
-  yPosNew= (int) (random(0, height)+4.3);
+  xPosRed=200;
+  yPosRed=200;
+  xSpeedRed=1;
+  ySpeedRed=1;
+  accelerationRed=2;
+  directionRed=-1;
+
+  xPosGreen= 100;
+  yPosGreen= 100;
+  xSpeedGreen=2;
+  ySpeedGreen=2;
+  accelerationGreen=4;
+  directionGreen=-1;
 }
 
 void draw() {
@@ -44,58 +40,56 @@ void draw() {
 
   //Rød cirkel
   fill(255, 0, 0, diameter);
-  circle(xPos, yPos, diameter);
-  xPos = xPos + xSpeed;
-  yPos = yPos + ySpeed;
+  circle(xPosRed, yPosRed, diameter);
+  xPosRed = xPosRed + xSpeedRed;
+  yPosRed = yPosRed + ySpeedRed;
 
 
   //Grøn cirkel
   fill(0, 255, 0, diameter);
-  circle(xPosNew, yPosNew, diameter);
-  xPosNew = xPosNew + xSpeedNew;
-  yPosNew = yPosNew + ySpeedNew;
+  circle(xPosGreen, yPosGreen, diameter);
+  xPosGreen = xPosGreen + xSpeedGreen;
+  yPosGreen = yPosGreen + ySpeedGreen;
 
   //hold dig inden for vinduet på X-aksen
-  if (xPos > (width - diameter/2) || xPos < (0 + diameter/2)) {
-    xSpeed = xSpeed * direction;
+  if (xPosRed > (width - diameter/2) || xPosRed < (0 + diameter/2)) {
+    xSpeedRed = xSpeedRed * directionRed;
   }
 
-  if (xPosNew > (width - diameter/2) || xPosNew < (0 + diameter/2)) {
-    xSpeedNew = xSpeedNew * directionNew;
+  if (xPosGreen > (width - diameter/2) || xPosGreen < (0 + diameter/2)) {
+    xSpeedGreen = xSpeedGreen * directionGreen;
   }
-  
-  if(dist(xPos, yPos, xPosNew, yPosNew) <= collision){
-    xSpeed = xSpeed * direction;
-    xSpeedNew = xSpeedNew * directionNew;
-    ySpeed = ySpeed * direction;
-    ySpeedNew = ySpeedNew * directionNew;
-  }
-  
- 
 
   //hold dig indenfor vinduet på Y-aksen
-  if (yPos > (height - diameter) || yPos < diameter) {
-    ySpeed = ySpeed * direction;
+  if (yPosRed > (height - diameter/2) || yPosRed < diameter/2) {
+    ySpeedRed = ySpeedRed * directionRed;
   }
 
 
-  if (yPosNew > (height - diameter) || yPosNew < diameter) {
-    ySpeedNew = ySpeedNew * directionNew;
+  if (yPosGreen > (height - diameter/2) || yPosGreen < diameter/2) {
+    ySpeedGreen = ySpeedGreen * directionGreen;
+  }
+
+  if (dist(xPosRed, yPosRed, xPosGreen, yPosGreen) <= collision) {
+    xSpeedRed = xSpeedRed * directionRed;
+    ySpeedRed = ySpeedRed * directionRed;
+    xSpeedGreen = xSpeedGreen * directionGreen;
+    ySpeedGreen = ySpeedGreen * directionGreen;
   }
 }
 
 //acceler når man klikker på musen
 void mousePressed() {
-  xSpeed = xSpeed * acceleration;
-  ySpeed = ySpeed * acceleration;
-  xSpeedNew = xSpeedNew * accelerationNew;
-  ySpeedNew = ySpeedNew * accelerationNew;
+  xSpeedRed = xSpeedRed * accelerationRed;
+  ySpeedRed = ySpeedRed * accelerationRed;
+  xSpeedGreen = xSpeedGreen * accelerationGreen;
+  ySpeedGreen = ySpeedGreen * accelerationGreen;
 }
 
 //skift retning når man klikker på en tast
 void keyPressed() {
-  xSpeed = xSpeed * direction;
-  ySpeed = ySpeed * direction;
-  xSpeedNew = xSpeedNew * directionNew;
-  ySpeedNew = ySpeedNew * directionNew;
+  xSpeedRed = xSpeedRed * directionRed;
+  ySpeedRed = ySpeedRed * directionRed;
+  xSpeedGreen = xSpeedGreen * directionGreen;
+  ySpeedGreen = ySpeedGreen * directionGreen;
 }
