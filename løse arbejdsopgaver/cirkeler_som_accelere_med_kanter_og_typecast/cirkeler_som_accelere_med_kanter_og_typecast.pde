@@ -15,20 +15,20 @@ int ySpeedGreen;
 int accelerationGreen;
 int directionGreen;
 
-float collision = diameter/2+15;
+float collision = diameter/2+20;
 
 
 void setup() {
   size(400, 400);
-  xPosRed=200;
-  yPosRed=200;
+  xPosRed=(int) random(50,width-50);
+  yPosRed=(int) random(50,height-50);
   xSpeedRed=1;
   ySpeedRed=1;
   accelerationRed=2;
   directionRed=-1;
 
-  xPosGreen= 100;
-  yPosGreen= 100;
+  xPosGreen= (int) random(50,width-50);
+  yPosGreen= (int) random(50,height-50);
   xSpeedGreen=2;
   ySpeedGreen=2;
   accelerationGreen=4;
