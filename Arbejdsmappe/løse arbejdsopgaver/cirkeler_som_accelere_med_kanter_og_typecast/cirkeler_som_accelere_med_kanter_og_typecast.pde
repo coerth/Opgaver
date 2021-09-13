@@ -69,7 +69,8 @@ void draw() {
   if (yPosGreen > (height - diameter/2) || yPosGreen < diameter/2) {
     ySpeedGreen = ySpeedGreen * directionGreen;
   }
-
+  
+  //kollisionsdetektion
   if (dist(xPosRed, yPosRed, xPosGreen, yPosGreen) <= collision) {
     xSpeedRed = xSpeedRed * directionRed;
     ySpeedRed = ySpeedRed * directionRed;
