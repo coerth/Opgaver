@@ -7,8 +7,21 @@ int skakColor = 255;
 
 for(int i = 0; i <= 8; i++){
 
+  
+
   for(int j = 0; j <=8; j++){  
    
+    //den smartere forfinet løsning
+    if((i+j)%2 == 0){
+      skakColor = 255;
+    }
+    
+    else {
+      skakColor = 0;
+    }
+    
+    //min mindre smarte løsning
+    /*
     if(i%2 == 0 && j%2 == 0){
       skakColor = 255;
       //fill(skakColor);
@@ -26,7 +39,7 @@ for(int i = 0; i <= 8; i++){
      else if(i%2 != 0 && j%2 != 0){
        skakColor = 255;
      }
-   
+   */
    stroke(0);
    fill(skakColor);  
    square(xPos, yPos, width/8); 
