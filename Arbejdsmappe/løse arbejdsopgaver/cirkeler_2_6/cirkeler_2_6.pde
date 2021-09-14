@@ -19,7 +19,7 @@ void draw() {
   blaaCirkel1.move();
   
 }
-//Selve class'en som indeholder variabler, bevægelse og selve cirklen
+//Selve class'en som indeholder variabler, funktioner(bevægelse og selve cirklen) som vil være gældende for hver cirkel
 class Cirkel{
   float xPos;
   float yPos;
