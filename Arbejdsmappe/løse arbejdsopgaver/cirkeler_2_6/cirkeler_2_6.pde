@@ -2,14 +2,14 @@
 Cirkel roedCirkel1; 
 Cirkel blaaCirkel1;
 
-//opretter cirkelerne her
+//opretter cirkelerne her og andre ting der skal sættes én gang
 void setup() {
   size(300, 300);
   roedCirkel1 = new Cirkel(51, 200, 2, 2, 40, color(255, 0, 0));
   blaaCirkel1 = new Cirkel(100, 50, 3, 3, 30, color(0, 0, 255));
 }
 
-//kalder cirkelernes visning og bevægelse i draw da den kører i loop (hvis jeg lavede cirkler her blev de nulstillet hele tiden)
+//kalder cirkelernes visning og bevægelse i draw da den kører i loop (hvis cirklerne laves her bliver de nulstillet hele tiden)
 void draw() {
   background(255);
 
@@ -17,7 +17,6 @@ void draw() {
   roedCirkel1.move();
   blaaCirkel1.display();
   blaaCirkel1.move();
-  collisionDetection();
   
 }
 //Selve class'en som indeholder variabler, bevægelse og selve cirklen
