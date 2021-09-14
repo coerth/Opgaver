@@ -31,13 +31,13 @@ class Cirkel{
   color c;
   
   //constructoren som gør at vi kan lave flere cirkler og forbinde de værdier med class'ens værdier
-  Cirkel(float tempxPos, float tempyPos, float tempxSpeed, float tempySpeed, float tempdiam, color tempC) {
-    xPos = tempxPos;
-    yPos = tempyPos;
-    xSpeed = tempxSpeed;
-    ySpeed = tempySpeed;
-    diam = tempdiam;
-    c = tempC;
+  Cirkel(float xPos, float yPos, float xSpeed, float ySpeed, float diam, color c) {
+    this.xPos = xPos;
+    this.yPos = yPos;
+    this.xSpeed = xSpeed;
+    this.ySpeed = ySpeed;
+    this.diam = diam;
+    this.c = c;
   }
   
   //tegn cirkel
