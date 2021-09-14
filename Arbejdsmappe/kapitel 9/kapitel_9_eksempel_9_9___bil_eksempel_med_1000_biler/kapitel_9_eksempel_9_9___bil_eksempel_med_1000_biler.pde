@@ -2,21 +2,20 @@ Car[] cars = new Car[100];
 
 
 void setup() {
-  size(200, 200);
+  size(1000, 1000);
 
   //initialize Car arrays
   for (int i = 0; i < cars.length; i++) {
     cars[i] = new Car(color(i*2), 0, i*2, i);
   }
-
 }
 
 void draw() {
   background(255);
   // Operate Car arrays. lav den visuelle bil og bevæg den
   for (int i = 0; i < cars.length; i++) {
-  cars[i].move();
-  cars[i].display();
+    cars[i].move();
+    cars[i].display();
   }
 }
 
