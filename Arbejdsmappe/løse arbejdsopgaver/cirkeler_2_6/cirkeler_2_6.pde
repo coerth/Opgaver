@@ -1,5 +1,5 @@
 //navn på en cirkel og dens klasse: Cirkel
-Cirkel roedCirkel1; 
+Cirkel roedCirkel1;
 Cirkel blaaCirkel1;
 
 //opretter cirkelerne her og andre ting der skal sættes én gang
@@ -17,10 +17,9 @@ void draw() {
   roedCirkel1.move();
   blaaCirkel1.display();
   blaaCirkel1.move();
-  
 }
 //Selve class'en som indeholder variabler, funktioner(bevægelse og selve cirklen) som vil være gældende for hver cirkel
-class Cirkel{
+class Cirkel {
   float xPos;
   float yPos;
   float xSpeed;
@@ -29,7 +28,7 @@ class Cirkel{
   float yDirection;
   float diam;
   color c;
-  
+
   //constructoren som gør at vi kan lave flere cirkler og forbinde de værdier med class'ens værdier
   Cirkel(float xPos, float yPos, float xSpeed, float ySpeed, float diam, color c) {
     this.xPos = xPos;
@@ -39,29 +38,28 @@ class Cirkel{
     this.diam = diam;
     this.c = c;
   }
-  
+
   //tegn cirkel
   void display() {
     fill(c);
     circle(xPos, yPos, diam);
   }
-  
+
   //bevægelse til cirkelen
   void move() {
     xPos = xPos + xSpeed;
     yPos = yPos + ySpeed;
     xDirection = -1;
     yDirection = -1;
-    
+
     //skift retning når x-værdien rammer udenfor
-    if(xPos > width - diam/2 || xPos < 0 + diam/2) {
+    if (xPos > width - diam/2 || xPos < 0 + diam/2) {
       xSpeed = xSpeed * xDirection;
     }
-    
+
     //skift retning når y-værdien rammer udenfor
-    if(yPos > height - diam/2 || yPos < 0 + diam/2){
+    if (yPos > height - diam/2 || yPos < 0 + diam/2) {
       ySpeed = ySpeed * yDirection;
-    } 
-    
+    }
   }
 }
