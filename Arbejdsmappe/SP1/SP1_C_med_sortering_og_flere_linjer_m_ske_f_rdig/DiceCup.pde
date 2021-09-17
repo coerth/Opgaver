@@ -1,12 +1,12 @@
 //SP1 C lavet af Casper, Mia og Morten.
 
 //vi vil have en tæller for hver af vores 6 værdier.
-int eyeCounterOne;
-int eyeCounterTwo;
-int eyeCounterThree;
-int eyeCounterFour;
-int eyeCounterFive;
-int eyeCounterSix;
+//int eyeCounterOne;
+//int eyeCounterTwo;
+//int eyeCounterThree;
+//int eyeCounterFour;
+//int eyeCounterFive;
+//int eyeCounterSix;
 
 
 // Array List for rullede terninger og så sortede resultater for terninger
@@ -35,7 +35,7 @@ class DiceCup {
   public void dieSort() { // Funktion for at tælle hvor mange af af hver terning slag vi har.
 
     java.util.Collections.sort(DiceCupArray); // Sorter Dicene i Cuppen har hentet den ind for at sortere i vores arraylist
-    for (Die part : DiceCupArray) {
+    //for (Die part : DiceCupArray) {
       //   part.isSorted = true;
     }
 
@@ -70,7 +70,7 @@ class DiceCup {
      }
      */
     //}
-  }
+  //}
 
   public void DrawCup() { //tegner hele cuppen
     DC.dieSort(); //sorter arrayet af Dices i DiceCuppen
@@ -96,33 +96,28 @@ class DiceCup {
 
     for (int i = 0; i < DiceCupArray.size(); i++) { // sættes i for fordi vi skal kigge på hver terning objekts øjne.
       Die part = DiceCupArray.get(i); //variable
-      int changeRow=1;
+      //int changeRow=1;
       if (part.eyes == 2) {
         xPosDie = -110+(part.dieSize+part.dieSize/2)*counterTwo;
-        yPosDie = 160;
+        yPosDie = 10 + (part.dieSize+part.dieSize/2)*1;
         counterTwo++;
       } else if (part.eyes == 3) {
         xPosDie = -110+(part.dieSize+part.dieSize/2)*counterThree;
-        yPosDie = 310;
+        yPosDie = 10 + (part.dieSize+part.dieSize/2)*2;
         counterThree++;
       } else if (part.eyes == 4) {
         xPosDie = -110+(part.dieSize+part.dieSize/2)*counterFour;
-        yPosDie = 460;
+        yPosDie = 10 + (part.dieSize+part.dieSize/2)*3;
         counterFour++;
       } else if (part.eyes == 5) {
         xPosDie = -110+(part.dieSize+part.dieSize/2)*counterFive;
-        yPosDie = 610;
+        yPosDie = 10 + (part.dieSize+part.dieSize/2)*4;
         counterFive++;
       } else if (part.eyes == 6) {
         xPosDie = -110+(part.dieSize+part.dieSize/2)*counterSix;
-        yPosDie = 760;
+        yPosDie = 10 + (part.dieSize+part.dieSize/2)*5;
         counterSix++;
       }
-      changeRow++;
-      println(changeRow);
-
-
-
 
       xPosDie += part.dieSize + part.dieSize/2;
       part.DrawDie(xPosDie, yPosDie); //part betyder for hvert objekt kør funktionen DrawDie(); hvor xog y koordinater angives

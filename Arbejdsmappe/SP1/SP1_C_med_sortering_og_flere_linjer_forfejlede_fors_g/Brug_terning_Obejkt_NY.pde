@@ -25,6 +25,7 @@ void draw() {
 // ved tryk på 'a' rulles terning og viser en ny værdi.
 void keyPressed() {
   if (key == ENTER) {
+    println(DC.DiceCupArray.size() );
 
     for (Die part : DC.DiceCupArray) { //starter med den første Die objekt i ArrayListen, indtil slutningen af ArrayListen og start forfra.
       part.roll(); //part betyder for hvert objekt kør funktionen roll();
