@@ -1,12 +1,12 @@
 //SP1 C lavet af Casper, Mia og Morten.
 
 //vi vil have en tæller for hver af vores 6 værdier.
-int eyeCounterOne;
-int eyeCounterTwo;
-int eyeCounterThree;
-int eyeCounterFour;
-int eyeCounterFive;
-int eyeCounterSix;
+//int eyeCounterOne;
+//int eyeCounterTwo;
+//int eyeCounterThree;
+//int eyeCounterFour;
+//int eyeCounterFive;
+//int eyeCounterSix;
 
 
 // Array List for rullede terninger og så sortede resultater for terninger
@@ -35,6 +35,7 @@ class DiceCup {
   public void dieSort() { // Funktion for at tælle hvor mange af af hver terning slag vi har.
 
     java.util.Collections.sort(DiceCupArray); // Sorter Dicene i Cuppen har hentet den ind for at sortere i vores arraylist
+    
     //for (Die part : DiceCupArray) {
       //   part.isSorted = true;
     }
