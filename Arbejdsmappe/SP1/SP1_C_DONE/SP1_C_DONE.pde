@@ -9,7 +9,7 @@ class Die implements Comparable<Die> { // min klasse 'die'
   public int eyes; //min attribut hedder eyes
   int dieSize = 100;
   int dieEdge = 15;
-  boolean isSorted = false;
+  //boolean isSorted = false;
 
 
   // vores konstruktor som når vi skriver enten eye eller dieColor så sætter den sine classes til det vi har skrevet.
@@ -22,7 +22,7 @@ class Die implements Comparable<Die> { // min klasse 'die'
 
   public int roll() { // navngiver min metode roll - Den viser hvad der sker i den her metode - terningen rulles - Der retuneres en int værdi.
     eyes =  (int)random(1, 7);
-    isSorted = false;
+   // isSorted = false;
     return eyes;
   }
 
