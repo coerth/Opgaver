@@ -5,9 +5,11 @@ import java.util.Scanner;
 
 public class BankAccount {
 
+    private String accountName;
     private float balance=30000;
     private String owner;
     private int stalkingCounter = 0;
+    private ArrayList<String> transactionsList = new ArrayList<String>();
 
     /**
      * Konstruktor for klassen com.company.BankAccount
