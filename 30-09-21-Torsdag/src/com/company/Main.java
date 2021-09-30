@@ -174,30 +174,33 @@ public class Main
         //for loop som kører igennem hvert bogstav i alfabetet og kører endnu en for loop som tjekker vores checkText
         // for det bogstav vi er nået til og adder til counteren når vi når dertil. Den tager ikke æ ø og å,
         // men har lavet en føler på at det ikke er en af de bogstaver der forekommer hyppigst.
-        for(char letter = 'a'; letter <= 'z'; letter++ ){
-
             for(int i = 0; i < checkText.length(); i++){
-                if(checkText.charAt(i) == letter){
-                    charCounter++;
-                    //System.out.println(s);
+                charCounter = 0; // start med at sæt charCounter til 0
+                if(letterArrayLess.size() == 0){ // hvis der ikke er nogle objekter i arrayet, så start med at indsætte det første objekt ind
+                    letterArrayLess.add(new Letteroccurence(checkText.charAt(i),1));
                 }
+                //for hvert objekt i arrayet, hvis der er et objekt som har samme bogstav, så forøg hyppigheden og forøg charCounter
+                for(Letteroccurence eachLetter : letterArrayLess){
+                    if (checkText.charAt(i) == eachLetter.getTheCharacter()){
+                        eachLetter.setNumberOfOccurences(eachLetter.getNumberOfOccurences()+1);
+                        charCounter++;
+                }
+                    }
+                //hvis charCounter er 0 så indsæt et objekt med det bogstav
+                if(charCounter == 0){
+                    letterArrayLess.add(new Letteroccurence(checkText.charAt(i),1));
             }
             //når tjekket efter et specifikt bogstav er færdigt og der er fundet værdi på counteren over 0,
             // print bogstavet + counter ud
 
-            if(charCounter > 0){
-                letterArrayLess.add(new Letteroccurence(letter,charCounter) );
-                //System.out.println(letter + "=" + charCounter);
-                charCounter = 0;
-            }
             sortCounter++; // når vi er færdige med hvert bogstav så går sortCounter en op.
-            if(sortCounter == 26){ //når vi er nået til det 26. bogstav så gør følgende:
+            if(sortCounter == checkText.length()){ //når vi er nået til det 26. bogstav så gør følgende:
                 Collections.sort(letterArrayLess); //sorter vores array, den mindste værdi er den første i arrayet
-                System.out.println("Top 10 for mindst hyppighed. Æ,Ø,Å er ikke inkluderet");
+                System.out.println("Top 10 for mindst hyppighed.");
 
                 // Da den mindste værdi er den første så start fra starten af arrayet og bevæg dig frem
-                for(int i = 0; i< 10; i++){
-                    System.out.println(letterArrayLess.get(i).getTheCharacter() + " = " + letterArrayLess.get(i).getNumberOfOccurences());
+                for(Letteroccurence each : letterArrayLess){
+                    System.out.println(each.getTheCharacter() + " = " + each.getNumberOfOccurences());
                 }
             }
         }
