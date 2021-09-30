@@ -87,7 +87,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -121,6 +124,7 @@
       <updated>1632981980625</updated>
       <workItem from="1632981982630" duration="20873000" />
       <workItem from="1633011851305" duration="1850000" />
+      <workItem from="1633025048737" duration="636000" />
     </task>
     <servers />
   </component>
