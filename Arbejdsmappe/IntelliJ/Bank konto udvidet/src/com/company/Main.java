@@ -9,10 +9,12 @@ public class Main {
     public static ArrayList<String> namesinputted = new ArrayList<String>();
 
     public static void main(String[] args) {
+        Bank BankOperations = new Bank();
 
-        showMenu();
+        BankOperations.bankMenu();
 
     }
+
 
                                                                                                                          //funktion for vores kontonavne
     public static String userInput(String msg){
@@ -42,7 +44,7 @@ public class Main {
             } //if opret klemme
 
             if(choice.equals("Slet") || choice.equals("slet") ){
-                choice = deleteAccounts(choice);
+                //choice = deleteAccounts(choice);
             } // if slet klemme
 
             if(choice.equals("Trans") || choice.equals("trans") ) {
@@ -92,7 +94,7 @@ public class Main {
         }while (!choice.equals("q"));
         System.out.println("Afslutter...");
     } // showMenu klemme
-
+/*
     private static void deleteAccounts() {
         do{
             if(namesinputted.size() == 0){
@@ -116,13 +118,15 @@ public class Main {
         return choice;
     }
 
+ */
+
     private static void createAccounts() {
         System.out.println("Hvor mange kontoer skal oprettes?");
         Scanner scan = new Scanner(System.in);
         int input = scan.nextInt();
         //indtil i når til antal input, gør følgende
         for (int i = 0; i < input; i++ ){
-            BankAccountArray.add(new BankAccount(userInput("Skriv dit navn:"),
+            BankAccountArray.add(new BankAccount(userInput("Skriv dit navn:"), userInput("Navn på kontoen"),
                     Float.parseFloat(userInput("Skriv dit kontobeløb:") ) ) );
         } //bank oprettelse klemme
         //for hvert objekt i arrayet, print følgende ud

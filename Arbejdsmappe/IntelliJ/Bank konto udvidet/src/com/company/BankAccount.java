@@ -15,9 +15,11 @@ public class BankAccount {
      * Konstruktor for klassen com.company.BankAccount
      * @param owner
      */
-    public BankAccount(String owner, float balance){
+    public BankAccount(String owner, String accountName, float balance){
         this.owner= owner;
+        this.accountName = accountName;
         this.balance = balance;
+
     }
 
     /**
@@ -28,6 +30,7 @@ public class BankAccount {
     public void doTransaction(float amount){
 
         this.balance += amount; // same as balance = balance+ amount;
+
     }
     /**
      * Alle objekter har en toString metode. Det er den System.out.print kalder når du skriver sådan her: System.out.print(mitobjekt)
@@ -61,4 +64,15 @@ public class BankAccount {
     public String getOwner() {
         return owner;
     }
+
+    private void addToTransactionsList (int amount){
+        if(amount < 0){
+            transactionsList.add("Dette beløb " + amount + "kr. er blevet flyttet fra kontoen.");
+        }
+        else{
+            transactionsList.add("Dette beløb " + amount + "kr. er blevet tilfået til kontoen.");
+        }
+    }
+
 }
+
