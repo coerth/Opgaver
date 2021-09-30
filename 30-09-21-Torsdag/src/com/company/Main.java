@@ -138,7 +138,7 @@ public class Main
                 letterArray.add(new Letteroccurence(checkText.charAt(i),1));
             }
              */
-            
+
             //for hvert objekt i arrayet, hvis der er et objekt som har samme bogstav, så forøg hyppigheden og forøg charCounter
             for(Letteroccurence eachLetter : letterArray){
                 if (checkText.charAt(i) == eachLetter.getTheCharacter()){
