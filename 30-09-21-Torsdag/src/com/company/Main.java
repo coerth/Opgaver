@@ -35,11 +35,17 @@ public class Main
         //test dine metoder ved at kalde dem her:
         //System.out.println(printLongestWord());
         //printFirstHalfOfEachWord();
-        printMostFrequentLetter();
-        printLessFrequentLetter();
+        //printMostFrequentLetter();
+        //printLessFrequentLetter();
 
+
+        for(char letter = 'a'; letter < 'å'; letter++){
+        System.out.println(letter);
 
     }
+
+
+
 
     private static void printWordsOfLength(int l)
     {
@@ -119,47 +125,36 @@ public class Main
     //Task 3
     public static void printMostFrequentLetter(){
         ArrayList<Letteroccurence> letterArray = new ArrayList<>(); //array til at sortere en top 10
-        int charCounter = 0; // counter brugt for hvert bogstav
+        int charCounter; // counter brugt for hvert bogstav
         String checkText = ""; //nem løsning for at tjekke hele string arrayet
         int sortCounter = 0; // for at kunne bruges i en if betingelse til printningen af vores top 10
-
-        //for hvert ord i String arrayet, læg det ord til vores checkText string
+                                                                                                                         //for hvert ord i String arrayet, læg det ord til vores checkText string
         for (String s : text) {
             checkText += s.toLowerCase(Locale.ROOT); // Gør alle bogstaver til lowercase
         }
-            //For loop som kører igennem hvert bogstav i alfabetet og kører endnu en for loop som tjekker vores checkText
-            // for det bogstav vi er nået til og adder til counteren når vi når dertil. Den tager ikke æ ø og å,
-            // men har lavet en føler på at det ikke er en af de bogstaver der forekommer hyppigst.
+                                                                                                                        //For loop som kører igennem hvert bogstav i alfabetet og kører endnu en for loop som tjekker vores checkText
+                                                                                                                        // for det bogstav vi er nået til og adder til counteren når vi når dertil. Den tager ikke æ ø og å,
+                                                                                                                        // men har lavet en føler på at det ikke er en af de bogstaver der forekommer hyppigst.
         for(int i = 0; i < checkText.length(); i++){
             charCounter = 0; // start med at sæt charCounter til 0
-
-            /*
-            if(letterArray.size() == 0){ // hvis der ikke er nogle objekter i arrayet, så start med at indsætte det første objekt ind
-                letterArray.add(new Letteroccurence(checkText.charAt(i),1));
-            }
-             */
-
-            //for hvert objekt i arrayet, hvis der er et objekt som har samme bogstav, så forøg hyppigheden og forøg charCounter
+                                                                                                                         //for hvert objekt i arrayet, hvis der er et objekt som har samme bogstav, så forøg hyppigheden og forøg charCounter
             for(Letteroccurence eachLetter : letterArray){
                 if (checkText.charAt(i) == eachLetter.getTheCharacter()){
                     eachLetter.setNumberOfOccurences(eachLetter.getNumberOfOccurences()+1);
                     charCounter++;
                 }
             }
-            //hvis charCounter er 0 så indsæt et objekt med det bogstav
+                                                                                                                        //hvis charCounter er 0 så indsæt et objekt med det bogstav
             if(charCounter == 0){
                 letterArray.add(new Letteroccurence(checkText.charAt(i),1));
             }
-            //når tjekket efter et specifikt bogstav er færdigt og der er fundet værdi på counteren over 0,
-            // print bogstavet + counter ud
-
+                                                                                                                        //når tjekket efter et specifikt bogstav er færdigt og der er fundet værdi på counteren over 0,
+                                                                                                                        // print bogstavet + counter ud
             sortCounter++; // når vi er færdige med hvert bogstav så går sortCounter en op.
             if(sortCounter == checkText.length()){ //når vi er nået til det 26. bogstav så gør følgende:
                 Collections.sort(letterArray); //sorter vores array, den mindste værdi er den første i arrayet
                 System.out.println("Top 10 for mest hyppighed.");
-
-
-                // Da den største værdi er den sidste så start fra slutningen af arrayet og bevæg dig tilbage
+                                                                                                                        // Da den største værdi er den sidste så start fra slutningen af arrayet og bevæg dig tilbage
                 for(int j = letterArray.size()-1; j > letterArray.size()-11 ; j--){
                     System.out.println(letterArray.get(j).getTheCharacter() + " = " + letterArray.get(j).getNumberOfOccurences());
                 }
@@ -171,45 +166,36 @@ public class Main
     //Task 4
     public static void printLessFrequentLetter(){
         ArrayList<Letteroccurence> letterArrayLess = new ArrayList<>(); //array til top 10 af de færreste, behøves ikke at lave navnet om men det blev gjort
-        int charCounter = 0; // counter brugt for hvert bogstav
+        int charCounter; // counter brugt for hvert bogstav
         String checkText = ""; //nem løsning for at tjekke hele string arrayet
         int sortCounter = 0; // for at kunne bruges i en if betingelse til printningen af vores top 10
         //for hvert ord i String arrayet, læg det ord til vores checkText string
         for (String s : text) {
             checkText += s.toLowerCase(Locale.ROOT); // Gør alle bogstaver til lowercase
         }
-        //for loop som kører igennem hvert bogstav i alfabetet og kører endnu en for loop som tjekker vores checkText
-        // for det bogstav vi er nået til og adder til counteren når vi når dertil.
-        // men har lavet en føler på at det ikke er en af de bogstaver der forekommer hyppigst.
+                                                                                                                        //for loop som kører igennem hvert bogstav i alfabetet og kører endnu en for loop som tjekker vores checkText
+                                                                                                                        // for det bogstav vi er nået til og adder til counteren når vi når dertil.
+                                                                                                                        // men har lavet en føler på at det ikke er en af de bogstaver der forekommer hyppigst.
             for(int i = 0; i < checkText.length(); i++){
                 charCounter = 0; // start med at sæt charCounter til 0
-
-                /*
-                if(letterArrayLess.size() == 0){ // hvis der ikke er nogle objekter i arrayet, så start med at indsætte det første objekt ind
-                    letterArrayLess.add(new Letteroccurence(checkText.charAt(i),1));
-                }
-                 */
-
-                //for hvert objekt i arrayet, hvis der er et objekt som har samme bogstav, så forøg hyppigheden og forøg charCounter
+                                                                                                                        //for hvert objekt i arrayet, hvis der er et objekt som har samme bogstav, så forøg hyppigheden og forøg charCounter
                 for(Letteroccurence eachLetter : letterArrayLess){
                     if (checkText.charAt(i) == eachLetter.getTheCharacter()){
                         eachLetter.setNumberOfOccurences(eachLetter.getNumberOfOccurences()+1);
                         charCounter++;
                 }
                     }
-                //hvis charCounter er 0 så indsæt et objekt med det bogstav
+                                                                                                                        //hvis charCounter er 0 så indsæt et objekt med det bogstav
                 if(charCounter == 0){
                     letterArrayLess.add(new Letteroccurence(checkText.charAt(i),1));
             }
-            //når tjekket efter et specifikt bogstav er færdigt og der er fundet værdi på counteren over 0,
-            // print bogstavet + counter ud
-
+                                                                                                                        //når tjekket efter et specifikt bogstav er færdigt og der er fundet værdi på counteren over 0,
+                                                                                                                        // print bogstavet + counter ud
             sortCounter++; // når vi er færdige med hvert bogstav så går sortCounter en op.
             if(sortCounter == checkText.length()){ //når vi er nået til det 26. bogstav så gør følgende:
                 Collections.sort(letterArrayLess); //sorter vores array, den mindste værdi er den første i arrayet
                 System.out.println("Top 10 for mindst hyppighed.");
-
-                // Da den mindste værdi er den første så start fra starten af arrayet og bevæg dig frem
+                                                                                                                        // Da den mindste værdi er den første så start fra starten af arrayet og bevæg dig frem
                 for(Letteroccurence each : letterArrayLess){
                     System.out.println(each.getTheCharacter() + " = " + each.getNumberOfOccurences());
                 }
