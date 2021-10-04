@@ -31,3 +31,5 @@ Man kan caste en primitiv data type til en anden.
         hvis de 2 variabler bliver printet vil det så således ud:
         doubleVariable = 23.
 
+
+
