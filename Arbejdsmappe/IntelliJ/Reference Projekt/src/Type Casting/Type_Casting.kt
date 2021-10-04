@@ -32,4 +32,4 @@ Man kan caste en primitiv data type til en anden.
         doubleVariable = 23.
 
 
-        
+
