@@ -43,7 +43,7 @@ public class BankAccount {
 
         stalkingCounter++;// Den her linje skal demonstrere en af de ting jeg som programmør kan få ud af begrænse adgangen klassens felter (bemærk feltet 'balance' i toppen af klassen er private).
         // Hver gang instansens saldo skal 'ses' udefra, skal det ske gennem denne metode og jeg kan så tilføje lidt  kode
-        // I dette eksempel bliver en 'stalkingCounter' talt op. M.a.o.: jeg tracker data.txt om udefrakommende interesse i feltet saldo.
+        // I dette eksempel bliver en 'stalkingCounter' talt op. M.a.o.: jeg tracker olddata.txt om udefrakommende interesse i feltet saldo.
 
         return balance;
     }

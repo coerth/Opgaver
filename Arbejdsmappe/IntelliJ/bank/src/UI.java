@@ -1,16 +1,21 @@
 import java.util.Scanner;
 
 public class UI {
-    static int MAX = 6;
+
    public void createAccounts(){
 
        String choice;
        int i = 0;
 
-       while(i < MAX ){
-           String input = getUserInput("Hvilken konto? :");
-           Main.accounts.add(new BankAccount(input, 30000 ) );
-           i++;
+       while(i < Main.MAX ){
+           String input = getUserInput("Navn til konto? Eller tryk Q for at afslutte :");
+           if(input.equalsIgnoreCase("Q")){
+               break;
+           }
+           else {
+               Main.accounts.add(new BankAccount(input, 30000));
+               i++;
+           }
        }
 
    }
@@ -37,5 +42,7 @@ public class UI {
             System.out.println("Det var ikke et tal");
         }
     }
+
+
 
 }

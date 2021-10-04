@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,32 +9,34 @@ public class Main {
     //static BankAccount[] accounts = new BankAccount[3];
 
     static ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
+    static int MAX = 6;
 
     public static void main(String [] arg){
-        readGameData();
+        try{
+         readGameData();
 
-        /*
-        UI ui = new UI();
-        ui.createAccounts();
-        ui.manageAccount();
+        } catch (FileNotFoundException e){
+            System.out.println(e.getMessage());
+            UI ui = new UI();
+            ui.createAccounts();
+           // ui.manageAccount();
 
-
-         */
-        //tester hvad der står på egons konto
-        for(BankAccount konto : accounts){
-            System.out.println(konto);
         }
+            saveGameData();
+
+
+        //tester hvad der står på samtlige konti <- Denis
+        printAccounts();
     }
 
-    private static void readGameData() {
+
+
+    private static void readGameData() throws FileNotFoundException {
         File file = new File("src/data.txt");
         Scanner scan = null;
 
-        try {
             scan = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+
 
         while(scan.hasNextLine()){
            String[] values =  scan.nextLine().split(":");
@@ -45,6 +49,12 @@ public class Main {
 
     }
     }
+
+    public static void printAccounts() {
+        for(BankAccount a : Main.accounts){
+            System.out.println(a);
+        }
+    }
 /*
     private static void showMenu() {
         System.out.println("Press Q to quit");
@@ -53,5 +63,18 @@ public class Main {
     }
 
  */
+    public static void saveGameData(){
+        String gameData = "";
+        try {
+            FileWriter writer = new FileWriter(("src/data.txt"));
+            for (BankAccount a : accounts) {
+                gameData += a;
+            }
+            writer.write(gameData);
+            writer.close();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
 
 }
