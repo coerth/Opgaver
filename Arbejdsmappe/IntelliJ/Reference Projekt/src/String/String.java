@@ -5,6 +5,14 @@ public class String {
 //        String stringVariableWithSpace = "Eksempel med mellemrum";
 //        String[] stringArrayVariable;
 //        ArrayList<String> stringArrayList = new ArrayList<>();
+
+//                \ kan bruges til at sætte ' og " uden at bryde strengen.
+//                "Eksempel \'enkelttegn\'" = Eksempel 'enkelttegn';
+//                "Eksempel \"dobbelt gås\"" = Eksempel "dobbelt gås";
+//                "Eksempel \\dobbelt streg\\" = Eksempel \dobbelt streg\;
+//                "\n" bruges til at lave linjeskift
+
+               
 //
 //        stringVariable.length() -giver længden af tekststrengen. 8 i dette tilfælde;
 //
