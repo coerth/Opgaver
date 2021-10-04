@@ -82,6 +82,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -114,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633075999586</updated>
       <workItem from="1633076000861" duration="7516000" />
-      <workItem from="1633330589479" duration="8649000" />
+      <workItem from="1633330589479" duration="9775000" />
     </task>
     <servers />
   </component>
