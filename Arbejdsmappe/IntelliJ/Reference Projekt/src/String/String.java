@@ -1,13 +1,6 @@
-package com.company;
+package String;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Locale;
-
-public class Main {
-
-    public static void main(String[] args) {
-	// write your code here
+public class String {
 //        String stringVariable = "Eksempel";
 //        String stringVariableWithSpace = "Eksempel med mellemrum";
 //        String[] stringArrayVariable;
@@ -39,7 +32,5 @@ public class Main {
 //           for(String s : stringArrayVariable){
 //               System.out.println(s);
 //           }
-
-
-    }
 }
+

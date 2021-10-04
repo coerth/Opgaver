@@ -81,7 +81,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dsf" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -105,6 +106,7 @@
       <updated>1633279089916</updated>
       <workItem from="1633279091286" duration="4601000" />
       <workItem from="1633356673132" duration="1294000" />
+      <workItem from="1633362399877" duration="2628000" />
     </task>
     <servers />
   </component>

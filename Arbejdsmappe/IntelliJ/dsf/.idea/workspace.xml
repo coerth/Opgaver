@@ -73,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -85,6 +86,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,6 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1633356984579</updated>
       <workItem from="1633356985867" duration="595000" />
+      <workItem from="1633362368570" duration="28000" />
+      <workItem from="1633363907249" duration="986000" />
     </task>
     <servers />
   </component>
