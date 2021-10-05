@@ -31,12 +31,13 @@ public class Main {
 
 //        opgave11(13);
 
-        int[] intArray = {5,12,54,57,64};
-        int[] intArray2 = {6,13,55,58,65};
+//        int[] intArray = {5,12,54,57,64};
+//        int[] intArray2 = {6,13,55,58,65};
 //
-//        System.out.println(opgave12(intArray));
+//       System.out.println(opgave12(intArray));
+//
+//        System.out.println(opgave13(intArray2, intArray));
 
-        System.out.println(opgave13(intArray2, intArray));
 
 
     }
@@ -220,5 +221,4 @@ public class Main {
             valid = false;        }
         return valid;
     }
-
 }
