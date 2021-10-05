@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Main "1" *-- "6" BankAccount : has
+Main "1" *-- UI : has
+
+BankAccount : Float balance
+BankAccount : String Owner
+BankAccount : int stalkingCounter
+BankAccount : doTransaction()
+BankAccount : toString ()
+BankAccount : getOwner()
+BankAccount : getBalance()
+
+UI : createAccount()
+UI : manageAccounts()
+UI : getUserInput()
+
+Main : ArrayList<BankAccount>
+Main : int MAX
+Main : readGameData()
+Main : printAccounts()
+Main : showMenu()
+Main : saveGameData()
+
+@enduml

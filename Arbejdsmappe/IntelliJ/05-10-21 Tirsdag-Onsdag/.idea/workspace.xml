@@ -81,6 +81,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bank" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -131,7 +132,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633419612359</updated>
-      <workItem from="1633419613597" duration="7119000" />
+      <workItem from="1633419613597" duration="7279000" />
+      <workItem from="1633427427933" duration="30000" />
     </task>
     <servers />
   </component>
