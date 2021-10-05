@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +23,22 @@ public class Main {
 
 //        System.out.println(opgave7("Pølse"));
 
-        opgave8();
+//        opgave8();
+
+//        opgave9();
+
+//        opgave10();
+
+//        opgave11(13);
+
+        int[] intArray = {5,12,54,57,64};
+        int[] intArray2 = {6,13,55,58,65};
+//
+//        System.out.println(opgave12(intArray));
+
+        System.out.println(opgave13(intArray2, intArray));
+
+
     }
 
 
@@ -107,9 +123,10 @@ public class Main {
         amountOfNames = scan.nextInt();
 
         for(int i = 0; i < amountOfNames; i++){
+            Scanner scanName = new Scanner(System.in);
 
             System.out.println("Navn " + nameCounter + ": ?");
-            userInput = scan.nextLine();
+            userInput = scanName.nextLine();
 
             if(shortestName.equals("")){
                 shortestName = userInput;
@@ -121,4 +138,87 @@ public class Main {
         }
         System.out.println(shortestName + " er det korteste navn");
     }
+
+    static void opgave9(){
+        int randomNumber;
+        int roundsCounter = 0;
+        Random rand = new Random();
+
+        do {
+            randomNumber = rand.nextInt(1000);
+            System.out.println(randomNumber);
+            roundsCounter++;
+
+        }while(randomNumber < 900);
+        System.out.println("Så mange runder krævede det: " + roundsCounter);
+    }
+
+    static void opgave10(){
+        int userInput = 0;
+        int maxInput = 0;
+        int minInput = 999;
+
+        while(userInput != -1){
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Skriv et tal eller tast -1 for at afslutte");
+            userInput = scan.nextInt();
+            System.out.println(userInput);
+
+            if(userInput > maxInput){
+                maxInput = userInput;
+            }
+            if(userInput < minInput && userInput != -1){
+                minInput = userInput;
+            }
+        }
+        System.out.println("Dit største tal var: " + maxInput + "." + "\n" + "Dit mindste tal var: " + minInput + ".");
+    }
+
+    static void opgave11(int input){
+        int multiplier = 1;
+
+        for(int i = 0; i < 10; i++){
+            int multipliedInput = 0;
+            multipliedInput = input * multiplier;
+            multiplier++;
+
+            if(multiplier < 11){
+                System.out.print(multipliedInput + " og ");
+            }
+            else{
+                System.out.print(multipliedInput);
+            }
+        }
+    }
+
+    static int opgave12(int[] inputArray){
+        int maxInput = 0;
+
+        for(int i = 0; i < inputArray.length; i++){
+            if(inputArray[i] > maxInput){
+                maxInput = inputArray[i];
+            }
+        }
+
+        return maxInput;
+    }
+
+    static boolean opgave13(int[] intArray1, int[] intArray2){
+        boolean valid = false;
+        if(intArray1.length == intArray2.length){
+            for(int i = 0; i < intArray1.length-1; i++){
+                if(intArray1[i] > intArray2[i]){
+                    if(i < intArray1.length-1){
+                        valid = true;
+                    }
+                }
+
+            }
+
+        }
+        else{
+            valid = false;        }
+        return valid;
+    }
+
 }
