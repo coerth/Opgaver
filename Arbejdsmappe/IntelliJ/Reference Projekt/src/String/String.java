@@ -12,7 +12,7 @@ public class String {
 //                "Eksempel \\dobbelt streg\\" = Eksempel \dobbelt streg\;
 //                "\n" bruges til at lave linjeskift
 
-               
+
 //
 //        stringVariable.length() -giver længden af tekststrengen. 8 i dette tilfælde;
 //
