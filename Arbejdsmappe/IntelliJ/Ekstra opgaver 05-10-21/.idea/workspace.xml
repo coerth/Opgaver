@@ -74,6 +74,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="loops" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
@@ -100,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633436147924</updated>
       <workItem from="1633436149136" duration="17657000" />
-      <workItem from="1633461684976" duration="3378000" />
+      <workItem from="1633461684976" duration="3398000" />
     </task>
     <servers />
   </component>
