@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
@@ -73,18 +80,51 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../AggregationAndComposition" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Exercise_3" />
+      <recent name="Exercise_2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main Exercise 3">
+    <configuration name="Main Exercise 1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Exercise_1.Main" />
+      <module name="07-10-21_Torsdag" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main Exercise 2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Exercise_2.Main" />
+      <module name="07-10-21_Torsdag" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main Exercise 3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Exercise_3.Main" />
+      <module name="07-10-21_Torsdag" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="07-10-21_Torsdag" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main Exercise 1" />
+      <item itemvalue="Application.Main Exercise 2" />
+      <item itemvalue="Application.Main Exercise 3" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -99,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633599547111</updated>
-      <workItem from="1633599548425" duration="2552000" />
+      <workItem from="1633599548425" duration="7629000" />
     </task>
     <servers />
   </component>
