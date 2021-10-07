@@ -80,7 +80,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../AggregationAndComposition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -140,6 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633599547111</updated>
       <workItem from="1633599548425" duration="7722000" />
+      <workItem from="1633627126403" duration="315000" />
     </task>
     <servers />
   </component>

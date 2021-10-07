@@ -1,7 +1,7 @@
 package String;
 
 public class String {
-        String stringVariable = "Eksempel";
+//        String stringVariable = "Eksempel";
 //        String stringVariableWithSpace = "Eksempel med mellemrum";
 //        String[] stringArrayVariable;
 //        ArrayList<String> stringArrayList = new ArrayList<>();
