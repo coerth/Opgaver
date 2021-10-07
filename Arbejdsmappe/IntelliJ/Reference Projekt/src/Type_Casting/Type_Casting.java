@@ -1,9 +1,7 @@
-package `Type Casting`
+package Type_Casting;
 
-class Type_Casting {
-}
-
-//Man kan caste en primitiv data type til en anden.
+public class Type_Casting {
+    //Man kan caste en primitiv data type til en anden.
 //
 //        der er åbenbart 2 slags casting:
 //
@@ -31,5 +29,4 @@ class Type_Casting {
 //        hvis de 2 variabler bliver printet vil det så således ud:
 //        doubleVariable = 23.
 
-
-
+}

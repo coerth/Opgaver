@@ -73,6 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Reference Projekt" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -106,6 +107,7 @@
       <updated>1633436147924</updated>
       <workItem from="1633436149136" duration="17657000" />
       <workItem from="1633461684976" duration="3398000" />
+      <workItem from="1633587137154" duration="46000" />
     </task>
     <servers />
   </component>
