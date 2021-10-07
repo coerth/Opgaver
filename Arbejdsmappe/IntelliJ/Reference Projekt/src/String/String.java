@@ -1,7 +1,7 @@
 package String;
 
 public class String {
-//        String stringVariable = "Eksempel";
+        String stringVariable = "Eksempel";
 //        String stringVariableWithSpace = "Eksempel med mellemrum";
 //        String[] stringArrayVariable;
 //        ArrayList<String> stringArrayList = new ArrayList<>();
@@ -32,7 +32,7 @@ public class String {
 //
 //        stringVariable.lastIndexOf('e') - giver den sidste forkomst af 'e'. 6;
 //
-//        stringVariableWithSpace.split(" ") - splitter strengen i et array ved kriteriet;
+//        stringVariableWithSpace.split(" ") - splitter strengen i et array ved kriteriet " ";
 //
 //        vist eksempel:
 //        stringArrayVariable = stringVariableWithSpace.split(" ");
