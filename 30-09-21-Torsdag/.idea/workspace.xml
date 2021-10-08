@@ -90,7 +90,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/bank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -129,6 +129,7 @@
       <workItem from="1633080692896" duration="1093000" />
       <workItem from="1633279043769" duration="44000" />
       <workItem from="1633330501062" duration="81000" />
+      <workItem from="1633673349569" duration="426000" />
     </task>
     <servers />
   </component>
