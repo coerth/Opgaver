@@ -13,6 +13,7 @@
         <option value="Class" />
         <option value="UML Sequence" />
         <option value="UML Class" />
+        <option value="UML Use Case" />
       </list>
     </option>
   </component>
@@ -82,7 +83,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Use Case" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -125,7 +126,7 @@
       <workItem from="1633598324168" duration="3281000" />
       <workItem from="1633672914771" duration="34000" />
       <workItem from="1633676605213" duration="21000" />
-      <workItem from="1633676650207" duration="5142000" />
+      <workItem from="1633676650207" duration="7928000" />
     </task>
     <servers />
   </component>
