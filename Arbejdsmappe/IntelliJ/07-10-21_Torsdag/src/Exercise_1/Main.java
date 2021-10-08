@@ -2,7 +2,9 @@ package Exercise_1;
 
 public class Main {
 
+
     public static void main(String[] args) {
+
 
         Address studentAddress1 = new Address("Street1",1,0.0f,2860,"Denmark");
         Address studentAddress2 = new Address("Street2",2,1.0f,2960,"Denmark");
@@ -23,13 +25,17 @@ public class Main {
         teacher1.setTeacherAddress(teacherAddress1);
 
         Semester semester1 = new Semester("Datamatiker", teacher1);
-        semester1.addStudent(student1);
-        semester1.addStudent(student2);
-        semester1.addStudent(student3);
+        semester1.getStudentArrayList().add(student1);
+        semester1.getStudentArrayList().add(student2);
+        semester1.getStudentArrayList().add(student3);
+        semester1.getStudentArrayList().remove(student1);
+
 
         School school1 = new School("CPH Business", semester1);
 
         System.out.println(school1.getSemester().getStudentArrayList().size());
+
+
 
 
     }

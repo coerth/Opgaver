@@ -6,7 +6,7 @@ public class Semester {
 
     private String name;
     private Teacher teacher;
-    private ArrayList<Student> studentArrayList = new ArrayList<>();
+    private final ArrayList<Student> studentArrayList = new ArrayList<>();
 
     public Semester(String name, Teacher teacher) {
         this.name = name;
@@ -39,6 +39,7 @@ public class Semester {
     }
 
     public ArrayList<Student> getStudentArrayList() {
+
         return studentArrayList;
     }
 
