@@ -85,7 +85,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Reference Projekt" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -122,6 +122,7 @@
       <workItem from="1633330589479" duration="9775000" />
       <workItem from="1633427461788" duration="2209000" />
       <workItem from="1633598324168" duration="3281000" />
+      <workItem from="1633672914771" duration="34000" />
     </task>
     <servers />
   </component>
