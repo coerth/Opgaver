@@ -13,4 +13,7 @@ public class Object implements Comparable<Object>  {
         return this.age - otherObject.age;
     }
 //  IntelliJ kan lave compareTo for en, under Generate;
+
 }
+
+
