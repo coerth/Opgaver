@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class Main {
     //static BankAccount[] accounts = new BankAccount[3];
 
-    static ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
+    //static ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
+    static ArrayList<Player> players = new ArrayList<Player>();
     static int MAX = 6;
 
     public static void main(String [] arg){
@@ -27,7 +28,11 @@ public class Main {
 
         //tester hvad der står på samtlige konti <- Denis
         printAccounts();
-    }
+
+
+        }
+
+
 
 
 
@@ -40,9 +45,10 @@ public class Main {
 
         while(scan.hasNextLine()){
            String[] values =  scan.nextLine().split(":");
-           float converted_float  = Float.parseFloat(values[1]) ;
-           BankAccount account = new BankAccount(values[0],converted_float);
-           accounts.add(account);
+           float converted_float  = Float.parseFloat(values[1]);
+           Player p = new Player(values[0],converted_float);
+         //  BankAccount account = new BankAccount(values[0],converted_float);
+           players.add(p);
 
 
 
@@ -51,7 +57,7 @@ public class Main {
     }
 
     public static void printAccounts() {
-        for(BankAccount a : Main.accounts){
+        for(Player a : Main.players){
             System.out.println(a);
         }
     }
@@ -67,7 +73,7 @@ public class Main {
         String gameData = "";
         try {
             FileWriter writer = new FileWriter(("src/data.txt"));
-            for (BankAccount a : accounts) {
+            for (Player a : players) {
                 gameData += a;
             }
             writer.write(gameData);

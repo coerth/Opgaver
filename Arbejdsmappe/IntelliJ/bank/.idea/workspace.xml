@@ -10,10 +10,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="UML Sequence" />
         <option value="UML Class" />
         <option value="UML Use Case" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -126,7 +126,7 @@
       <workItem from="1633598324168" duration="3281000" />
       <workItem from="1633672914771" duration="34000" />
       <workItem from="1633676605213" duration="21000" />
-      <workItem from="1633676650207" duration="7928000" />
+      <workItem from="1633676650207" duration="9586000" />
     </task>
     <servers />
   </component>
