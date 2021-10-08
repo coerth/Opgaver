@@ -7,20 +7,20 @@ Main "1" *-- UI : has
 BankAccount : Float balance
 BankAccount : String Owner
 BankAccount : int stalkingCounter
-BankAccount : doTransaction()
-BankAccount : toString ()
-BankAccount : getOwner()
-BankAccount : getBalance()
+BankAccount : void doTransaction()
+BankAccount : String toString ()
+BankAccount : String getOwner()
+BankAccount : float getBalance()
 
-UI : createAccount()
-UI : manageAccounts()
-UI : getUserInput()
+UI : void createAccount()
+UI : void manageAccounts()
+UI : String getUserInput()
 
-Main : ArrayList<BankAccount>
-Main : int MAX
-Main : readGameData()
-Main : printAccounts()
-Main : showMenu()
-Main : saveGameData()
+Main : static ArrayList<BankAccount>
+Main : static int MAX
+Main : static readGameData()
+Main : static printAccounts()
+Main : static showMenu()
+Main : static saveGameData()
 
 @enduml
