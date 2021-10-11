@@ -72,6 +72,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -103,6 +105,7 @@
       <workItem from="1633356985867" duration="595000" />
       <workItem from="1633362368570" duration="28000" />
       <workItem from="1633363907249" duration="1758000" />
+      <workItem from="1633933340224" duration="699000" />
     </task>
     <servers />
   </component>

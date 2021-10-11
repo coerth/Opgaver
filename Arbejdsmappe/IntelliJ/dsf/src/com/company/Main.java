@@ -39,6 +39,20 @@ public class Main {
 //           for(String s : stringArrayVariable){
 //               System.out.println(s);
 //           }
+//
+//        int[][] intArray = {{1,2,3,4,5},
+//                            {6,7,8,9}};
+
+//    Der skal så 2 [] hvis der er 2 arrays inden i den.
+
+//    hvis vi vil printe ud fra arrayet ud så kan vi gøre således:
+//    her printer vi 4 ud da den er i det array 0 og på plads 3
+//        int tal = intArray[0][3];
+//        System.out.println(tal);
+
+//      her printer vi 9 ud da den er i array 1 og på plads 3
+//        int tal = intArray[1][3];
+//        System.out.println(tal);
 
 
     }
