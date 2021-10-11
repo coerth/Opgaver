@@ -24,8 +24,10 @@ public class Main {
            // ui.manageAccount();
 
         }
-            saveGameData();
 
+        Board board = new Board();
+        //todo: call gameloop(w. while)
+        saveGameData();
 
         //tester hvad der står på samtlige konti <- Denis
         printAccounts();
