@@ -1,12 +1,24 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-Main "1" *-- "6" BankAccount : has
+Main  *-- "2..6" BankAccount : has
 Main "1" *-- UI : has
+Player *-- "1" BankAccount : has a
+Field <|-- Consequence : is a
+Field <|-- Property : is a
 
-BankAccount : Float balance
-BankAccount : String Owner
-BankAccount : int stalkingCounter
+Player : - int id
+Player : - int counter
+Player : - String name
+Player : - int position
+Player : - BankAccount account
+Player : + handleMoney()
+Player : + updatePosition()
+Player : + String toString();
+
+BankAccount : - Float balance
+BankAccount : - String Owner
+BankAccount : - int stalkingCounter
 BankAccount : void doTransaction()
 BankAccount : String toString ()
 BankAccount : String getOwner()
@@ -16,11 +28,18 @@ UI : void createAccount()
 UI : void manageAccounts()
 UI : String getUserInput()
 
-Main : static ArrayList<BankAccount>
-Main : static int MAX
-Main : static readGameData()
-Main : static printAccounts()
-Main : static showMenu()
-Main : static saveGameData()
+Main : + static ArrayList<BankAccount>
+Main : + static int MAX
+Main : + static readGameData()
+Main : + static printAccounts()
+Main : + static showMenu()
+Main : + static saveGameData()
+
+Field : - String label
+Field : - int id
+Field : - int cost
+Field : - int income
+Field : + String createOption()
+Field : + void processResponse()
 
 @enduml

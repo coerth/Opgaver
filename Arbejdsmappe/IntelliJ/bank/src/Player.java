@@ -1,19 +1,24 @@
 public class Player {
+    private String name;
+    private BankAccount account;
     private int id;
-    private static int counter = 0;
+    private int position;
+
+    private static int counter;
 
 
-    public Player(String name, float balance) {
-        BankAccount account = new BankAccount(name,balance);
+    public Player(String name, int balance) {
+        this.account = new BankAccount(name,balance);
         counter++;
         this.id = counter;
+        this.name = name;
 
     }
 
     @Override
     public String toString() {
-        return "Player{" +
-                "id=" + id +
-                '}';
+        String s;
+        s = name + ":" + account.getBalance() + "\n";
+        return s;
     }
 }

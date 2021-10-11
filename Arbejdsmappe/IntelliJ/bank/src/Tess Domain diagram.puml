@@ -20,12 +20,11 @@ object Account
 object Piece
 object Dice
 object Card
-object ProofOfPurchase
+object Deed
 object Tax
-object Event
+object Chance
 
 Field <|-- Property
-Field <|-- Start
 Field <|-- Consequence
 Property <|-- Land
 Property <|-- Business
@@ -34,9 +33,10 @@ Building <|-- Hotel
 Business <|-- Brewery
 Business <|-- ShippingLine
 Consequence <|-- Bonus
-Consequence <|-- Event
+Consequence <|-- Chance
 Consequence <|-- Prison
 Consequence <|-- Tax
+Consequence <|-- Start
 
 
 Board o-- "40" Field
@@ -47,7 +47,7 @@ Board o-- "2..6" Piece
 Player o-- "1" Piece
 Player o-- "1" Account
 Land o-- "0..5" Building
-Account o-- "1" ProofOfPurchase
-Property o-- "1" ProofOfPurchase
+Account o-- "1" Deed
+Property o-- "1" Deed
 
 @enduml

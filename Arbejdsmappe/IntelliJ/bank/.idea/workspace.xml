@@ -91,6 +91,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mbend\Documents\GitHub\Opgaver\Arbejdsmappe\IntelliJ\bank\src" />
     </key>
@@ -127,6 +130,7 @@
       <workItem from="1633672914771" duration="34000" />
       <workItem from="1633676605213" duration="21000" />
       <workItem from="1633676650207" duration="9703000" />
+      <workItem from="1633936300346" duration="11125000" />
     </task>
     <servers />
   </component>

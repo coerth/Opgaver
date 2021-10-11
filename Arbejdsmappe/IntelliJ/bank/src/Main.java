@@ -13,12 +13,13 @@ public class Main {
     static int MAX = 6;
 
     public static void main(String [] arg){
+        UI ui = new UI();
+
         try{
          readGameData();
 
         } catch (FileNotFoundException e){
             System.out.println(e.getMessage());
-            UI ui = new UI();
             ui.createAccounts();
            // ui.manageAccount();
 
@@ -45,8 +46,8 @@ public class Main {
 
         while(scan.hasNextLine()){
            String[] values =  scan.nextLine().split(":");
-           float converted_float  = Float.parseFloat(values[1]);
-           Player p = new Player(values[0],converted_float);
+           int converted_int  = Integer.parseInt(values[1]);
+           Player p = new Player(values[0],converted_int);
          //  BankAccount account = new BankAccount(values[0],converted_float);
            players.add(p);
 
