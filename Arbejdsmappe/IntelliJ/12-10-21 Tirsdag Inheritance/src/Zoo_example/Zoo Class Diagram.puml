@@ -1,0 +1,58 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface AnimalSound
+interface Basic_Needs
+class Animal
+class Human
+class Zoo
+class Bear
+class Caretaker
+class Main
+class Ostrich
+class Staff
+class Tiger
+
+
+Main *-- Zoo
+Zoo *-- Animal
+Zoo *-- Staff
+AnimalSound <|-- Animal
+Basic_Needs <|-- Animal
+Basic_Needs <|-- Human
+Animal <|-- Bear
+Animal <|-- Ostrich
+Animal <|-- Tiger
+Human <|-- Staff
+Staff <|-- Caretaker
+
+AnimalSound : + makeSound()
+
+Basic_Needs : + eat()
+Basic_Needs : + sleep()
+Basic_Needs : + poop()
+
+Animal : - String name
+Animal : - int numberOfLegs
+Animal : + getName()
+Animal : + getNumberOfLegs()
+
+Bear : + eat()
+Bear : + makeSound()
+
+Caretaker : + eat()
+Caretaker : - int id
+Caretaker : - String name
+
+Ostrich : + eat()
+Ostrich : + makeSound()
+
+Zoo : - Arraylist<Animal> animalArrayList
+Zoo : - Arraylist<Staff> staffArrayList
+Zoo : + addAnimalToZoo()
+Zoo : + addStaffToZoo()
+Zoo : + makeAllSounds()
+Zoo : + printNumberOfLegs()
+
+
+@enduml

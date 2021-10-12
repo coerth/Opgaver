@@ -10,9 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="UML Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -83,7 +83,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -116,6 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634030441787</updated>
       <workItem from="1634030443368" duration="3680000" />
+      <workItem from="1634039030311" duration="4177000" />
     </task>
     <servers />
   </component>

@@ -3,8 +3,9 @@ package Music_Player_example;
 import java.util.ArrayList;
 
 public class Album implements Playable {
-    String albumTitle;
-    ArrayList<Song> songArrayList = new ArrayList<Song>();
+    private Artist artist;
+    private String albumTitle;
+    private ArrayList<Song> songArrayList = new ArrayList<Song>();
 
     public Album(String albumTitle) {
         this.albumTitle = albumTitle;

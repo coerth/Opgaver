@@ -1,7 +1,7 @@
 package Music_Player_example;
 
 public class Song implements Playable {
-    String songTitle;
+    private String songTitle;
 
     public Song(String songTitle) {
         this.songTitle = songTitle;
