@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7812e133-a3a7-429b-b6ed-8cada63728d3" name="Changes" comment="" />
+    <list default="true" id="a3460848-e139-47f3-81bd-d659ce47dce6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,13 +11,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="UML Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1zAn1WHER1wTWOuerfbubfm580u" />
+  <component name="ProjectId" id="1zOsO5PbpDh17zmhQDGESIIJ5hO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -80,54 +82,25 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Java-InheritanceAndInterfaces" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="Exercise_3" />
-      <recent name="Exercise_2" />
+      <recent name="Music_Player_example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main Exercise 1">
-    <configuration name="Main Exercise 1" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Exercise_1.Main" />
-      <module name="07-10-21_Torsdag" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main Exercise 2" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Exercise_2.Main" />
-      <module name="07-10-21_Torsdag" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main Exercise 3" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Exercise_3.Main" />
-      <module name="07-10-21_Torsdag" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="07-10-21_Torsdag" />
+      <option name="MAIN_CLASS_NAME" value="Zoo_example.Main" />
+      <module name="12-10-21 Tirsdag Inheritance" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main Exercise 1" />
-      <item itemvalue="Application.Main Exercise 2" />
-      <item itemvalue="Application.Main Exercise 3" />
-      <item itemvalue="Application.Main" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -137,17 +110,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7812e133-a3a7-429b-b6ed-8cada63728d3" name="Changes" comment="" />
-      <created>1633599547111</created>
+      <changelist id="a3460848-e139-47f3-81bd-d659ce47dce6" name="Changes" comment="" />
+      <created>1634030441787</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633599547111</updated>
-      <workItem from="1633599548425" duration="7722000" />
-      <workItem from="1633627126403" duration="666000" />
-      <workItem from="1633673824037" duration="2791000" />
-      <workItem from="1633676649944" duration="593000" />
-      <workItem from="1633931627146" duration="592000" />
-      <workItem from="1634024271598" duration="4249000" />
+      <updated>1634030441787</updated>
+      <workItem from="1634030443368" duration="3680000" />
     </task>
     <servers />
   </component>

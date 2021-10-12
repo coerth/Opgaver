@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Artist
+class Album
+class Song
+interface Playable
+
+Artist <|-- Playable
+Album <|-- Playable
+Song <|-- Playable
+
+Player *-- Playlist
+
+Artist *-- Album
+Album *-- Song
+
+Artist : - String artistName
+Artist : - Arraylist<Album>
+
+Album : - String albumTitle
+Album : - Arraylist<Song>
+
+Song : - String songTile
+@enduml
