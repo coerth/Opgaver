@@ -7,6 +7,8 @@ Player *-- "1" BankAccount : has a
 Field <|-- Consequence : is a
 Field <|-- Property : is a
 Main *-- Board : has a
+Consequence <|-- Tax : is a
+Consequence <|-- Chance : is a
 
 Player : - int id
 Player : - int counter
@@ -17,17 +19,17 @@ Player : + handleMoney()
 Player : + updatePosition()
 Player : + String toString();
 
-BankAccount : - Float balance
+BankAccount : - int balance
 BankAccount : - String Owner
 BankAccount : - int stalkingCounter
-BankAccount : void doTransaction()
-BankAccount : String toString ()
-BankAccount : String getOwner()
-BankAccount : float getBalance()
+BankAccount : + void doTransaction()
+BankAccount : + String toString ()
+BankAccount : + String getOwner()
+BankAccount : + int getBalance()
 
-UI : void createAccount()
-UI : void manageAccounts()
-UI : String getUserInput()
+UI : + void createAccount()
+UI : + void manageAccounts()
+UI : + String getUserInput()
 
 Main : + static ArrayList<BankAccount>
 Main : + static int MAX
@@ -43,11 +45,17 @@ Field : - int income
 Field : + String createOption()
 Field : + void processResponse()
 
-Consequence : onAccept()
-Consequence : onReject()
+Consequence : + onAccept()
+Consequence : + onReject()
+Consequence : + String toString()
 
-Board : ArrayList<Field> field
+Property : + onAccept()
+Property : + onReject()
+Property : + String toString()
+
+Board : - Field[] fields
 Board : Dice dice
+Board : - setFields()
 
 
 
