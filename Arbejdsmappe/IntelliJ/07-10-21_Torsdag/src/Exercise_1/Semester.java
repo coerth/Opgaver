@@ -23,18 +23,22 @@ public class Semester {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public Teacher getTeacher() {
+
         return teacher;
     }
 
     public void setTeacher(Teacher teacher) {
+
         this.teacher = teacher;
     }
 
@@ -44,6 +48,7 @@ public class Semester {
     }
 
     public void addStudent(Student student){
+
         studentArrayList.add(student);
     }
 }

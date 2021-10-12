@@ -18,18 +18,22 @@ public class School {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public Semester getSemester() {
+
         return semester;
     }
 
     public void setSemester(Semester semester) {
+
         this.semester = semester;
     }
 }
