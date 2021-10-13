@@ -101,7 +101,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="bank" />
+      <module name="Matador" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -133,6 +133,8 @@
       <workItem from="1633936300346" duration="11774000" />
       <workItem from="1634018886393" duration="5610000" />
       <workItem from="1634119878352" duration="12066000" />
+      <workItem from="1634135102897" duration="17000" />
+      <workItem from="1634135132095" duration="1516000" />
     </task>
     <servers />
   </component>

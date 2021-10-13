@@ -25,6 +25,7 @@ public class Board {
         //todo: instantiere felter af forskellig type på baggrund af værdien i fieldType
         for(String s : fieldsData){
           fieldData =  s.split(",");
+
           id = Integer.parseInt(fieldData[0].trim());
           fieldType  = fieldData[1].trim();
           label = fieldData[2].trim();
@@ -33,7 +34,7 @@ public class Board {
           seriesId = Integer.parseInt(fieldData[5].trim());
 
           Field field = null;
-            System.out.println(fieldData[1]);
+           // System.out.println(fieldData[1]);
 
             switch (fieldType){
 

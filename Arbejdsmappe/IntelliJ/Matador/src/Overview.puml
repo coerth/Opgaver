@@ -42,10 +42,12 @@ UI : + String getUserInput()
 
 Main : + static ArrayList<BankAccount>
 Main : + static int MAX
+Main : String[] fieldsDataArray
 Main : + static readGameData()
 Main : + static printAccounts()
 Main : + static showMenu()
 Main : + static saveGameData()
+Main : + static String[] readFieldsData()
 
 Field : - String label
 Field : - int id
