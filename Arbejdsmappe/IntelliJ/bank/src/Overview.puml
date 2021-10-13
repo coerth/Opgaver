@@ -4,11 +4,20 @@
 Main  *-- "2..6" BankAccount : has
 Main "1" *-- UI : has
 Player *-- "1" BankAccount : has a
-Field <|-- Consequence : is a
-Field <|-- Property : is a
+Field <|-- Consequence
+Field <|-- Property
 Main *-- Board : has a
-Consequence <|-- Tax : is a
-Consequence <|-- Chance : is a
+Consequence <|-- Tax
+Consequence <|-- Chance
+Consequence <|-- Start
+Consequence <|-- Prison
+Consequence <|-- Visit
+Consequence <|-- Bonus
+Property <|-- Plot
+Property <|-- Business
+Business <|-- ShippingLine
+Business <|-- Brewery
+
 
 Player : - int id
 Player : - int counter
@@ -49,6 +58,7 @@ Consequence : + onAccept()
 Consequence : + onReject()
 Consequence : + String toString()
 
+Property : seriesID
 Property : + onAccept()
 Property : + onReject()
 Property : + String toString()

@@ -16,7 +16,7 @@ Field <|-- "1" Tax
 Field <|-- "1" Visit
 Property <|-- Plot
 Property <|-- Business
-Business <|-- Shipping
+Business <|-- ShippingLine
 Business <|-- Brewery
 Plot o--"1..4" Building
 Building <|-- House

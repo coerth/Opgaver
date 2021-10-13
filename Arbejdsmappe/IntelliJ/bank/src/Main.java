@@ -12,6 +12,7 @@ public class Main {
     static ArrayList<Player> players = new ArrayList<Player>();
     static int MAX = 6;
 
+
     public static void main(String [] arg){
         UI ui = new UI();
 
@@ -22,21 +23,18 @@ public class Main {
             System.out.println(e.getMessage());
             ui.createAccounts();
            // ui.manageAccount();
-
         }
 
-        Board board = new Board();
+        //byg spilleplade
+        String[] fieldsDataArray = readFieldsData();
+        Board board = new Board(fieldsDataArray);
         //todo: call gameloop(w. while)
         saveGameData();
 
         //tester hvad der står på samtlige konti <- Denis
         printAccounts();
-
-
-        }
-
-
-
+        System.out.println(board.getField(40));
+    }
 
 
     private static void readGameData() throws FileNotFoundException {
@@ -45,18 +43,35 @@ public class Main {
 
             scan = new Scanner(file);
 
-
         while(scan.hasNextLine()){
            String[] values =  scan.nextLine().split(":");
            int converted_int  = Integer.parseInt(values[1]);
            Player p = new Player(values[0],converted_int);
          //  BankAccount account = new BankAccount(values[0],converted_float);
            players.add(p);
-
-
-
-
     }
+    }
+
+    public static String[] readFieldsData(){
+        String[] fieldsArray = new String[40];
+        File file = new File("src/fields.txt");
+        int counter = 0;
+    try {
+        Scanner scan = null;
+            scan = new Scanner(file);
+            scan.nextLine(); //ignorer den første linje i filen
+
+        while(scan.hasNextLine()){
+
+            fieldsArray[counter] = scan.nextLine();
+            counter++;
+        }
+
+        }
+        catch (FileNotFoundException e) {
+            System.out.println(e);
+        }
+        return fieldsArray;
     }
 
     public static void printAccounts() {

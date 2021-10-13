@@ -14,8 +14,9 @@ public class Property extends Field{
 
     @Override
     public String toString() {
-        return "Property{" +
-                "seriesID=" + seriesID +
-                '}';
+        String s = super.toString();
+        s+=  " En del af serie: "+ seriesID;
+        return s;
     }
+
 }
