@@ -17,7 +17,6 @@ Property <|-- Plot
 Property <|-- Business
 Business <|-- ShippingLine
 Business <|-- Brewery
-Board *-- Field
 
 
 Player : - int id
