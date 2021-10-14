@@ -19,7 +19,6 @@ Business <|-- ShippingLine
 Business <|-- Brewery
 Board *-- Field
 
-
 Player : - int id
 Player : - int counter
 Player : - String name

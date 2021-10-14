@@ -1,4 +1,4 @@
-/*
+package Task_1;/*
 FORMÅL: At kunne redesigne ved at skifte standard datatyper ud med egne klasser
 OPGAVEN: Der er fem delopgaver.
 
@@ -26,29 +26,60 @@ private ArrayList <Dog> offSpring;
 
 
 */
-import java.util.Arrays;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class DogKennel {
 	public static void main(String[] args) {
 		//TODO:
 		// lav en ny hund
 		Dog myDog = new Dog("woodie", true);
+		Owner henning = new Owner("Henning");
 		// sæt en ejer
-		myDog.setOwner("Henning");
+		myDog.setOwner(henning);
 		// TODO: tilføj to hvalpe når hundeklassen er klar til hvalpe
-		myDog.setOffSpring("woodiesnoopie");
-		myDog.setOffSpring("woodiesfido");
+		myDog.setOffSpring(new Dog("woodiesnoopie", true ));
+		myDog.setOffSpring(new Dog("woodiesfido", false));
 		
-		// print alle hvalpe
-		ArrayList <String> myOff = myDog.getOffSpring();
-		for (String myD: myOff) {
-			System.out.println(myD);
-		}
-		
+//		// print alle hvalpe
+//		ArrayList<Dog> myOff = myDog.getOffSpring();
+//		for (Dog myD: myOff) {
+//			System.out.println(myD);
+//		}
+
+		// task 7
+		//myDog.printOffSpring();
+
+		myDog.setOffSpringFromFile(readDogData());
+
+		myDog.printOffSpring();
+
 		// print ejeren
 		System.out.println("min hund er ejet af " + myDog.getOwner());
 		// TODO: fodr hunden når hundeklassen er modificeret så den kan fodres
 		String resString = myDog.feedDog();
 		System.out.println(resString);
+	}
+
+	public static ArrayList<String> readDogData(){
+		File file = new File("Task_1/dogData.txt");
+		ArrayList<String> dogDataFromFile = new ArrayList<>();
+
+		try {
+			Scanner scan = null;
+			scan = new Scanner(file);
+
+			while(scan.hasNextLine()){
+				dogDataFromFile.add(scan.nextLine());
+			}
+
+		}catch (FileNotFoundException e){
+			System.out.println(e);
+		}
+
+		return dogDataFromFile;
 	}
 	
 }

@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Main *-- Controller
+ComputeVAT <|-- Controller
+Controller *-- View
+Controller *-- CalculateVat
+Controller *-- Dialog
+
+Main : + static void main(String[] args)
+
+Controller : + runController()
+
+View : + doView(double Result, String typeOfResult)
+
+CalculateVat : + doVAT(double number)
+
+Dialog : + doDiag()
+
+ComputeVAT : # final int PRCVAT
+ComputeVAT : # final String MSG
+ComputeVAT : # final String CURRENCY
+
+@enduml

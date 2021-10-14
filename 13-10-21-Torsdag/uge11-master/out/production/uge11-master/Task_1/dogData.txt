@@ -1,0 +1,4 @@
+Ellie, true
+Samba, false
+Luna, true
+Sorte, false

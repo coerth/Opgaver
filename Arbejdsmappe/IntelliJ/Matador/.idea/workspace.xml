@@ -87,7 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12-10-21 Tirsdag Inheritance" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -137,6 +137,7 @@
       <workItem from="1634135132095" duration="1516000" />
       <workItem from="1634141536480" duration="1832000" />
       <workItem from="1634151109969" duration="2003000" />
+      <workItem from="1634194864518" duration="2845000" />
     </task>
     <servers />
   </component>
