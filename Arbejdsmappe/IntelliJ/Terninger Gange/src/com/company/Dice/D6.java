@@ -1,16 +1,17 @@
-package com.company;
+package com.company.Dice;
 
 import java.util.Random;
 
 public class D6 extends Terning{
 
-    public D6(int maxEyesValue) {
-        super(maxEyesValue);
+    public D6() {
+        super.setMaxEyesValue(6);
+        rollDie();
     }
 
     @Override
     public void rollDie() {
         Random rand = new Random();
-        super.setMaxEyesValue(rand.nextInt(1,7));
+        super.setEyesValue(rand.nextInt(1,7));
     }
 }
