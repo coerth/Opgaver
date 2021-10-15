@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Arbejdsmappe/IntelliJ/Matador" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -93,6 +93,7 @@
       <workItem from="1634150309825" duration="494000" />
       <workItem from="1634187620699" duration="155000" />
       <workItem from="1634191964103" duration="8206000" />
+      <workItem from="1634205596062" duration="487000" />
     </task>
     <servers />
   </component>
