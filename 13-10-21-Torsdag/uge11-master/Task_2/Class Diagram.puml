@@ -11,8 +11,11 @@ Main : + static void main(String[] args)
 
 Controller : + runController()
 
+View : - String CURRENCY
+View : - String MSG
 View : + doView(double Result, String typeOfResult)
 
+CalculateVat : - PRCVAT
 CalculateVat : + doVAT(double number)
 
 Dialog : + doDiag()
