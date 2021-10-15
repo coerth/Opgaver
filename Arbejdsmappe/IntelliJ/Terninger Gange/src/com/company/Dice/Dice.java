@@ -1,6 +1,6 @@
 package com.company.Dice;
 
-public class Terning implements Roll {
+public class Dice implements Roll {
     private int maxEyesValue;
     private int eyesValue;
 

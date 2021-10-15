@@ -2,7 +2,7 @@ package com.company.Dice;
 
 import java.util.Random;
 
-public class D4 extends Terning{
+public class D4 extends Dice {
 
     public D4() {
         super.setMaxEyesValue(4);

@@ -37,7 +37,19 @@ public class ComputeVAT {
   final protected int PRCVAT = 25;
   final protected String MSG = "MOMS";
   final protected String CURRENCY = "Kr";
-  }
+
+//  public int getPRCVAT() {
+//    return PRCVAT;
+//  }
+//
+//  public String getMSG() {
+//    return MSG;
+//  }
+//
+//  public String getCURRENCY() {
+//    return CURRENCY;
+//  }
+}
 
 
 

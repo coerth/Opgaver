@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3efb790a-8ae5-40fc-b470-6198f6775c1d" name="Changes" comment="" />
+    <list default="true" id="3efb790a-8ae5-40fc-b470-6198f6775c1d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/Musik.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Bas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Drum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Guitar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Instrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Mstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Overview.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Percussion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Piano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Trumpet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Musik/src/com/company/model/Wind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Dice/D10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13-10-21-Torsdag/uge11-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13-10-21-Torsdag/uge11-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13-10-21-Torsdag/uge11-master/Task_2/ComputeVAT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13-10-21-Torsdag/uge11-master/Task_2/ComputeVAT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/Terning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/Terning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DiceCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DiceCup.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,8 +120,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../out" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -114,10 +156,22 @@
       <option name="presentableId" value="Default" />
       <updated>1634213884003</updated>
       <workItem from="1634213885251" duration="10730000" />
+      <workItem from="1634278245464" duration="5519000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

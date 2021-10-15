@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class DiceCup {
-    Terning[] diceInDiceCup = new Terning[2];
+    Dice[] diceInDiceCup = new Dice[2];
 
     public void rollDice(){
         int userInput = 1;
@@ -35,9 +35,10 @@ public class DiceCup {
            amountOfTries++;
        }
         System.out.println("Så mange forsøg tog det: " + amountOfTries);
+       endOfSequenceOptions();
     }
 
-    public boolean checkValidity(int userInput) throws ArithmeticException{
+    private boolean checkValidity(int userInput) throws ArithmeticException{
         //ArrayList<Integer> acceptedValues = acceptedValues();
         boolean check = false;
         //check = acceptedValues.contains(userInput);
@@ -50,7 +51,7 @@ public class DiceCup {
        return check;
     }
 
-    public  ArrayList<Integer> acceptedValues(Terning[] diceInDiceCup) {
+    private  ArrayList<Integer> acceptedValues(Dice[] diceInDiceCup) {
         ArrayList<Integer> acceptabelValues = new ArrayList<>();
         int sum = 0;
         for (int i = 1; i < diceInDiceCup[0].getMaxEyesValue()+1; i++) {
@@ -69,12 +70,12 @@ public class DiceCup {
 
        scan = new Scanner(System.in);
         System.out.println("Du skal vælge to terninger, hvilken terning skal den første være?");
-        System.out.println("D4, D6, D8, D12, D20?");
+        System.out.println("D4, D6, D8, D10, D12, D20?");
        userInput = scan.nextLine().toUpperCase(Locale.ROOT).trim();
         addDiceToCup(userInput,0);
 
-        System.out.println("Hvilken terning skal den anden være?");
-        System.out.println("D4, D6, D8, D12, D20?");
+        System.out.println("Hvilken terning skal den anden terning være?");
+        System.out.println("D4, D6, D8, D10, D12, D20?");
         userInput = scan.nextLine().toUpperCase(Locale.ROOT).trim();
 
         addDiceToCup(userInput,1);
@@ -95,6 +96,10 @@ public class DiceCup {
                    diceInDiceCup[arrayElement] = new D8();
                    break;
 
+               case "D10":
+                   diceInDiceCup[arrayElement] = new D10();
+                   break;
+
                case "D12":
                    diceInDiceCup[arrayElement] = new D12();
                    break;
@@ -103,5 +108,38 @@ public class DiceCup {
                    diceInDiceCup[arrayElement] = new D20();
                    break;
            }
+       }
+
+       private void endOfSequenceOptions(){
+        Scanner scan;
+        String userinput;
+
+        scan = new Scanner(System.in);
+        System.out.println("Vil du rulle igen:");
+        System.out.println("Ja / Nej?");
+        userinput = scan.nextLine().toLowerCase(Locale.ROOT).trim();
+
+        if(userinput.equals("ja")){
+            System.out.println("Skal det være samme terninger?");
+            System.out.println("Ja / Nej?");
+            userinput = scan.nextLine().toLowerCase(Locale.ROOT).trim();
+
+            if(userinput.equals("ja")){
+                rollDice();
+            }
+
+            else if(userinput.equals("nej")){
+                chooseDice();
+                rollDice();
+            }
+
+            else{
+                System.out.println("Tak for spillet.");
+            }
+        }
+        else {
+            System.out.println("Tak for spillet.");
+        }
+
        }
 }
