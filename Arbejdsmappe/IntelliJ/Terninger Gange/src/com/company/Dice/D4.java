@@ -6,6 +6,7 @@ public class D4 extends Dice {
 
     public D4() {
         super.setMaxEyesValue(4);
+        super.calculateValue();
         rollDie();
     }
 

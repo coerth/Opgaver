@@ -6,6 +6,7 @@ public class D8 extends Dice {
 
     public D8() {
         super.setMaxEyesValue(8);
+        super.calculateValue();
         rollDie();
     }
 

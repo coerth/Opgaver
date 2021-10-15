@@ -5,6 +5,7 @@ import java.util.Random;
 public class D20 extends Dice {
     public D20() {
         super.setMaxEyesValue(20);
+        super.calculateValue();
         rollDie();
     }
 

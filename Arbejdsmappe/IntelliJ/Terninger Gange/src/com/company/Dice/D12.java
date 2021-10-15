@@ -6,6 +6,7 @@ public class D12 extends Dice {
 
     public D12() {
         super.setMaxEyesValue(12);
+        super.calculateValue();
         rollDie();
     }
 
