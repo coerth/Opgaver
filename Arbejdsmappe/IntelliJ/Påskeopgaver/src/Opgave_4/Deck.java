@@ -10,7 +10,7 @@ public class Deck {
     private int[] deck = new int[52];
     private String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
     private String[] ranks = {"Ace","2", "3", "4", "5", "6", "7" , "8", "9", "10", "Jack", "Queen", "King"};
-    ArrayList<Integer> pulledCards = new ArrayList<>();
+
 
 
     public Deck() {
