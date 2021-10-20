@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="" />
+    <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/Påskeopgaver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_1/Lottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_2/Expenses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_3/NumberAnalyse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_4/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Terninger Gange/src/com/company/Dice/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Terninger Gange/src/com/company/Dice/Dice.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,6 +161,7 @@
       <workItem from="1634151109969" duration="2003000" />
       <workItem from="1634194864518" duration="2845000" />
       <workItem from="1634216718874" duration="2062000" />
+      <workItem from="1634723639225" duration="2212000" />
     </task>
     <servers />
   </component>

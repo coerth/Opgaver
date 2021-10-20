@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e17d27-61d7-4349-8e5a-fa22b9bb5dc0" name="Changes" comment="" />
+    <list default="true" id="63e17d27-61d7-4349-8e5a-fa22b9bb5dc0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/Påskeopgaver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/src/Opgave_1/Lottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/src/Opgave_2/Expenses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/src/Opgave_2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/src/Opgave_3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Påskeopgaver/src/Opgave_3/NumberAnalyse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Terninger Gange/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Terninger Gange/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Terninger Gange/src/com/company/Dice/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/Terninger Gange/src/com/company/Dice/Dice.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1632916041521</updated>
       <workItem from="1632916042804" duration="3299000" />
+      <workItem from="1634723614093" duration="11000" />
     </task>
     <servers />
   </component>

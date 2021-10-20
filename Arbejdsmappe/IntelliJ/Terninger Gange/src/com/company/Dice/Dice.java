@@ -2,7 +2,7 @@ package com.company.Dice;
 
 import java.util.ArrayList;
 
-public class Dice implements Roll {
+public abstract class Dice implements Roll {
     private int maxEyesValue;
     private int eyesValue;
     private ArrayList<Integer> possibleValues = new ArrayList<>();
