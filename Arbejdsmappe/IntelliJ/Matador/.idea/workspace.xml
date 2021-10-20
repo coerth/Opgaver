@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/out/production/Påskeopgaver/Opgave_5/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/out/production/Påskeopgaver/Opgave_5/TV.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/out/production/Påskeopgaver/Opgave_6/Circle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/out/production/Påskeopgaver/Opgave_6/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_5/TV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_6/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_6/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Edible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_7/Tiger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Påskeopgaver/out/production/Påskeopgaver/Opgave_4/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Påskeopgaver/out/production/Påskeopgaver/Opgave_4/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_4/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Påskeopgaver/src/Opgave_4/Deck.java" afterDir="false" />
-    </list>
+    <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
