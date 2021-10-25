@@ -1,6 +1,7 @@
 package com.company.Dice;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public abstract class Dice implements Roll {
     private int maxEyesValue;
@@ -12,6 +13,9 @@ public abstract class Dice implements Roll {
 
     @Override
     public void rollDie() {
+        Random rand = new Random();
+        int rolled = rand.nextInt(1,possibleValues.size()+1);
+        eyesValue = possibleValues.get(rolled-1);
     }
 
     public void calculateValue(){
@@ -42,10 +46,12 @@ public abstract class Dice implements Roll {
     }
 
     public ArrayList<Integer> getPossibleValues() {
+
         return possibleValues;
     }
 
     public void setPossibleValues(int values) {
+
         this.possibleValues.add(values);
     }
 }

@@ -15,6 +15,12 @@ public class Player {
 
     }
 
+    public int updatePosition(int diceRoll){
+
+        position += diceRoll;
+        return position;
+    }
+
     @Override
     public String toString() {
         String s;

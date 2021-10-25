@@ -1,4 +1,4 @@
-    public class Field {
+   abstract public class Field {
         int cost;
         int income;
         String label;
@@ -11,17 +11,33 @@
             this.id = id;
         }
 
-        //Vil du købe grunden
-        public String createOption(String s){
-            return s;
+        //Vil du købe grunden eller du er landet på x
+        public String onLand(){
+        String message = "Du er landet på " + label;
+            return message;
         }
 
         //Er der blevet sagt ja eller nej
-        public void processResponse(){
+        public void processResponse(String response){
+
+            if(response.equalsIgnoreCase("Y")){
+                this.onAccept();
+            }
+            else{
+                this.onReject();
+            }
         }
+
+
+
+       abstract void onAccept();
+
+       abstract void onReject();
+
 
         @Override
         public String toString(){
+
             return id+": "+label;
         }
     }

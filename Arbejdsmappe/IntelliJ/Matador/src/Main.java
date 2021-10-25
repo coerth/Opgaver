@@ -11,10 +11,16 @@ public class Main {
     //static ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
     static ArrayList<Player> players = new ArrayList<Player>();
     static int MAX = 6;
+    private static Board board;
+    private static UI ui;
+    private static Player currentPlayer;
 
+    public static Player getCurrentPlayer() {
+        return currentPlayer;
+    }
 
     public static void main(String [] arg){
-        UI ui = new UI();
+       ui = new UI();
 
         try{
          readGameData();
@@ -27,15 +33,44 @@ public class Main {
 
         //byg spilleplade
         String[] fieldsDataArray = readFieldsData();
-        Board board = new Board(fieldsDataArray);
+        board = new Board(fieldsDataArray);
         //todo: call gameloop(w. while)
         saveGameData();
 
         //tester hvad der står på samtlige konti <- Denis
         printAccounts();
         System.out.println(board.getField(40));
+
+        runLoop();
     }
 
+
+    private static void runLoop(){
+
+        //todo:while
+        currentPlayer = players.get(0);
+        takeTurn();
+    }
+
+    private static void takeTurn() {
+        // slå med terninger (Dice)
+        int diceValue = board.dice.throwDice();
+
+        // opdatere spillers position (PLAYER)
+       int position = currentPlayer.updatePosition(diceValue);
+
+       // få fat i det felt spilleren er landet på
+        Field f = board.getField(position);
+
+        // hent besked hos det felt
+        String message = f.onLand();
+
+        // startDialog(UI) med den besked felt har returneret, returnerer det brugeren svarer
+       String response = ui.startDialog(message);
+
+       f.processResponse(response);
+
+    }
 
     private static void readGameData() throws FileNotFoundException {
         File file = new File("src/data.txt");
@@ -100,5 +135,6 @@ public class Main {
             e.printStackTrace();
         }
     }
+
 
 }

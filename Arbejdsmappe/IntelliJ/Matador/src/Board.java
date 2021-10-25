@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Board {
     private Field[] fields = new Field[40];
+    Dice dice = new Dice();
 
     public Board(String[] fieldsData){
 

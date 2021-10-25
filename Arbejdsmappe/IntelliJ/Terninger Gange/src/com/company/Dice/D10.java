@@ -10,10 +10,10 @@ public class D10 extends Dice {
         rollDie();
     }
 
-    @Override
+/*    @Override
     public void rollDie() {
         Random rand = new Random();
         super.setEyesValue(rand.nextInt(1,11));
-    }
+    }*/
 
 }

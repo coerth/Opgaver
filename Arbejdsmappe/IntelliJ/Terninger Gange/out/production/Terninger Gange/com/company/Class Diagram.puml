@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Main
+class DiceCup
+abstract Dice
+interface Roll
+class D4
+class D6
+class D8
+class D10
+class D12
+class D20
+
+Main *-- DiceCup
+DiceCup *-- Dice
+Roll <|-- Dice
+Dice <|-- D4
+Dice <|-- D6
+Dice <|-- D8
+Dice <|-- D10
+Dice <|-- D12
+Dice <|-- D20
+
+Roll : + void rollDie()
+
+Dice : - int maxEyesValue
+Dice : - int eyesValue
+Dice : - Arraylist<Integer> possibleValues
+Dice : + @Override void rollDie()
+Dice : + void calculateValue()
+Dice : + getEyesValue()
+Dice : + getMaxEyesValue()
+Dice : + getPossibleValues()
+Dice : + setEyesValue()
+Dice : + setMaxEyesValue()
+Dice : + setPossibleValues()
+
+DiceCup : ArrayList<Dice> diceInDiceCup
+DiceCup : + void rollDice()
+DiceCup : - boolean checkValidity(int userInput)
+DiceCup : - Arraylist<Integer> acceptedValues(Arraylist<Dice> diceCupArray)
+DiceCup : + void chooseDice()
+DiceCup : - void addDiceToCup()
+DiceCup : - void endOfSequenceOptions()
+
+
+@enduml
