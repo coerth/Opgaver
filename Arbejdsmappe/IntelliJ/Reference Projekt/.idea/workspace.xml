@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b7f85de-bb99-49ef-9868-d33ba974cdae" name="Changes" comment="" />
+    <list default="true" id="4b7f85de-bb99-49ef-9868-d33ba974cdae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Arrays/Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays/Arrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -150,6 +154,7 @@
       <workItem from="1633931622619" duration="4843000" />
       <workItem from="1634039008261" duration="18000" />
       <workItem from="1634118118512" duration="2932000" />
+      <workItem from="1635245905449" duration="807000" />
     </task>
     <servers />
   </component>

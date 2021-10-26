@@ -36,7 +36,7 @@ public class Arrays {
 //        System.out.println(stringArray[i]);
 //    }
 
-//    multidimentionelle arrays er muligt:
+//    multidimensional arrays er muligt:
 
 //        int[][] intArray = {{1,2,3,4,5},
 //                            {6,7,8,9}};

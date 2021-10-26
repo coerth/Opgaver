@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b005c0-c8c5-41c4-975e-932f11add4ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Matador/src/Deed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Matador/src/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Matador/src/Sequence Diagram.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Matador/src/Sequence-halløj.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Class Diagram.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/BankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Bonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Bonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Brewery.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Brewery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Business.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Chance.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Chance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Consequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Consequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Overview.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Overview.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Plot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Plot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Prison.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Prison.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Property.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/ShippingLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/ShippingLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Tax.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Tax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/out/production/Matador/Visit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/out/production/Matador/Visit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Plot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/src/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reference Projekt/src/Arrays/Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reference Projekt/src/Arrays/Arrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/D8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/Dice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/Dice/Dice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/D8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/D8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Dice/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Dice/Dice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12-10-21 Tirsdag Inheritance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Reference Projekt" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -121,6 +74,7 @@
       <workItem from="1634294297949" duration="8420000" />
       <workItem from="1634718242881" duration="80000" />
       <workItem from="1635150398010" duration="3414000" />
+      <workItem from="1635245746981" duration="747000" />
     </task>
     <servers />
   </component>
@@ -137,6 +91,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
