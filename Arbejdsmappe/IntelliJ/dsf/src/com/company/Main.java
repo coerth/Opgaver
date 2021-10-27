@@ -55,47 +55,48 @@ public class Main {
 //      her printer vi 9 ud da den er i array 1 og på plads 3
 //        int tal = intArray[1][3];
 //        System.out.println(tal);
+//
+//        ArrayList<String> stringArrayList = new ArrayList<>();
+//
+//        stringArrayList.add("Zebra");
+//        stringArrayList.add("Hval");
+//        stringArrayList.add("Hest");
+//        stringArrayList.add("Hund");
+//        stringArrayList.add("Kat");
+//
+//        //printer Zebra, Hval , Hest, Hund, Kat ud i den rækkefølge.
+//        for(String s : stringArrayList){
+//            System.out.println(s);
+//        }
+//
+//        //sortere en arrayliste med en primitiv datatype, endten alfabetisk eller numerisk.
+//        Collections.sort(stringArrayList);
+//
+//        //så printes Hest, Hund, Hval, Kat, Zebra ud i den rækkefølge.
+//        for(String s : stringArrayList){
+//            System.out.println(s);
+//        }
+//
+//        ArrayList<Integer> integerArrayList = new ArrayList<>();
+//
+//        integerArrayList.add(20);
+//        integerArrayList.add(24);
+//        integerArrayList.add(100);
+//        integerArrayList.add(10);
+//        integerArrayList.add(7);
+//
+//        //så printes 20, 24, 100, 10 ,7 ud i den rækkefølge
+//        for(Integer i : integerArrayList){
+//            System.out.println(i);
+//        }
+//
+//        //sortere en arrayliste med en primitiv datatype, endten alfabetisk eller numerisk.
+//        Collections.sort(integerArrayList);
+//
+//        for(Integer i : integerArrayList){
+//            System.out.println(i);
+//        }
+//
 
-        ArrayList<String> stringArrayList = new ArrayList<>();
-
-        stringArrayList.add("Zebra");
-        stringArrayList.add("Hval");
-        stringArrayList.add("Hest");
-        stringArrayList.add("Hund");
-        stringArrayList.add("Kat");
-
-        //printer Zebra, Hval , Hest, Hund, Kat ud i den rækkefølge.
-        for(String s : stringArrayList){
-            System.out.println(s);
-        }
-
-        //sortere en arrayliste med en primitiv datatype, endten alfabetisk eller numerisk.
-        Collections.sort(stringArrayList);
-
-        //så printes Hest, Hund, Hval, Kat, Zebra ud i den rækkefølge.
-        for(String s : stringArrayList){
-            System.out.println(s);
-        }
-
-        ArrayList<Integer> integerArrayList = new ArrayList<>();
-
-        integerArrayList.add(20);
-        integerArrayList.add(24);
-        integerArrayList.add(100);
-        integerArrayList.add(10);
-        integerArrayList.add(7);
-
-        //så printes 20, 24, 100, 10 ,7 ud i den rækkefølge
-        for(Integer i : integerArrayList){
-            System.out.println(i);
-        }
-
-        //sortere en arrayliste med en primitiv datatype, endten alfabetisk eller numerisk.
-        Collections.sort(integerArrayList);
-
-        for(Integer i : integerArrayList){
-            System.out.println(i);
-        }
-
-    }
+   }
 }

@@ -101,7 +101,7 @@ public class DiceCup {
         for(int i = 0; i < amountOfDice; i++){
             //scanString = new Scanner(System.in);
 
-                //System.out.println("Hvad skal terningen være?");
+            //System.out.println("Hvad skal terningen være?");
             //System.out.println("D4, D6, D8, D10, D12, D20?");
             //input = scanString.nextLine().toUpperCase(Locale.ROOT).trim();
                 input = userInput("Hvad skal terningen være?"+"\n"+"D4, D6, D8, D10, D12, D20?").toUpperCase(Locale.ROOT).trim();

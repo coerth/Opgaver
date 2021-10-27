@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b005c0-c8c5-41c4-975e-932f11add4ea" name="Changes" comment="rettelser">
+      <change afterPath="$PROJECT_DIR$/../Reference Projekt/src/Switch/Switch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Matador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DiceCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DiceCup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dsf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dsf/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dsf/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Reference Projekt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12-10-21 Tirsdag Inheritance" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -76,6 +80,7 @@
       <workItem from="1635150398010" duration="3414000" />
       <workItem from="1635245746981" duration="747000" />
       <workItem from="1635314570363" duration="2777000" />
+      <workItem from="1635318043920" duration="2126000" />
     </task>
     <task id="LOCAL-00001" summary="rettelser">
       <created>1635315355430</created>
