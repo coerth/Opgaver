@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b7f85de-bb99-49ef-9868-d33ba974cdae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Switch/Switch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Matador/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Terninger Gange/src/com/company/DiceCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Terninger Gange/src/com/company/DiceCup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dsf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dsf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dsf/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dsf/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +153,7 @@
       <workItem from="1634039008261" duration="18000" />
       <workItem from="1634118118512" duration="2932000" />
       <workItem from="1635245905449" duration="807000" />
-      <workItem from="1635318246221" duration="4966000" />
+      <workItem from="1635318246221" duration="5556000" />
     </task>
     <servers />
   </component>
