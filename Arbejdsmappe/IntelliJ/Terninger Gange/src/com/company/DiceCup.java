@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class DiceCup {
     ArrayList<Dice> diceInDiceCup = new ArrayList<>();
 
+    //metode til at rulle terningerne og få brugerens tal som skal rammes.
     public void rollDice(){
         int userInput = 0;
         Scanner scan = new Scanner(System.in);
@@ -42,6 +43,7 @@ public class DiceCup {
        endOfSequenceOptions();
     }
 
+    //metode til at tjekke om det tal brugeren vil ramme er indenfor de værdier terningerne kan rulle
     private boolean checkValidity(int userInput) throws ArithmeticException{
         //ArrayList<Integer> acceptedValues = acceptedValues();
         boolean check = false;
@@ -55,6 +57,7 @@ public class DiceCup {
        return check;
     }
 
+    //metode til at regne ud hvilke værdier er mulige med de valgte terninger og returnerer arraylisten med de værdier
     private ArrayList<Integer> acceptedValues(ArrayList<Dice> diceCupArray) {
         ArrayList<Integer> acceptedValues = new ArrayList<>();
         ArrayList<Integer> tempValueArray = new ArrayList<>();
@@ -82,6 +85,7 @@ public class DiceCup {
         return acceptedValues;
     }
 
+    //metode til at få brugerens input og add terningerne
     public void chooseDice(){
         Scanner scan;
         String userInput;
@@ -103,6 +107,7 @@ public class DiceCup {
         }
     }
 
+    //metode til at adde terninger til DiceCup arraylisten
        private void addDiceToCup(String userInput) {
            switch (userInput) {
                case "D4":
@@ -131,6 +136,7 @@ public class DiceCup {
            }
        }
 
+       //efter tallet er nået, får brugeren et valg om der skal rulles igen og om det er med samme terninger
        private void endOfSequenceOptions(){
         Scanner scan;
         String userInput;
@@ -150,6 +156,7 @@ public class DiceCup {
             }
 
             else if(userInput.equals("nej")){
+                diceInDiceCup.clear();
                 chooseDice();
                 rollDice();
             }
