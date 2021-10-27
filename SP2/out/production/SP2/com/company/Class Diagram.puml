@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Bil
+class BenzinBil
+class DieselBil
+class ElBil
+
+Bil : String regNr
+Bil : String mærke
+Bil : String model
+Bil : int årgang
+Bil : int antalDate
+
+BenzinBil : int octantal
+BenzinBil : int km/l
+
+DieselBil : boolean partikelFilter
+DieselBil : int km/t
+
+ElBil : int batteriKapcitet
+ElBil : int maxKm
+ElBil : int wPKm
+
+@enduml
