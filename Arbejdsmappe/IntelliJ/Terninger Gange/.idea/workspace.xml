@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45b005c0-c8c5-41c4-975e-932f11add4ea" name="Changes" comment="rettelser" />
+    <list default="true" id="45b005c0-c8c5-41c4-975e-932f11add4ea" name="Changes" comment="rettelser">
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/SP2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/BenzinBil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/Bil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/Class Diagram.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/DieselBil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/ElBil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/Garage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SP2/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../12-10-21 Tirsdag Inheritance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -73,6 +91,7 @@
       <workItem from="1635245746981" duration="747000" />
       <workItem from="1635314570363" duration="2777000" />
       <workItem from="1635318043920" duration="2126000" />
+      <workItem from="1635329963365" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="rettelser">
       <created>1635315355430</created>
