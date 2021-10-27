@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45b005c0-c8c5-41c4-975e-932f11add4ea" name="Changes" comment="">
+    <list default="true" id="45b005c0-c8c5-41c4-975e-932f11add4ea" name="Changes" comment="rettelser">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Terninger Gange/com/company/DiceCup.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DiceCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DiceCup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +75,16 @@
       <workItem from="1634718242881" duration="80000" />
       <workItem from="1635150398010" duration="3414000" />
       <workItem from="1635245746981" duration="747000" />
-      <workItem from="1635314570363" duration="515000" />
+      <workItem from="1635314570363" duration="2777000" />
     </task>
+    <task id="LOCAL-00001" summary="rettelser">
+      <created>1635315355430</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635315355430</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="rettelser" />
+    <option name="LAST_COMMIT_MESSAGE" value="rettelser" />
   </component>
 </project>

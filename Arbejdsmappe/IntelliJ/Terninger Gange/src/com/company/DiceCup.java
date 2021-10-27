@@ -11,22 +11,23 @@ public class DiceCup {
 
     //metode til at rulle terningerne og få brugerens tal som skal rammes.
     public void rollDice(){
-        int userInput = 0;
+        int input = 0;
         Scanner scan = new Scanner(System.in);
         int rolledValue = 1;
         int amountOfTries = 0;
 
        try {
-           System.out.println("Hvad vil du slå?");
-           userInput = scan.nextInt();
-           checkValidity(userInput);
+           //System.out.println("Hvad vil du slå?");
+           input = Integer.parseInt(userInput("Hvad vil du slå?"));
+           //input = scan.nextInt();
+           checkValidity(input);
 
        }catch (ArithmeticException e){
            System.out.println("Det faldt ud over parametrene");
            rollDice();
        }
 
-       while(userInput != rolledValue){
+       while(input != rolledValue){
            rolledValue = 1;
 
            for(Dice d : diceInDiceCup){
@@ -87,22 +88,24 @@ public class DiceCup {
 
     //metode til at få brugerens input og add terningerne
     public void chooseDice(){
-        Scanner scan;
-        String userInput;
+        //Scanner scan;
+        String input;
         int amountOfDice;
-        Scanner scanString;
+        //Scanner scanString;
 
-        scan = new Scanner(System.in);
-        System.out.println("Hvor mange terninger skal bruges?");
-        amountOfDice = scan.nextInt();
+        //scan = new Scanner(System.in);
+        //System.out.println("Hvor mange terninger skal bruges?");
+
+        amountOfDice = Integer.parseInt(userInput("Hvor mange terninger skal bruges?"));
 
         for(int i = 0; i < amountOfDice; i++){
-            scanString = new Scanner(System.in);
+            //scanString = new Scanner(System.in);
 
-                System.out.println("Hvad skal terningen være?");
-                System.out.println("D4, D6, D8, D10, D12, D20?");
-                userInput = scanString.nextLine().toUpperCase(Locale.ROOT).trim();
-                addDiceToCup(userInput);
+                //System.out.println("Hvad skal terningen være?");
+            //System.out.println("D4, D6, D8, D10, D12, D20?");
+            //input = scanString.nextLine().toUpperCase(Locale.ROOT).trim();
+                input = userInput("Hvad skal terningen være?"+"\n"+"D4, D6, D8, D10, D12, D20?").toUpperCase(Locale.ROOT).trim();
+                addDiceToCup(input);
 
         }
     }
@@ -169,5 +172,15 @@ public class DiceCup {
             System.out.println("Tak for spillet.");
         }
 
+       }
+
+       private String userInput(String message){
+        Scanner scan = new Scanner(System.in);
+        String input;
+
+        System.out.println(message);
+        input = scan.nextLine();
+
+        return input;
        }
 }
