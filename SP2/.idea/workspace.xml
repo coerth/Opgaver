@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6581a13f-95ec-40d8-9066-32224fb8e0a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SP2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/BenzinBil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Bil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Class Diagram.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/DieselBil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ElBil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Garage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Terninger Gange/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DieselBil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DieselBil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="205beCcyUb6Zult2LdpKdGyWZCp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -102,6 +87,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -132,6 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635337491436</updated>
       <workItem from="1635337492806" duration="7401000" />
+      <workItem from="1635430486335" duration="157000" />
     </task>
     <servers />
   </component>
@@ -148,5 +136,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

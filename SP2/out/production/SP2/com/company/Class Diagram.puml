@@ -5,21 +5,43 @@ abstract class Bil
 class BenzinBil
 class DieselBil
 class ElBil
+class Garage
 
-Bil : String regNr
-Bil : String mærke
-Bil : String model
-Bil : int årgang
-Bil : int antalDate
+Garage : - Arraylist<Bil> bilArrayList
+Garage : - String name
+Garage : + getBilArrayList()
+Garage : + getName
+Garage : + beregnGrønAfgiftForBilPark
+Garage : + @override toString
+Garage : + setBilArrayList
 
-BenzinBil : int octantal
-BenzinBil : int km/l
+Bil : - String regNr
+Bil : - String mærke
+Bil : - String model
+Bil : - int årgang
+Bil : - int antalDate
+Bil : + abstract beregnGrønEjerAfgift()
+Bil : + @override toString()
 
-DieselBil : boolean partikelFilter
-DieselBil : int km/t
+BenzinBil : - int octantal
+BenzinBil : - int km/l
+BenzinBil : + beregnGrønEjerAfgift()
+BenzinBil : + @override toString()
 
-ElBil : int batteriKapcitet
-ElBil : int maxKm
-ElBil : int wPKm
+DieselBil : - boolean partikelFilter
+DieselBil : - int km/t
+DieselBil : + beregnGrønEjerAfgift()
+DieselBil : + beregnUdligningsAfgift()
+DieselBil : + @override toString()
 
+ElBil : - int batteriKapcitet
+ElBil : - int maxKm
+ElBil : - int wPKm
+ElBil : + beregnGrønEjerAfgift()
+ElBil : + @override toString()
+
+Bil <|-- BenzinBil
+Bil <|-- DieselBil
+Bil <|-- ElBil
+Garage *-- Bil
 @enduml

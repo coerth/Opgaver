@@ -44,6 +44,7 @@ public class DieselBil extends Bil{
     public double beregnGrønEjerAfgift() {
         double ejerAfgift = 0;
         double udligningsAfgift;
+        int udledningsAfgift = 1000;
 
         if(kmPrLiter < 50 && kmPrLiter > 20){
             ejerAfgift = 330;
@@ -67,12 +68,13 @@ public class DieselBil extends Bil{
 
         //hvis ikke bilen har et partikelfilter skal 1000kr ligges til afgift
         if(!partikelFilter){
-            ejerAfgift += 1000;
+            ejerAfgift += udledningsAfgift;
         }
 
         udligningsAfgift = beregnUdligningsAfgift();
+        ejerAfgift += udligningsAfgift;
 
-        return ejerAfgift + udligningsAfgift;
+        return ejerAfgift;
     }
 
     //metode til at udregne udligningsafgift da den skal ligges til den grønne afgift
