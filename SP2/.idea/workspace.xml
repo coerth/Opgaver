@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6581a13f-95ec-40d8-9066-32224fb8e0a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DieselBil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DieselBil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/SP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/SP2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ElBil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ElBil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +91,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -120,6 +121,7 @@
       <updated>1635337491436</updated>
       <workItem from="1635337492806" duration="7401000" />
       <workItem from="1635430486335" duration="157000" />
+      <workItem from="1635487733416" duration="711000" />
     </task>
     <servers />
   </component>
