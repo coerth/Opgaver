@@ -10,16 +10,16 @@ class Garage
 Garage : - Arraylist<Bil> bilArrayList
 Garage : - String name
 Garage : + getBilArrayList()
-Garage : + getName
-Garage : + beregnGrønAfgiftForBilPark
-Garage : + @override toString
-Garage : + setBilArrayList
+Garage : + getName()
+Garage : + beregnGrønAfgiftForBilPark()
+Garage : + @override toString()
+Garage : + setBilArrayList()
 
 Bil : - String regNr
 Bil : - String mærke
 Bil : - String model
 Bil : - int årgang
-Bil : - int antalDate
+Bil : - int antalDøre
 Bil : + abstract beregnGrønEjerAfgift()
 Bil : + @override toString()
 
