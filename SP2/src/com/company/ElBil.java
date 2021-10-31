@@ -53,8 +53,9 @@ public class ElBil extends Bil{
     @Override
     public double beregnGrønEjerAfgift() {
         double ejerAfgift = 0;
-        double kmPrLiter = 100 / (wPrKM / 91.25);
         //formlen for at omregne watt pr km til km pr liter
+        double kmPrLiter = 100 / (wPrKM / 91.25);
+
 
         if(kmPrLiter < 50 && kmPrLiter > 20){
             ejerAfgift = 330;
