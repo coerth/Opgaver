@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6581a13f-95ec-40d8-9066-32224fb8e0a4" name="Changes" comment="" />
+    <list default="true" id="6581a13f-95ec-40d8-9066-32224fb8e0a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/E2021MatadorTess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/Tests/PropertyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/DieselBilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/Matador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/Matador.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Plot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Plot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/out/production/Matador/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Deed.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Deed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Arbejdsmappe/IntelliJ/Matador/src/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SP2.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +31,7 @@
       <list>
         <option value="UML Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -84,12 +104,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -119,6 +154,7 @@
       <workItem from="1635337492806" duration="7401000" />
       <workItem from="1635430486335" duration="157000" />
       <workItem from="1635487733416" duration="5034000" />
+      <workItem from="1635753732017" duration="816000" />
     </task>
     <servers />
   </component>

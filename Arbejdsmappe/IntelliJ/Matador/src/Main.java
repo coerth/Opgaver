@@ -13,7 +13,7 @@ public class Main {
     static int MAX = 6;
     private static Board board;
     private static UI ui;
-    private static Player currentPlayer;
+     static Player currentPlayer;
 
     public static Player getCurrentPlayer() {
         return currentPlayer;

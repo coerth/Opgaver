@@ -4,10 +4,12 @@ public class Deed {
     private Player owner;
 
     public boolean isOwned() {
+
         return owned;
     }
 
     public Player getOwner() {
+
         return owner;
     }
 }

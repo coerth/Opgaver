@@ -21,6 +21,10 @@ public class Player {
         return position;
     }
 
+    public BankAccount getAccount() {
+        return account;
+    }
+
     @Override
     public String toString() {
         String s;
