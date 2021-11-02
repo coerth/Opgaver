@@ -15,7 +15,7 @@ public class Property extends Field{
 
         if(this.owner!=null){
             //todo: tjek om der er monopol
-            if(this.owner == Main.currentPlayer){
+            if(this.owner == Main.getCurrentPlayer()){
                 s+="Vil du bygge?";
                 currentOption = "Build";
             }else{

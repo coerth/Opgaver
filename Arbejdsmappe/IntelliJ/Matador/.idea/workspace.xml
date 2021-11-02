@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../E2021MatadorTess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/PropertyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../SP2/src/com/company/DieselBilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Matador.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/Plot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/Plot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/Property.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Matador/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Matador/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/PropertyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/PropertyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Matador/PropertyTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Property.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../SP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP2/SP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP2/SP2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +106,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bank konto udvidet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -190,6 +179,7 @@
       <workItem from="1635145093976" duration="12405000" />
       <workItem from="1635320229045" duration="2555000" />
       <workItem from="1635753958288" duration="9167000" />
+      <workItem from="1635838466033" duration="4426000" />
     </task>
     <servers />
   </component>

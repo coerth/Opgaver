@@ -13,17 +13,22 @@ Player player2 = new Player("Dans", 30000);
         //Main.readGameData();
         String [] data = Main.readFieldsData();;
         board = new Board(data);
-
     }
 
     @Test
     public void onLand() {
-        Main.currentPlayer = player1;
-        int position = Main.getCurrentPlayer().updatePosition(4);
+        int position;
+        int expectedBalance;
+        int currentBalance;
+
+        Main.setCurrentPlayer(player1);
+        position = Main.getCurrentPlayer().updatePosition(4);
         Field f = board.getField(position);
         f.onLand();
+        expectedBalance = Main.getCurrentPlayer().getAccount().getBalance() - f.cost;
         f.processResponse("Y");
-        assertEquals(28800, Main.getCurrentPlayer().getAccount().getBalance());
+        currentBalance = Main.getCurrentPlayer().getAccount().getBalance();
 
+        assertEquals(expectedBalance, currentBalance);
     }
 }

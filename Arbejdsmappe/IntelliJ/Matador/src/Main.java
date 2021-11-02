@@ -13,7 +13,7 @@ public class Main {
     static int MAX = 6;
     private static Board board;
     private static UI ui;
-     static Player currentPlayer;
+    private static Player currentPlayer;
 
     public static Player getCurrentPlayer() {
         return currentPlayer;
@@ -44,6 +44,11 @@ public class Main {
         runLoop();
     }
 
+
+
+    public static void setCurrentPlayer(Player currentPlayer) {
+        Main.currentPlayer = currentPlayer;
+    }
 
     private static void runLoop(){
 
