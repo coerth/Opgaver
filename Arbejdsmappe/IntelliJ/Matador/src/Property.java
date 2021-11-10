@@ -19,7 +19,7 @@ public class Property extends Field{
                 s+="Vil du bygge?";
                 currentOption = "Build";
             }else{
-                s+= "Du skal betale husleje til "+this.owner;
+                s+= "Du skal betale husleje til "+this.owner.getName();
                 //todo: sæt timer
                 currentOption = "Pay";
             }
@@ -60,6 +60,11 @@ public class Property extends Field{
             Main.getCurrentPlayer().getAccount().doTransaction(-this.cost);
             //sætte this.owner til currentPlayer
             System.out.println("Du er nu ejer af " + label);
+        }
+        else if(currentOption.equals("Pay")){
+            Main.getCurrentPlayer().getAccount().doTransaction(-this.income);
+            this.owner.getAccount().doTransaction(this.income);
+            System.out.println("du har nu betalt " + this.income + " til " + this.owner.getName());
         }
     }
 

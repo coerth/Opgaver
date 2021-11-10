@@ -4,7 +4,7 @@ public class Player {
     private int age;
     private char gender;
 
-    public Player(String name, int age, char gender) {
+    public Player(String name) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -22,7 +22,10 @@ public class Player {
         return gender;
     }
 
-    public void createTeam(){
-
+    @Override
+    public String toString() {
+        return "Player{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

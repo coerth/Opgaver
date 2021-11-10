@@ -1,6 +1,6 @@
 @startuml
-
 abstract Tournament
+object UI
 
 Controller *-- Tournament
 Tournament *-- Team
@@ -12,8 +12,11 @@ Match *-- Team
 Team *-- Player
 MatchHistory *-- Match
 GroupTournament *-- Group
+Tournament *-- BracketView
 Tournament <|-- KnockOutTournament
 Tournament <|-- GroupTournament
+
+UI : + showMenu(Controller)
 
 Controller : - ArrayList<Tournament> tournaments
 Controller : + void createTournament()
@@ -27,10 +30,11 @@ Tournament : - ArrayList<Team> teams
 Tournament : - String startDate
 Tournament : - boolean isFixedDuration
 Tournament : + void readTeamsFromFile()
-Tournament : + void saveTeamsToFile()
+Tournament : + void createTeam()
 
 KnockOutTournament : - Bracket bracket
-KnockOutTournament : + Bracket createBracket()
+KnockOutTournament : + void createBracket()
+KnockOutTournament : + void runBracket()
 GroupTournament : - ArrayList<Group> groups
 
 Group : - String name
@@ -39,16 +43,28 @@ Group : - ArrayList<Team> teams
 Group : - Team[] ranking
 Group : - Match matches
 
-Bracket : - ArrayList<Array> playOffs
-Bracket : - Match[] final
+Bracket : - Match[] finals
 Bracket : - Match[] semiFinal
 Bracket : - Match[] quarterFinal
 Bracket : - Match[] preliminaryFinal
-Bracket : + void playOffs()
-Bracket : + void processFinal()
+Bracket : + void processBracket()
+Bracket : + Team processFinal()
 Bracket : + void processSemiFinal()
-Bracket : + void processQuarterFinal()
+Bracket : + void processQuarterFinal(Team[])
 Bracket : + void processPreliminaryFinal()
+Bracket : + void createFinal(Team[])
+Bracket : + void createSemiFinal(Team[])
+Bracket : + void createQuarterFinal(Team[])
+Bracket : + void createPreliminaryFinal(ArrayList<Team>)
+Bracket : + announceMatches(Match[])
+Bracket : + announceBracketStages(String)
+Bracket : + announceBracket(Match[])
+Bracket : + ArrayList<(Match[]> exportBracketToView()
+Bracket : + void displayBracket()
+
+BracketView : - String[] teamNames
+BracketView : + void loadTeamsIntoView(ArrayList<(Match[])
+BracketView : + showBracketView()
 
 MatchHistory : - ArrayList<Match> matches
 MatchHistory : + @Override String toString()
@@ -59,7 +75,7 @@ Match : - String startTime
 Match : - int TeamAScore
 Match : - int TeamBScore
 Match : - int matchDuration
-Match : + Team processMatch()
+Match : + void processMatch()
 Match : + addGoalScore()
 Match : + @Override String toString()
 
@@ -67,6 +83,7 @@ Team : - String name
 Team : - ArrayList<Player> players
 Team : - MatchHistory matchHistory
 Team : - int goalScore
+Team : - int points
 Team : + void addPlayer()
 Team : + void removePlayer()
 Team : + void joinTournament()
@@ -76,5 +93,4 @@ Team : + @Override String toString()
 Player : - String name
 Player : - int age
 Player : - char gender
-Player : + void createTeam()
 @enduml

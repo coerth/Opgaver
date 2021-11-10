@@ -7,9 +7,14 @@ public class Team {
     private ArrayList<Player> players = new ArrayList<>();
     private MatchHistory matchHistory;
     private int goalScore;
+    private int points;
 
-    public Team(String name) {
+    public Team(String name, String player1, String player2) {
         this.name = name;
+        Player p1 = new Player(player1);
+        Player p2 = new Player(player2);
+        this.players.add(p1);
+        this.players.add(p2);
     }
 
     public String getName() {
