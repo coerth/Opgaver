@@ -19,6 +19,7 @@ public class UI {
             System.out.println("Press T to post teams in tournament");
             System.out.println("Type run to run the tournament");
             System.out.println("Type Quit to quit");
+            System.out.println("Press B to go back to main menu");
             choice = scan1.nextLine();
             if (choice.equalsIgnoreCase("q")) {
                 menuTournament(controller);
@@ -32,6 +33,10 @@ public class UI {
                 menuPostTeams(controller);
             } else if (choice.equalsIgnoreCase("run")) {
                 menuRunTournament(controller);
+            } else if (choice.equalsIgnoreCase("b")){
+                
+            } else {
+                System.out.println("This menu doesn't exist, try again!");
             }
         } while (!choice.equalsIgnoreCase("quit"));
     }
@@ -105,7 +110,7 @@ public class UI {
         if (doesExist) {
             System.out.println("The tournament already exists");
         } else {
-            System.out.println("When does it start?");
+            System.out.println("When does it start? (YYYY,MM,DD,HH,mm");
             String startDate = scan.nextLine();
             System.out.println("Is it fixed time?");
             boolean fixedDuration = Boolean.parseBoolean(scan.nextLine());

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class TimedMatch extends Match{
+    private int matchDuration;
 
     public TimedMatch(Team teamA, Team teamB) {
         super(teamA, teamB);
@@ -8,7 +9,6 @@ public class TimedMatch extends Match{
 
     @Override
     public void processMatch() {
-
         int goldenGoal = 0;
         boolean validGoldenGoal = false;
         boolean validAScore = false;
@@ -45,7 +45,7 @@ public class TimedMatch extends Match{
                     try {
                         System.out.println("Press 1 for: " + super.getTeams()[0].getName() + " or " + "Press 2 for: " + super.getTeams()[1].getName());
                         goldenGoal = Integer.parseInt(scan.nextLine());
-                        if (goldenGoal == 1) {;
+                        if (goldenGoal == 1) {
                             validGoldenGoal = true;
                         } else if (goldenGoal == 2) {
                             validGoldenGoal = true;

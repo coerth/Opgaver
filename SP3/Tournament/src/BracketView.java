@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -7,20 +8,33 @@ public class BracketView {
     private String[] quarterFinalTeamNames = new String[8];
     private String[] semiFinalTeamNames = new String[4];
     private String[] finalTeamNames = new String[2];
-    private String tourWinner = "    TBD   ";
+    private String tourWinner = "   TBD.   ";
     private String tournamentName;
     private LocalDateTime startDate;
-    private String formattedStartDate;
-
+    private LocalDateTime[] matchTimerBracket = new LocalDateTime[15];
+    private String[] formattedMatchTimerBracket = new String[15];
+    private DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 
 
 
     public void setStartDate(LocalDateTime startDate){
-
         this.startDate = startDate;
-        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
-        this.formattedStartDate = startDate.format(myFormatObj);
+        for( int i = 0; i < matchTimerBracket.length;  i++ ){
+          if (i == 0){
+                matchTimerBracket[0] = startDate;
+                formattedMatchTimerBracket[0] = matchTimerBracket[0].format(myFormatObj);
+            }
+        else{
+            matchTimerBracket[i] = matchTimerBracket[i-1].plusMinutes(30);
+            formattedMatchTimerBracket[i] = matchTimerBracket[i].format(myFormatObj);
+          }
+
+
+        }
     }
+
+
+
 
 
     public void setTournamentName(String tournamentName) {
@@ -31,7 +45,7 @@ public class BracketView {
         try {
             this.tourWinner = tourWinner;
         }catch (NullPointerException e){
-            this.tourWinner = "    TBD   ";
+            this.tourWinner = "   TBD.   ";
         }
 
     }
@@ -58,14 +72,14 @@ public void loadPreliminaryTeamsIntoView(ArrayList<Match[]> matchArrayList){
             preliminaryTeamNames[i] = match.getTeams()[0].getName();
         }
         catch(NullPointerException e){
-            preliminaryTeamNames[i] = "    TBD   ";
+            preliminaryTeamNames[i] = "   TBD.   ";
         }
 
         try {
             preliminaryTeamNames[j] = match.getTeams()[1].getName();
         }
         catch(NullPointerException e){
-            preliminaryTeamNames[j] = "    TBD   ";
+            preliminaryTeamNames[j] = "   TBD.   ";
         }
 
         i += 2;
@@ -83,14 +97,14 @@ public void loadQuarterFinalTeamsIntoView(ArrayList<Match[]> matchArrayList){
             quarterFinalTeamNames[i] = match.getTeams()[0].getName();
         }
         catch(NullPointerException e){
-            quarterFinalTeamNames[i] = "    TBD   ";
+            quarterFinalTeamNames[i] = "   TBD.   ";
         }
 
         try {
             quarterFinalTeamNames[j] = match.getTeams()[1].getName();
         }
         catch(NullPointerException e){
-            quarterFinalTeamNames[j] = "    TBD   ";
+            quarterFinalTeamNames[j] = "   TBD.   ";
         }
 
         i += 2;
@@ -108,14 +122,14 @@ public void loadSemiFinalTeamsIntoView(ArrayList<Match[]> matchArrayList){
             semiFinalTeamNames[i] = match.getTeams()[0].getName();
         }
         catch(NullPointerException e){
-            semiFinalTeamNames[i] = "    TBD   ";
+            semiFinalTeamNames[i] = "   TBD.   ";
         }
 
         try {
             semiFinalTeamNames[j] = match.getTeams()[1].getName();
         }
         catch(NullPointerException e){
-            semiFinalTeamNames[j] = "    TBD   ";
+            semiFinalTeamNames[j] = "   TBD.   ";
         }
 
         i += 2;
@@ -133,14 +147,14 @@ public void loadFinalTeamsIntoView(ArrayList<Match[]> matchArrayList){
             finalTeamNames[i] = match.getTeams()[0].getName();
         }
         catch(NullPointerException e){
-            finalTeamNames[i] = "TBD   ";
+            finalTeamNames[i] = "   TBD.   ";
         }
 
         try {
             finalTeamNames[j] = match.getTeams()[1].getName();
         }
         catch(NullPointerException e){
-            finalTeamNames[j] = "    TBD   ";
+            finalTeamNames[j] = "   TBD.   ";
         }
 
         i += 2;
@@ -153,29 +167,28 @@ public void showBracketView(){
     System.out.println("                                                             _________________________________________________________________________________________________________________________________");
     System.out.println("                                                             |                                                                                                                               |");
     System.out.println("                                                             |                                                                                                                               |");
-    System.out.println("                                                                                                    ");
+    System.out.println("                                                             |                                                        " + formattedMatchTimerBracket[14]+"                                                       |");
     System.out.println("                                                             |                                                                                                                               |");
     System.out.println("                                                             |                                                                                                                               |");
     System.out.println("                                                        "+finalTeamNames[0] +"                                                                                                                      " +finalTeamNames[1]);
     System.out.println("                               _________________________________________________________________                                                             ___________________________________________________________________");
     System.out.println("                               |                                                               |                                                             |                                                                 |");
-    System.out.println("                               |                                                               |                                                             |                                                                 |");
-    System.out.println("                                                                                                  "+ tournamentName+ " takes place at CPH business at " + formattedStartDate);
-    System.out.println("                               |                                                               |                                                             |                                                                 |");
+    System.out.println("                               |                                                               |                        "+tournamentName+"                          |                                                                 |");
+    System.out.println("                               |                       " +formattedMatchTimerBracket[12]  +"                        |                    CPH Business Lyngby                      |                        " + formattedMatchTimerBracket[13]+"                         |");
+    System.out.println("                               |                                                               |                      "+formattedMatchTimerBracket[0]+"                       |                                                                 |");
     System.out.println("                               |                                                               |                                                             |                                                                 |");
     System.out.println("                          "+semiFinalTeamNames[0] +"                                                      " + semiFinalTeamNames[1] +"                                                    "+ semiFinalTeamNames[2] +"                                                        " +semiFinalTeamNames[3]);
     System.out.println("              _________________________________                               _________________________________                               _________________________________                               _________________________________");
     System.out.println("              |                               |                               |                               |                               |                               |                               |                               |");
     System.out.println("              |                               |                               |                               |                               |                               |                               |                               |");
-    System.out.println("                                                                                                ");
+    System.out.println("              |         "+ formattedMatchTimerBracket[8] + "      |                               |        " + formattedMatchTimerBracket[9] + "       |                               |        " + formattedMatchTimerBracket[10]+"       |                               |       "+ formattedMatchTimerBracket[11]+"        |");
     System.out.println("              |                               |                               |                               |                               |                               |                               |                               |");
     System.out.println("              |                               |                               |                               |                               |                               |                               |                               |");
     System.out.println("         "+ quarterFinalTeamNames[0]+"                      " +quarterFinalTeamNames[1]+"                      "+ quarterFinalTeamNames[2] +"                      "+ quarterFinalTeamNames[3] +"                      " + quarterFinalTeamNames[4] +"                      " + quarterFinalTeamNames[5] +"                      " + quarterFinalTeamNames[6]  +"                      "+ quarterFinalTeamNames[7]);
     System.out.println("     __________________              __________________              __________________              __________________              __________________              __________________              __________________              __________________");
     System.out.println("     |                |              |                |              |                |              |                |              |                |              |                |              |                |              |                |");
     System.out.println("     |                |              |                |              |                |              |                |              |                |              |                |              |                |              |                |");
-    System.out.println("                                                                                            ");
-    System.out.println("     |                |              |                |              |                |              |                |              |                |              |                |              |                |              |                |");
+    System.out.println("      "+ formattedMatchTimerBracket[0] + "                " + formattedMatchTimerBracket[1] + "                " + formattedMatchTimerBracket[2] +"                "+ formattedMatchTimerBracket[3] + "                " + formattedMatchTimerBracket[4] + "                " + formattedMatchTimerBracket[5] +"                "+ formattedMatchTimerBracket[6] + "                " + formattedMatchTimerBracket[7]);
     System.out.println("     |                |              |                |              |                |              |                |              |                |              |                |              |                |              |                |");
     System.out.println(preliminaryTeamNames[0]+"       "+preliminaryTeamNames[1]+"     "+preliminaryTeamNames[2]+"       " +preliminaryTeamNames[3]+"     " +preliminaryTeamNames[4] +"       " +preliminaryTeamNames[5] +"     " + preliminaryTeamNames[6] +"       " + preliminaryTeamNames[7] +"     " +preliminaryTeamNames[8] +"       "+preliminaryTeamNames[9]+"     "  +preliminaryTeamNames[10]+"       "+preliminaryTeamNames[11]+"     " +preliminaryTeamNames[12] +"       "+ preliminaryTeamNames[13] +"     "  + preliminaryTeamNames[14]  +"       " + preliminaryTeamNames[15]);
     System.out.println("__________   -   __________     __________   -   __________     __________   -   __________     __________   -   __________     __________   -   __________     __________   -   __________     __________   -   __________     __________   -   __________");

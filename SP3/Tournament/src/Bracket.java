@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Bracket {
     private BracketView bracketView = new BracketView();
@@ -7,10 +6,10 @@ public class Bracket {
     private Match[] semiFinal = new Match[2];
     private Match[] quarterFinal = new Match[4];
     private Match[] preliminaryFinal = new Match[8];
-    private boolean isFixed;
+    private boolean isFixedDuration;
 
-    public Bracket(boolean isFixed){
-        this.isFixed = isFixed;
+    public Bracket(boolean isFixedDuration){
+        this.isFixedDuration = isFixedDuration;
     }
 
     public Team processBracket() {
@@ -27,7 +26,7 @@ public class Bracket {
 
     public void createFinal(Team[] teams) {
 
-        if(isFixed){
+        if(isFixedDuration){
             finals[0] = new TimedMatch(teams[0], teams[1]);
         }
         else {
@@ -48,7 +47,7 @@ public class Bracket {
         int i = 0;
         int j = 1;
 
-        if(isFixed){
+        if(isFixedDuration){
             for (int k = 0; k < semiFinal.length; k++) {
                 semiFinal[k] = new TimedMatch(teams[i], teams[j]);
                 i += 2;
@@ -81,7 +80,7 @@ public class Bracket {
         int i = 0;
         int j = 1;
 
-        if (isFixed) {
+        if (isFixedDuration) {
             for (int k = 0; k < quarterFinal.length; k++) {
                 quarterFinal[k] = new TimedMatch(teams[i], teams[j]);
                 i += 2;
@@ -116,7 +115,7 @@ public class Bracket {
         int i = 0;
         int j = 1;
 
-        if(isFixed){
+        if(isFixedDuration){
             for (int k = 0; k < preliminaryFinal.length; k++) {
                 preliminaryFinal[k] = new TimedMatch(teams.get(i), teams.get(j));
                 i += 2;
@@ -172,7 +171,7 @@ public class Bracket {
         }
     }
 
-    public void announceBracketStages(String announcement) {
+    public void announceMessage(String announcement) {
 
         System.out.println(announcement);
     }
@@ -180,17 +179,17 @@ public class Bracket {
 
     public void announceBracket(Match[] matchArray) {
         if (matchArray.length == 8) {
-            announceBracketStages("This is the Prelinimaryfinals" +"\n"+ "Following teams should get ready. . . ");
+            announceMessage("This is the Prelinimaryfinals" +"\n"+ "Following teams should get ready. . . ");
             announceMatches(matchArray);
         } else if (matchArray.length == 4) {
-            announceBracketStages("This is the Quarterfinals" +"\n"+ "Following teams should get ready. . .");
+            announceMessage("This is the Quarterfinals" +"\n"+ "Following teams should get ready. . .");
             announceMatches(matchArray);
 
         } else if (matchArray.length == 2) {
-            announceBracketStages("This is the Semifinals" +"\n"+ "Following teams should get ready. . .");
+            announceMessage("This is the Semifinals" +"\n"+ "Following teams should get ready. . .");
             announceMatches(matchArray);
         } else {
-            announceBracketStages("This is the FINALS" +"\n"+ "Following teams should get ready. . . READY SET GO");
+            announceMessage("This is the FINALS" +"\n"+ "Following teams should get ready. . . READY SET GO");
            announceMatches(matchArray);
         }
     }

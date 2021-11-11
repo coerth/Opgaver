@@ -7,15 +7,13 @@ public class Match {
     private String startTime;
     private int teamAScore;
     private int teamBScore;
-    private int matchDuration;
-    //private boolean fixedDuration;
 
     public Match(Team teamA, Team teamB) {
         this.teams[0] = teamA;
         this.teams[1] = teamB;
-        this.startTime = startTime;
-        this.matchDuration = matchDuration;
     }
+    
+    
 
     public Team[] getTeams() {
         return teams;
@@ -29,28 +27,12 @@ public class Match {
         return teamBScore;
     }
 
-    public String getStartTime() {
-        return startTime;
-    }
-
-    public int getMatchDuration() {
-        return matchDuration;
-    }
-
     public Team getWinner() {
         return winner;
     }
 
     public void setWinner(Team winner) {
         this.winner = winner;
-    }
-
-    public void setTeamAScore(int teamAScore) {
-        this.teamAScore = teamAScore;
-    }
-
-    public void setTeamBScore(int teamBScore) {
-        this.teamBScore = teamBScore;
     }
 
     public void processMatch() {
@@ -94,12 +76,16 @@ public class Match {
         }
     }
 
-    public void addGoalScore() {
-
-    }
-
     @Override
     public String toString() {
         return teams[0].getName() + " VS " + teams[1].getName();
+    }
+
+    public void setTeamAScore(int teamAScore) {
+        this.teamAScore = teamAScore;
+    }
+
+    public void setTeamBScore(int teamBScore) {
+        this.teamBScore = teamBScore;
     }
 }

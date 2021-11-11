@@ -1,3 +1,4 @@
 PepsilaksLigaen: 2022,01,05,13,30: false
 wrath: 2022,01,05,13,30: false
 LakseLigaen: 2022,01,05,13,30: false
+FlemseLigaen: 2022,05,12,13,30: true

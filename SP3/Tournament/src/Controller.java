@@ -95,7 +95,7 @@ public class Controller {
         }
     }*/
 
-    public void saveMatch(Match match, Match[] matches) {
+    /*public void saveMatch(Match match, Match[] matches) {
         File file = new File("src/Tournaments/Matches.txt");
         try {
             file.createNewFile();
@@ -108,7 +108,7 @@ public class Controller {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     public void loadTournaments() throws FileNotFoundException {
         File file = new File("src/Tournaments/Tournaments.txt");

@@ -25,22 +25,6 @@ public class Team {
         return goalScore;
     }
 
-    public void addPlayer(){
-
-    }
-
-    public void removePlayer(){
-
-    }
-
-    public void joinTournament(){
-
-    }
-
-    public void forfeitTournament(){
-
-    }
-
     @Override
     public String toString() {
         return "Team: " + name + '\'' + players;// skriver vores værdier i arraylisten ud

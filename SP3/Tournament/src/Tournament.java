@@ -12,7 +12,6 @@ public abstract class Tournament {
     private ArrayList<Team> teams = new ArrayList<>();
     private LocalDateTime startDate;
     private boolean isFixedDuration;
-    //private DateFormat startDate;
 
     public Tournament(String name, String startDate, boolean isFixedDuration) {
         this.name = name;
@@ -90,7 +89,7 @@ public abstract class Tournament {
                 System.out.println("Player2 name?");
                 String name2 = keyboard.nextLine();
                 String fullTeam = teamName +": "+ name1 +": " +name2;
-                fw.write('\n'+fullTeam);
+                fw.write(fullTeam + '\n');
                 fw.close();
             }
             else{

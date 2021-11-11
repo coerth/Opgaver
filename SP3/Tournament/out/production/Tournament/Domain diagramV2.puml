@@ -1,0 +1,31 @@
+@startuml
+object Tournament
+object Player
+object Team
+object Match
+object Bracket
+object Controller
+object Matchhistory
+object Group
+object UI
+object KnockOutTournament
+object GroupTournament
+object BracketView
+object TimedMatch
+
+Controller *-- Tournament
+
+KnockOutTournament *-- Bracket
+Tournament *-- Team
+GroupTournament *-- Group
+Bracket *-- Match
+Bracket *-- BracketView
+Team *-- Matchhistory
+Match *-- Team
+Team *-- Player
+Matchhistory *-- Match
+Tournament <|-- KnockOutTournament
+Tournament <|-- GroupTournament
+Match <|-- TimedMatch
+
+@enduml

@@ -32,10 +32,6 @@ public class KnockOutTournament extends Tournament {
 
     }
 
-    public void exportBracketToView() {
-        bracket.exportBracketToView();
-    }
-
     /*public Team excessBracket(){
         Team sixteenthTeam = null;
         ArrayList<Team> teamArrayList = new ArrayList<>();
