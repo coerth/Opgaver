@@ -7,8 +7,9 @@ public class ProcessingTest extends PApplet {
     PFont f;
     String teamA = "teamA";
     String teamB = "teamB";
-    public static void main(String[] args) {
-        PApplet.main("Main", args);
+
+    public static void processing(String name ,String[] args) {
+        PApplet.main(name, args);
 
     }
 

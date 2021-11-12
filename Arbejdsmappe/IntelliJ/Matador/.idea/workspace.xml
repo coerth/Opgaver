@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ProcessingTest/.idea/libraries/core1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/Tests/MatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/Tests/MatchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/Tests/TimedMatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/Tests/TimedMatchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Bracket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Bracket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/BracketView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/BracketView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Class dragramV3.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/KnockOutTournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/KnockOutTournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Match.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/TimedMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/TimedMatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Tournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Tournaments/Tournaments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/Tournaments/Tournaments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/production/Tournament/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/out/test/Tournament/TimedMatchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/out/test/Tournament/TimedMatchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Bracket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Bracket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/BracketView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/BracketView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Class diagramV5.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Class diagramV5.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Class dragramV3.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/KnockOutTournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/KnockOutTournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/TimedMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/TimedMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Tournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/Tournaments/Tournaments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/Tournaments/Tournaments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/src/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/.idea/libraries/core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/ProcessingTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/ProcessingTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/ProcessingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/ProcessingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/ProcessingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/ProcessingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/.idea/dataSources.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +108,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SP3/Tournament" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -209,6 +189,7 @@
       <workItem from="1636446994853" duration="3055000" />
       <workItem from="1636528413827" duration="1811000" />
       <workItem from="1636568922149" duration="623000" />
+      <workItem from="1636708748936" duration="3438000" />
     </task>
     <servers />
   </component>
