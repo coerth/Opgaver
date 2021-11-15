@@ -2,8 +2,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.sql.*;
 
 public class Main {
     //static BankAccount[] accounts = new BankAccount[3];
@@ -112,6 +116,35 @@ public class Main {
             System.out.println(e);
         }
         return fieldsArray;
+    }
+
+    public String[] readFieldData(){
+        String[] field_data = new String[40];
+        Connection conn = null;
+        Statement stmt = null;
+        try{
+            //step 1: open a connection
+            conn = DriverManager.getConnection(localhost/Matador, "SQLUser", "Bananflue");
+
+            //Step 2: Create a statement
+            stmt = conn.createStatement();
+            String sql  ="SELECT * FROM Field";
+
+            //Step 3: execute a query
+            ResultSet rs = stmt.executeQuery(sql);
+
+            //Step 4: extract data from result set
+            while(rs.next()){
+                int id = rs.getInt("field_id");
+                String label = rs.getString("field_label");
+
+                field_data[id-1] = field_id+","+field_type+","+field_label+","+field_cost+","+field_income+","+field_seriesid
+            }
+        }
+        catch(SQLException e){
+
+        }
+
     }
 
     public static void printAccounts() {

@@ -2,15 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc180080-04b8-4dea-8c41-ff336255ec05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ProcessingTest/.idea/libraries/core1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-connector-java-8.0.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/mysql-connector-java-8.0.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/DBConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tess bank kode/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/.idea/libraries/core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/ProcessingTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/ProcessingTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/ProcessingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/ProcessingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/ProcessingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/ProcessingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../SP3/Tournament/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP3/Tournament/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matador.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Matador.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creation MatadorSQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/creation MatadorSQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/project-template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/Bank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/Bank.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/Configure Board.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/Configure Board.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/DomainModel.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/DomainModel.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/Sequence diagram - TakeTurn.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/Sequence diagram - TakeTurn.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/ThisProject.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/ThisProject.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/test.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/test.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/usecase diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/UML/usecase diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/BankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/BankAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Brewery.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Brewery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Chance.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Chance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Consequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Consequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Dice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Dice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Plot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Plot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Prison.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Prison.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/ShippingLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/ShippingLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Tax.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/Tax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/fields.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/production/Bank/fields.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/test/Bank/PropertyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/out/test/Bank/PropertyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Brewery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Brewery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Business.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Business.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Consequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Consequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Plot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Prison.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Prison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/ShippingLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/ShippingLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Tax.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/Tax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/fields.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/src/fields.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/test/PropertyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tess Matador/E2021Matador-master/test/PropertyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,11 +162,15 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tess Matador/E2021Matador-master" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -190,6 +252,7 @@
       <workItem from="1636528413827" duration="1811000" />
       <workItem from="1636568922149" duration="623000" />
       <workItem from="1636708748936" duration="3438000" />
+      <workItem from="1636963484774" duration="2383000" />
     </task>
     <servers />
   </component>

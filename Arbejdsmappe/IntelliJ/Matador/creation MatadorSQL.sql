@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS field;
 DROP TABLE IF EXISTS player;
 DROP TABLE IF EXISTS deed;
 SET FOREIGN_KEY_CHECKS = 1;
+
 create table Field(
 	field_id tinyint primary key auto_increment, 
     field_type ENUM("Start", "Plot", "Tax", "ShippingLine", "Chance", "Visit", "Brewery", "Bonus", "Prison"),
@@ -113,3 +114,9 @@ VALUES ("Tax", "Statsskat", 0, 0, 0);
 INSERT INTO Field (field_type, field_label, field_cost, field_income, field_seriesid) 
 VALUES ("Plot", "Rådhuspladsen", 8000, 1000, 10);
 
+Insert into Player(player_name, player_balance)
+Values("Egon",30000);
+Insert into Player(player_name, player_balance)
+Values("Benny",30000);
+Insert into Player(player_name, player_balance)
+Values("Kjeld",30000);

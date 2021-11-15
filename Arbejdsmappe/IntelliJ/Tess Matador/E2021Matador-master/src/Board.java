@@ -5,6 +5,7 @@ public class Board {
     public Board(String[] data){
         setFields(data);
     }
+
     public void setFields(String[] data){
 
 
