@@ -1,8 +1,11 @@
 @startuml
 abstract Tournament
 object UI
-object FileWriter
-
+object FileManager
+object DBConnector
+interface IO
+Main *-- Controller
+Main *-- UI
 Controller *-- Tournament
 Tournament *-- Team
 KnockOutTournament *-- Bracket
@@ -17,6 +20,13 @@ Bracket *-- BracketView
 Tournament <|-- KnockOutTournament
 Tournament <|-- GroupTournament
 Match <|-- TimedMatch
+IO <|-- FileManager
+IO <|-- DBConnector
+Controller *-- FileManager
+Controller *-- DBConnector
+
+IO : abstract (ArrayList<Team>) readTeams()
+IO : abstract (ArrayList<Tournament>) readTournaments()
 
 UI : - Scanner scan
 UI : - Scanner scan1
@@ -31,6 +41,8 @@ UI : + void menuBracket(Controller)
 UI : + void menuTeam(Controller)
 UI : + void menuTournament(Controller)
 
+Controller : - DBConnector
+Controller : - FileManager
 Controller : - ArrayList<Tournament> tournaments
 Controller : + void createTournament(String, String, boolean)
 Controller : + void deleteTournament()

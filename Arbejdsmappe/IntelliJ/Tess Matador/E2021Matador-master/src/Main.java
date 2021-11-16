@@ -31,12 +31,13 @@ public class Main {
         }
         printAccounts();
 
-
-        String [] data = dbConnector.readFieldData();
-        //String [] data = readFieldData();
+        String [] data;
+        data= dbConnector.readFieldData();
+        //data = FileReader.readFieldData();
         board = new Board(data);
         runLoop();
         saveGameData();
+        dbConnector.saveGameData(players);
     }
 
     private static void runLoop(){
@@ -75,27 +76,6 @@ public class Main {
         System.out.println(message + currentPlayer.getName() + "'s saldo: " + currentPlayer.account.getBalance());
 
 
-    }
-
-    public static String[] readFieldData() {
-        String[] data = new String[40];
-        File file = new File("src/fields.txt");
-        String s;
-        int i = 0;
-        try {
-            Scanner scan = new Scanner(file);
-            scan.nextLine();//ignorerer headeren
-
-            while(scan.hasNextLine()){
-                 s = scan.nextLine();
-                 data[i] = s;
-                 i++;
-            }
-
-        }catch(FileNotFoundException e){
-            System.out.println(e.getCause());
-        }
-        return data;
     }
 
     /**

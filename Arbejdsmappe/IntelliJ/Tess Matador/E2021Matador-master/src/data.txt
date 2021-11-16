@@ -1,4 +1,3 @@
-name, balance, position, isNext
-Egon,30000,1,false
-Benny,30000,1,true
-Kjeld,30000,1,false
+Egon:30000,8,false
+Benny:27600,10,false
+Kjeld:28000,9,false

@@ -92,4 +92,41 @@ public class DBConnector {
         return playerArrayList;
     }
 
+    public void saveGameData(ArrayList<Player> players) {
+        Player p;
+        Connection conn = null;
+
+        String sql = "INSERT INTO Player(Player_id, Player_name, Player_balance, Player_position, Player_isNext) " +
+                "VALUES(?,?,?,?,?)  ON DUPLICATE KEY UPDATE Player_balance=?, Player_position=?, Player_isNext=?";
+
+        try{
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            PreparedStatement pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+            //Step 2
+            System.out.println("Creating Statement");
+
+            for(int i = 0; i < players.size(); i ++) {
+                //Disse bruges når brugeren ikke er i databasen
+                p = players.get(i);
+                pstmt.setInt(1, p.getId());
+                pstmt.setString(2, p.getName());
+                pstmt.setInt(3, p.account.getBalance());
+                pstmt.setInt(4, p.getPosition());
+                pstmt.setBoolean(5, Main.currentPlayer == p);
+
+                //disse bruges ved UPDATES, når brugeren findes i databasen
+                pstmt.setInt(6, p.account.getBalance());
+                pstmt.setInt(7, p.getPosition());
+                pstmt.setBoolean(8, Main.currentPlayer == p);
+
+                pstmt.addBatch();
+            }
+
+            pstmt.executeBatch();
+        }
+        catch(Exception e){
+
+        }
+    }
 }

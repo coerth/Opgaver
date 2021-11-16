@@ -7,25 +7,27 @@ DROP TABLE IF EXISTS deed;
 SET FOREIGN_KEY_CHECKS = 1;
 
 create table Field(
-	field_id tinyint primary key auto_increment, 
-    field_type ENUM("Start", "Plot", "Tax", "ShippingLine", "Chance", "Visit", "Brewery", "Bonus", "Prison"),
-    field_label varchar(255),
-    field_cost smallint,
-    field_income smallint,
-    field_seriesid tinyint
+	Field_id tinyint primary key auto_increment, 
+    Field_type ENUM("Start", "Plot", "Tax", "ShippingLine", "Chance", "Visit", "Brewery", "Bonus", "Prison"),
+    Field_label varchar(255),
+    Field_cost smallint,
+    Field_income smallint,
+    Field_seriesid tinyint
 );
 
 create table Player(
 
-player_id tinyint primary key auto_increment,
-player_name varchar(255),
-player_balance int
+Player_id tinyint primary key auto_increment,
+Player_name varchar(255),
+Player_balance int,
+Player_position tinyint,
+Player_isNext boolean
 );
 
 create table Deed(
-	deed_id tinyint,
-    player_id tinyint,
-    field_id tinyint,
+	Deed_id tinyint,
+    Player_id tinyint,
+    Field_id tinyint,
      foreign key (player_id) references Player(player_id),
      foreign key (field_id) references Field(field_id),
      CONSTRAINT ownershipID PRIMARY KEY (field_id, player_id)

@@ -3,7 +3,7 @@ public class Player {
     int id;
     int position;
     BankAccount account;
-    static int counter;
+    static int counter = 1;
 
     public Player(String name,int balance){
         this.name = name;
@@ -18,7 +18,7 @@ public class Player {
         this.position = position;
         this.account = new BankAccount(balance);
         if(isNext){
-            Main.setTurnCounter(this.id);
+            Main.setTurnCounter(this.id-1);
         }
         counter++;
     }
@@ -56,18 +56,33 @@ public class Player {
     }
 
     public int updatePosition(int diceRoll){
-        position += diceRoll;
+        if(position+diceRoll > 40){
+            position += diceRoll - 40;
+        }
+        else{
+            position += diceRoll;
+
+        }
         return position;
     }
 
     @Override
     public String toString(){
         String s;
-        s = name +":"+account.getBalance()+"\n";
+        //boolean isNext = Main.currentPlayer.id == this.id;
+        s = name +":"+account.getBalance()+","+position+","+false+"\n";
         return s;
     }
 
     public String getName() {
         return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getPosition() {
+        return position;
     }
 }
