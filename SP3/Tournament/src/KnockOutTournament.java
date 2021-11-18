@@ -28,10 +28,14 @@ public class KnockOutTournament extends Tournament {
     }
 
     public void runBracket() {
-        super.setWinner(bracket.processBracket());
-        bracket.getBracketView().setTourWinner(super.getWinner().getName());
-        System.out.println("The winner of "+super.getName()+" is " + super.getWinner().getName());
-
+        if(super.getWinner() != null){
+            System.out.println("A winner of this tournament is already found, it's " + super.getWinner().getName());
+        }
+        else {
+            super.setWinner(bracket.processBracket());
+            bracket.getBracketView().setTourWinner(super.getWinner().getName());
+            System.out.println("The winner of " + super.getName() + " is " + super.getWinner().getName());
+        }
     }
 
 
