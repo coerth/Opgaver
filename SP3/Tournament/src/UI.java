@@ -89,8 +89,14 @@ public class UI {
         }
         num = scan.nextInt();
         if (controller.getTournament(num) instanceof KnockOutTournament) {
-            ((KnockOutTournament) controller.getTournament(num)).createBracket();
-            System.out.println("Bracket created for " + controller.getTournament(num).getName());
+            if(((KnockOutTournament) controller.getTournament(num)).getBracket().getPreliminaryFinal()[0] != null){
+                System.out.println("You already created a bracket for " + controller.getTournament(num).getName());
+            }
+            else{
+                ((KnockOutTournament) controller.getTournament(num)).createBracket();
+                System.out.println("Bracket created for " + controller.getTournament(num).getName());
+            }
+
         }
     }
 
