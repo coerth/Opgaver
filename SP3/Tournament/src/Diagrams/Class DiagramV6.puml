@@ -29,7 +29,6 @@ IO : abstract (ArrayList<Team>) readTeams()
 IO : abstract (ArrayList<Tournament>) readTournaments()
 IO : abstract void saveTeams(Tournament, int)
 IO : abstract void saveTournament(ArrayList<Tournament>)
-IO : abstract void addTeam(Tournament)
 
 UI : - Scanner scan
 UI : - Scanner scan1
