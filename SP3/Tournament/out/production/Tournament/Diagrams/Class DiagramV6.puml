@@ -1,0 +1,146 @@
+@startuml
+abstract Tournament
+object UI
+object FileManager
+object DBConnector
+interface IO
+Main *-- Controller
+Main *-- UI
+Controller *-- Tournament
+Tournament *-- Team
+KnockOutTournament *-- Bracket
+Bracket *-- Match
+Group *-- Match
+Team *-- MatchHistory
+Match *-- Team
+Team *-- Player
+MatchHistory *-- Match
+GroupTournament *-- Group
+Bracket *-- BracketView
+Tournament <|-- KnockOutTournament
+Tournament <|-- GroupTournament
+Match <|-- TimedMatch
+IO <|-- FileManager
+IO <|-- DBConnector
+Controller *-- FileManager
+Controller *-- DBConnector
+
+IO : abstract (ArrayList<Team>) readTeams()
+IO : abstract (ArrayList<Tournament>) readTournaments()
+IO : abstract void saveTeams(Tournament, int)
+IO : abstract void saveTournament(ArrayList<Tournament>)
+IO : abstract void addTeam(Tournament)
+
+UI : - Scanner scan
+UI : - Scanner scan1
+UI : - int num
+UI : - String name
+UI : - String choice
+UI : + void showMenu(Controller)
+UI : + void menuRunTournament(Controller)
+UI : + void menuPostTeams(Controller)
+UI : + void menuLoadTeams(Controller)
+UI : + void menuBracket(Controller)
+UI : + void menuTeam(Controller)
+UI : + void menuTournament(Controller)
+
+Controller : - IO connector
+Controller : - ArrayList<Tournament> tournaments
+Controller : + void setConnection()
+Controller : + void createTournament(String, String, boolean)
+Controller : + void deleteTournament()
+Controller : + void saveTournament()
+Controller : + void loadTeamsToTournament(int)
+Controller : + void loadTournaments()
+Controller : + void createTeam(Tournament)
+Controller : + void postTeamsFromTournament(int)
+
+Tournament : - int id
+Tournament : - Team winner
+Tournament : - String name
+Tournament : - ArrayList<Team> teams
+Tournament : - LocalDateTime startDate
+Tournament : - String startDateString
+Tournament : - boolean isFixedDuration
+Tournament : - static int counter
+Tournament : + void addTeamToArray(Team)
+
+KnockOutTournament : - Bracket bracket
+KnockOutTournament : + void createBracket()
+KnockOutTournament : + void runBracket()
+
+GroupTournament : - ArrayList<Group> groups
+
+Group : - String name
+Group : - int amountOfMatches
+Group : - ArrayList<Team> teams
+Group : - Team[] ranking
+Group : - Match matches
+
+Bracket : - BracketView bracketView
+Bracket : - Match[] finals
+Bracket : - Match[] semiFinal
+Bracket : - Match[] quarterFinal
+Bracket : - Match[] preliminaryFinal
+Bracket : - boolean isFixedDuration
+Bracket : + Team processBracket()
+Bracket : + void createFinal(Team[])
+Bracket : + Team processFinal()
+Bracket : + void createSemiFinal(Team[])
+Bracket : + void processSemiFinal()
+Bracket : + void createQuarterFinal(Team[])
+Bracket : + void processQuarterFinal()
+Bracket : + void createPreliminaryFinal(ArrayList<Team>)
+Bracket : + void processPreliminaryFinal()
+Bracket : + void announceMatches(Match[])
+Bracket : + void announceMessage(String)
+Bracket : + void announceBracket(Match[])
+Bracket : + ArrayList<(Match[]> exportBracketToView()
+Bracket : + void displayBracket()
+
+BracketView : - String[] preliminaryTeamNames
+BracketView : - String[] quarterFinalTeamNames
+BracketView : - String[] semiFinalTeamNames
+BracketView : - String[] finalTeamNames
+BracketView : - String tourWinner
+BracketView : - String tournamentName
+BracketView : - LocalDateTime startDate
+BracketView : - LocalDateTime[] matchTimerBracket
+BracketView : - String[] formattedMatchTimerBracket
+BracketView : - DateTimeFormatter myFormatObj
+BracketView : + void setTourWinner(String)
+BracketView : + void loadTeamsIntoView(ArrayList<Match[]>)
+BracketView : + void loadPreliminaryTeamsIntoView(ArrayList<Match[]>)
+BracketView : + void loadQuarterFinalTeamsIntoView(ArrayList<Match[]>)
+BracketView : + void loadSemiFinalTeamsIntoView(ArrayList<Match[]>)
+BracketView : + void loadFinalTeamsIntoView(ArrayList<Match[]>)
+BracketView : + void showBracketView()
+
+MatchHistory : - ArrayList<Match> matches
+MatchHistory : + @Override String toString()
+
+Match : - Team[] teams
+Match : - Team winner
+Match : - String startTime
+Match : - int TeamAScore
+Match : - int TeamBScore
+Match : + void processMatch()
+Match : + @Override String toString()
+
+TimedMatch : - int matchDuration
+TimedMatch : + @Override processMatch()
+
+Team : - int id
+Team : - String name
+Team : - ArrayList<Player> players
+Team : - MatchHistory matchHistory
+Team : - int goalScore
+Team : - int points
+Team : - static int counter
+Team : + @Override String toString()
+
+Player : - String name
+Player : - int age
+Player : - char gender
+Player : + @Override toString()
+@enduml

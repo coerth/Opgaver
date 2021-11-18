@@ -1,4 +1,3 @@
-/*
 import org.junit.Before;
 import org.junit.Test;
 import java.util.Scanner;
@@ -155,4 +154,4 @@ public class TimedMatchTest {
 
         assertEquals(teamB, match.getWinner());
     }
-}*/
+}

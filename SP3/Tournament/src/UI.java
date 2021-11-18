@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -39,6 +40,11 @@ public class UI {
                 System.out.println("This menu doesn't exist, try again!");
             }
         } while (!choice.equalsIgnoreCase("quit"));
+        try {
+            controller.saveTournament();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void menuRunTournament(Controller controller){
@@ -47,13 +53,13 @@ public class UI {
             System.out.println(controller.getTournaments().indexOf(t)+1 + ". " + t.getName());
         }
         num = scan.nextInt();
-        for(Tournament t : controller.getTournaments()){
-            if (t instanceof KnockOutTournament) {
-                System.out.println(t.getName() + " is running");
+
+            if (controller.getTournament(num) instanceof KnockOutTournament) {
+                System.out.println(controller.getTournament(num).getName() + " is running");
                 ((KnockOutTournament) controller.getTournament(num)).runBracket();
             }
 
-        }
+
     }
 
     public void menuPostTeams(Controller controller){
@@ -94,7 +100,7 @@ public class UI {
             System.out.println(controller.getTournaments().indexOf(t)+1 +". "+ t.getName());
         }
         num = scan.nextInt();
-        controller.getTournament(num).createTeam();
+        controller.createTeam(controller.getTournament(num));
         System.out.println("Team added to " + controller.getTournament(num).getName());
     }
 

@@ -38,6 +38,7 @@ public class Bracket {
         Team tournamentWinner;
         finals[0].processMatch();
         tournamentWinner = finals[0].getWinner();
+        bracketView.setTourWinner(tournamentWinner.getName());
 
         displayBracket();
         return tournamentWinner;
@@ -53,11 +54,12 @@ public class Bracket {
                 i += 2;
                 j += 2;
             }
-        }
-        for (int k = 0; k < semiFinal.length; k++) {
-            semiFinal[k] = new Match(teams[i], teams[j]);
-            i += 2;
-            j += 2;
+        } else {
+            for (int k = 0; k < semiFinal.length; k++) {
+                semiFinal[k] = new Match(teams[i], teams[j]);
+                i += 2;
+                j += 2;
+            }
         }
     }
 
@@ -136,6 +138,8 @@ public class Bracket {
     public void processPreliminaryFinal() {
         Team[] teams = new Team[8];
         int i = 0;
+
+        displayBracket();
 
         for (Match match : preliminaryFinal) {
             match.processMatch();

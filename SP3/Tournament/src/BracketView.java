@@ -2,7 +2,7 @@ import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-public class BracketView {
+public class BracketView{
 
     private String[] preliminaryTeamNames = new String[16];
     private String[] quarterFinalTeamNames = new String[8];
@@ -14,8 +14,6 @@ public class BracketView {
     private LocalDateTime[] matchTimerBracket = new LocalDateTime[15];
     private String[] formattedMatchTimerBracket = new String[15];
     private DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
-
-
 
     public void setStartDate(LocalDateTime startDate){
         this.startDate = startDate;
@@ -32,9 +30,6 @@ public class BracketView {
 
         }
     }
-
-
-
 
 
     public void setTournamentName(String tournamentName) {

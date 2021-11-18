@@ -1,15 +1,31 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Controller {
+    private IO connector;
     private ArrayList<Tournament> tournaments = new ArrayList<>();
 
+    public void setConnection(){
+        while(connector == null) {
+            try {
+                Scanner scan = new Scanner(System.in);
+                System.out.println("How do you want to read data?");
+                System.out.println("Press 1 for DB. Press 2 for Files");
+                int choice = Integer.parseInt(scan.nextLine());
+
+                if (choice == 1) {
+                    connector = new DBConnector();
+                } else if (choice == 2) {
+                    connector = new FileManager();
+                }
+            }catch (Exception e){
+                System.out.println("Your input was not a number, please try again.");
+            }
+        }
+    }
 
     public ArrayList<Tournament> getTournaments() {
         return tournaments;
@@ -17,24 +33,53 @@ public class Controller {
 
 
     public void createTournament(String tournamentName, String startDate, boolean fixedDuration) {
-        tournaments.add(new KnockOutTournament(tournamentName, startDate, fixedDuration));
-        try {
-            FileWriter fw = new FileWriter("src/Tournaments/Tournaments.txt", true);
-            fw.write(tournamentName + ": " + startDate + ": " + fixedDuration + "\n");
-            fw.close();
-        }catch (IOException e){
-            e.printStackTrace();
+        int idCounter = tournaments.size()+1;
+        if(connector instanceof DBConnector){
+            tournaments.add(new KnockOutTournament(idCounter, tournamentName, startDate, fixedDuration));
+        }
+        else{
+            tournaments.add(new KnockOutTournament(tournamentName, startDate, fixedDuration));
         }
 
-        for (Tournament t : tournaments) {
-            File file = new File("src/Tournaments/" + t.getName() + "Teams.txt");
-            try {
-                file.createNewFile();
-            } catch (IOException e) {
-                continue;
+    }
+
+    public void saveTournament() throws IOException {
+        connector.saveTournaments(tournaments);
+        for(Tournament t : tournaments){
+            connector.saveTeams(t, tournaments.indexOf(t) + 1);
+        }
+
+    }
+
+    public IO getFileManager() {
+        return connector;
+    }
+
+    public void createTeam(Tournament t){
+        Scanner keyboard = new Scanner(System.in);
+        int idcounter = 0;
+        for(Tournament tour : tournaments){
+            idcounter += tour.getTeams().size();
+        }
+        idcounter += 1;
+         
+        if (t.getTeams().size() < 16) {
+            System.out.println("What is your team name?");
+            String teamName = keyboard.nextLine();
+            System.out.println("Player1 name?");
+            String name1 = keyboard.nextLine();
+            System.out.println("Player2 name?");
+            String name2 = keyboard.nextLine();
+            if(connector instanceof DBConnector){
+                t.addTeamToArray(new Team(idcounter, teamName, name1, name2));
+            }else{
+                t.addTeamToArray(new Team(teamName, name1, name2));
             }
+        } else {
+            System.out.println("Registration is closed!");
         }
     }
+
 
     public void deleteTournament() {
 
@@ -54,7 +99,7 @@ public class Controller {
         for (Tournament t : tournaments) {
             if (tournaments.indexOf(t) == tournamentPlace - 1) {
                 try {
-                    t.readTeamsFromFile();
+                    t.setTeams(connector.readTeams(t));
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
@@ -64,61 +109,9 @@ public class Controller {
 
     }
 
-   /* public void saveMatch(){
-        File file = new File("src/Tournaments/Matches.txt");
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-        }
-        for(Tournament t : tournaments){
-            if(t instanceof KnockOutTournament){
-                for (Match[] mArray : ((KnockOutTournament) t).getBracket().exportBracketToView()){
-                    for(Match m : mArray){
-                        if (m == null){
-                            continue;
-                        }else{
-                            if (m.getWinner() == null){
-                                continue;
-                            }
-                            try {
-                                FileWriter fw = new FileWriter("src/Tournaments/Matches.txt", true);
-                                fw.write(((KnockOutTournament) t).getBracket().exportBracketToView().indexOf(mArray) + ", " + m.getTeams()[0].getName() + ", " + m.getTeams()[1].getName() + ", " + m.getWinner().getName()+'\n');
-                                fw.close();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-    }*/
-
-    /*public void saveMatch(Match match, Match[] matches) {
-        File file = new File("src/Tournaments/Matches.txt");
-        try {
-            file.createNewFile();
-        } catch (IOException e) {
-        }
-        try {
-            FileWriter fw = new FileWriter("src/Tournaments/Matches.txt", true);
-            fw.write(matches + ": " + match.getTeams()[0].getName() + ": " + match.getTeams()[1].getName() + ": " + match.getWinner().getName() + '\n');
-            fw.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }*/
 
     public void loadTournaments() throws FileNotFoundException {
-        File file = new File("src/Tournaments/Tournaments.txt");
-        Scanner scan = null;
-        scan = new Scanner(file);
-
-        while (scan.hasNextLine()) {
-            String[] values = scan.nextLine().split(":");
-            tournaments.add(new KnockOutTournament(values[0].trim(), values[1].trim(), Boolean.parseBoolean(values[2].trim())));
-        }
+        this.tournaments = connector.readTournaments();
     }
 
     public void postTeamsFromTournament(int tournamentPlace) {
