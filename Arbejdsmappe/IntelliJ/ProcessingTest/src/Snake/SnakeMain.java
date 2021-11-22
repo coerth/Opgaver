@@ -13,8 +13,6 @@ public class SnakeMain extends PApplet {
     int scl = 20;
     PVector food;
 
-
-
     public static void main(String[] args) {
 
         PApplet.main(new String[] {SnakeMain.class.getName()});

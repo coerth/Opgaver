@@ -14,9 +14,10 @@ public class TextPopUpMain extends PApplet {
 
 
    static int current;
-   //static PApplet pApplet
+   static PApplet pApplet;
    static Scanner scan = new Scanner(System.in);
    static String userInput = "";
+   static Match match;
 
 
     LoadDisplayImage loadDisplayImage;
@@ -47,6 +48,7 @@ public class TextPopUpMain extends PApplet {
         matches.add(new Match(this, "Navi", "Folketinget"));
         matches.add(new Match(this, "Pepsilax", "Astralis"));
 
+        match.display();
         matches.get(0).display();
     }
 
@@ -65,6 +67,8 @@ public class TextPopUpMain extends PApplet {
             matches.get(i).processMatch();
             matches.get(i).display();
             }
+
+
        }
 
 
