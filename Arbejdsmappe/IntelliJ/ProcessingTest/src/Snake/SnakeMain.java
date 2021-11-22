@@ -33,7 +33,6 @@ public class SnakeMain extends PApplet {
 
         //food = new PVector(floor(random(width/scl)),floor(random(height/scl)));
         food = pickLocation();
-
     }
 
     @Override
