@@ -16,6 +16,7 @@ public class SnakeMain extends PApplet {
 
 
     public static void main(String[] args) {
+
         PApplet.main(new String[] {SnakeMain.class.getName()});
     }
 

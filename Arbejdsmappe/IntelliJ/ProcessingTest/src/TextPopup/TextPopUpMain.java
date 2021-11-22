@@ -25,6 +25,7 @@ public class TextPopUpMain extends PApplet {
 
         PApplet.main(new String[] {TextPopUpMain.class.getName()});
 
+
 //        System.out.println("Her når vi til");
 //        while(!userInput.equals("Q".toLowerCase(Locale.ROOT).trim())) {
 //            userInput = scan.nextLine();
@@ -50,11 +51,11 @@ public class TextPopUpMain extends PApplet {
     }
 
     @Override
-    public void draw(){
+    public void draw() {
         //her kaldes display funktionerne
 
 //        background(255);
-
+//
 //        fill(0);
 //        textSize(50);
 //        textAlign(CENTER);

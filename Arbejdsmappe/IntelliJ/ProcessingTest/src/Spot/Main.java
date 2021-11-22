@@ -15,6 +15,9 @@ public class Main extends PApplet {
 
     @Override
     public void settings() {
+        //visse ting vil hellere stå i settings fremfor setup()
+        //man får en fejl hvis det er tilfældet
+
         size(640,360);
     }
 

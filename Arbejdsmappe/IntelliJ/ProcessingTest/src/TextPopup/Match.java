@@ -27,6 +27,7 @@ public class Match {
             if (holdAScore == 10 && holdBScore != 10 || holdBScore == 10 && holdAScore != 10) {
                 matchFinished = true;
             }
+            display();
         }
     }
 
