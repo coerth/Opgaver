@@ -8,6 +8,9 @@ public class Main{
         UI ui = new UI();
         try {
             controller.loadTournaments();
+            for(Tournament t : controller.getTournaments()){
+                controller.loadTeamsToTournament(t.getId());
+            }
         } catch (FileNotFoundException e) {
             System.out.println("No tournaments, please create one.");
             ui.menuTournament(controller);

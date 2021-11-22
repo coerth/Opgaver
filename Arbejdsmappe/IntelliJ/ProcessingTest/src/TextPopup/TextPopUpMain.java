@@ -46,6 +46,7 @@ public class TextPopUpMain extends PApplet {
         matches.add(new Match(this, "Navi", "Folketinget"));
         matches.add(new Match(this, "Pepsilax", "Astralis"));
 
+        matches.get(0).display();
     }
 
     @Override
@@ -53,25 +54,21 @@ public class TextPopUpMain extends PApplet {
         //her kaldes display funktionerne
 
 //        background(255);
+
 //        fill(0);
 //        textSize(50);
 //        textAlign(CENTER);
 //        text(userInput, width / 2f, height / 2f);
 
         for (int i = 0; i < matches.size(); i++){
-            while(matches.get(i).matchFinished == false) {
-                matches.get(i).display();
-                matches.get(i).processMatch();
-                matches.get(i).display();
+            matches.get(i).processMatch();
+            matches.get(i).display();
             }
-
        }
 
-        //shape.display();
 
 
 
-    }
 
 
 

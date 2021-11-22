@@ -20,15 +20,14 @@ public class Match {
     }
 
     void processMatch() {
-        //while (!matchFinished) {
-            holdAScore = Integer.parseInt(userInput("Hvad har HoldA af score?"));
-            holdBScore = Integer.parseInt(userInput("Hvad har HoldB af score?"));
+        while (!matchFinished) {
+            holdAScore = Integer.parseInt(userInput("Hvad har "+ holdAName +" af score?"));
+            holdBScore = Integer.parseInt(userInput("Hvad har " + holdBName + " af score?"));
 
             if (holdAScore == 10 && holdBScore != 10 || holdBScore == 10 && holdAScore != 10) {
                 matchFinished = true;
-
             }
-        //}
+        }
     }
 
         public String userInput(String message){

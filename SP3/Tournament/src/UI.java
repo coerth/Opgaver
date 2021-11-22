@@ -16,7 +16,6 @@ public class UI {
             System.out.println("Press Q to create a tournament");
             System.out.println("Press W to create a team");
             System.out.println("Press E to create a bracket");
-            System.out.println("Press R to load teams to tournament");
             System.out.println("Press T to post teams in tournament");
             System.out.println("Type run to run the tournament");
             System.out.println("Type Quit to quit");
@@ -28,8 +27,6 @@ public class UI {
                 menuTeam(controller);
             } else if (choice.equalsIgnoreCase("e")) {
                 menuBracket(controller);
-            } else if (choice.equalsIgnoreCase("r")) {
-                menuLoadTeams(controller);
             } else if (choice.equalsIgnoreCase("t")) {
                 menuPostTeams(controller);
             } else if (choice.equalsIgnoreCase("run")) {
@@ -70,16 +67,6 @@ public class UI {
         num = scan.nextInt();
         controller.postTeamsFromTournament(num);
         System.out.println("Teams posted from " + controller.getTournament(num).getName());
-    }
-
-    public void menuLoadTeams(Controller controller){
-        System.out.println("Which tournament?");
-        for(Tournament t : controller.getTournaments()){
-            System.out.println(controller.getTournaments().indexOf(t)+1 +". "+ t.getName());
-        }
-        num = scan.nextInt();
-        controller.loadTeamsToTournament(num);
-        System.out.println("Teams loaded to " + controller.getTournament(num).getName());
     }
 
     public void menuBracket(Controller controller) {

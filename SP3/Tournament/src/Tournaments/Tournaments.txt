@@ -1,3 +1,4 @@
 LaskeLigaen: 2022,12,12,12,12: true
 FlemseLigaen: 2022,11,11,11,11: false
 SlaskeLigaen: 2022,12,12,12,12: true
+canonball: 2022,12,12,12,12: true
