@@ -54,7 +54,7 @@ public class Snake {
             pApplet.rect(pv.x,pv.y, scl, scl);
         }
 
-        pApplet.rect(this.xPos, this.yPos, scl,scl);
+        //pApplet.rect(this.xPos, this.yPos, scl,scl);
     }
 
     public void dir(int xSpeed, int ySpeed){
