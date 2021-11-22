@@ -1,20 +1,17 @@
 package Snake;
 
 import processing.core.PApplet;
-import processing.core.PVector;
 
-import java.util.Random;
+import static java.awt.event.KeyEvent.VK_S;
 
-import static java.awt.event.KeyEvent.*;
-
-public class SnakeMain extends PApplet {
+public class Main extends PApplet {
 
     Controller controller;
 
 
     public static void main(String[] args) {
 
-        PApplet.main(new String[] {SnakeMain.class.getName()});
+        PApplet.main(new String[] {Main.class.getName()});
     }
 
     @Override

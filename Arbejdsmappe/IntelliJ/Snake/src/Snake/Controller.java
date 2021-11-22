@@ -81,7 +81,7 @@ public class Controller {
         }
     }
 
-    public void boundary(){
+    private void boundary(){
         while(s.getTail().contains(food.getpVector())){
             food.pickLocation();
         }
