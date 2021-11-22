@@ -39,6 +39,9 @@ public class Controller {
             right = true;
             left = false;
         }
+        else if(pApplet.keyCode == VK_S && isGameOver){
+            setSetting(true);
+        }
         else if (pApplet.keyCode == VK_N && isGameOver){
             pApplet.exit();
         }
@@ -98,6 +101,7 @@ public class Controller {
         displayGameScreen("Game Over!",0.3f, 50);
         displayGameScreen("Score: "+score, 0.5f, 40);
         displayGameScreen("Play again? Y/N",0.65f,40);
+        displayGameScreen("Press S for settings", 0.9f,20 );
         endGameOptions();
     }
 
@@ -106,7 +110,7 @@ public class Controller {
         displayGameScreen("Press S for settings", 0.5f,20 );
     }
 
-    public void settings(){
+    public void settingsMenu(){
         displayGameScreen("Choose Speed:",0.3f, 40);
         displayGameScreen("1. Fast",0.4f, 20);
         displayGameScreen("2. Medium <- Default",0.5f, 20);

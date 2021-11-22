@@ -29,23 +29,28 @@ public class Main extends PApplet {
     public void draw() {
         //her kaldes display funktionerne
         background(51);
-        if(controller.isGameOver()){
-           controller.endgameScreen();
-        }
-
-        if (!controller.isPressed() && !controller.isGameOver()) {
-            background(51);
-
-            controller.startGameScreen();
-            if(controller.isSetting()){
+        if (controller.isGameOver()) {
+            controller.endgameScreen();
+            if (controller.isSetting()) {
                 background(51);
-                controller.settings();
+                controller.settingsMenu();
             }
-
-        } else if (controller.isPressed() && !controller.isGameOver()) {
-            controller.playGame();
         }
-    }
+
+            if (!controller.isPressed() && !controller.isGameOver()) {
+                background(51);
+
+                controller.startGameScreen();
+                if (controller.isSetting()) {
+                    background(51);
+                    controller.settingsMenu();
+                }
+
+            } else if (controller.isPressed() && !controller.isGameOver()) {
+                controller.playGame();
+            }
+        }
+
 
     @Override
     public void keyPressed() {
