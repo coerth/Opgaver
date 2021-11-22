@@ -1,17 +1,16 @@
 package Snake;
 
-import Image.LoadDisplayImage;
-import Spot.Spot;
 import processing.core.PApplet;
 import processing.core.PVector;
 
 import java.util.Random;
 
+import static java.awt.event.KeyEvent.*;
+
 public class SnakeMain extends PApplet {
 
-    Snake s;
-    int scl = 20;
-    PVector food;
+    Controller controller;
+
 
     public static void main(String[] args) {
 
@@ -20,59 +19,78 @@ public class SnakeMain extends PApplet {
 
     @Override
     public void settings() {
-        size(600,600);
+        size(400,400);
 
     }
 
     @Override
     public void setup(){
-        s = new Snake(this, scl);
-        frameRate = 1;
-
-        //food = new PVector(floor(random(width/scl)),floor(random(height/scl)));
-        food = pickLocation();
+        controller = new Controller(this, 20);
     }
 
     @Override
     public void draw() {
         //her kaldes display funktionerne
         background(51);
-        s.update();
-        s.show();
-        delay(70);
-
-        if(s.eat(food)){
-            food = pickLocation();
+        if(controller.isGameOver()){
+           controller.endgameScreen();
         }
 
-        fill(255,0,100);
-        rect(food.x, food.y, scl,scl);
+        if (!controller.isPressed() && !controller.isGameOver()) {
+
+
+            controller.startGameScreen();
+            if(controller.isSetting()){
+                background(51);
+                controller.settings();
+            }
+
+        } else if (controller.isPressed() && !controller.isGameOver()) {
+            controller.playGame();
+        }
     }
 
     @Override
     public void keyPressed() {
-        if ( keyCode == UP){
-            s.dir(0,-1);
+
+
+        if ( keyCode == UP && !controller.isDown()){
+            controller.getSnake().dir(0,-1);
+            controller.setUp(true);
+            controller.setDown(false);
+            controller.setRight(false);
+            controller.setLeft(false);
+
         }
-        else if (keyCode == DOWN){
-           s.dir(0,1);
+        else if (keyCode == DOWN && !controller.isUp()){
+            controller.getSnake().dir(0,1);
+            controller.setUp(false);
+            controller.setDown(true);
+            controller.setRight(false);
+            controller.setLeft(false);
         }
-        else if (keyCode == RIGHT){
-            s.dir(1,0);
+        else if (keyCode == RIGHT && !controller.isLeft()){
+            controller.getSnake().dir(1,0);
+            controller.setUp(false);
+            controller.setDown(false);
+            controller.setRight(true);
+            controller.setLeft(false);
         }
-        else if (keyCode == LEFT){
-            s.dir(-1,0);
+        else if (keyCode == LEFT && !controller.isRight()){
+            controller.getSnake().dir(-1,0);
+            controller.setUp(false);
+            controller.setDown(false);
+            controller.setRight(false);
+            controller.setLeft(true);
+        }
+        else if(keyCode == ENTER){
+            controller.setPressed(true);
+        }
+
+        else if(keyCode == VK_S){
+            controller.setSetting(true);
         }
     }
 
-    public PVector pickLocation(){
-        Random rand = new Random();
-        int cols = floor(width/scl);
-        int rows = floor(height/scl);
-        food = new PVector(floor(rand.nextInt(cols)),floor(rand.nextInt(rows)));
-        food.mult(scl);
-
-        return food;
-    }
 }
 
