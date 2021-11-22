@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Processing.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/export.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-linux-aarch64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-linux-amd64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-linux-armv6hf.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-linux-i586.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-macosx-universal.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-windows-amd64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt-natives-windows-i586.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/gluegen-rt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-linux-aarch64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-linux-amd64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-linux-armv6hf.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-linux-i586.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-macosx-universal.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-windows-amd64.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all-natives-windows-i586.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Processing/jogl-all.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Snake.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Food.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Snake.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snake/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snake/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snake/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Snake/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Snake/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Snake/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Snake/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Snake/Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Snake/SnakeMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/Snake/SnakeMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Snake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Snake/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Snake/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Snake/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Snake/SnakeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Snake/SnakeMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637609580241</updated>
-      <workItem from="1637609581504" duration="397000" />
+      <workItem from="1637609581504" duration="931000" />
     </task>
     <servers />
   </component>
