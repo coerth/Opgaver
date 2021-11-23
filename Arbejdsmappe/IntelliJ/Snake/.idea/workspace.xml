@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Snake/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Snake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Snake/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Snake/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637609580241</updated>
       <workItem from="1637609581504" duration="4754000" />
-      <workItem from="1637650636318" duration="1786000" />
+      <workItem from="1637650636318" duration="2407000" />
     </task>
     <servers />
   </component>

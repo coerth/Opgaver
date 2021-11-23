@@ -27,7 +27,6 @@ public class Snake {
         }
 
         for (int j = 0; j < tail.size()-1; j++) {
-            //this.tail.set(j - 1,this.tail.get(j));
             this.tail.get(j).x = this.tail.get(j+1).x;
             this.tail.get(j).y = this.tail.get(j+1).y;
         }

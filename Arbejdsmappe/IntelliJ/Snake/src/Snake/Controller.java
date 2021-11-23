@@ -179,10 +179,6 @@ public class Controller {
         return s;
     }
 
-    public Food getFood(){
-        return food;
-    }
-
     public boolean isGameOver() {
         return isGameOver;
     }
@@ -195,7 +191,4 @@ public class Controller {
         isSetting = setting;
     }
 
-    public UI getUi() {
-        return ui;
-    }
 }
