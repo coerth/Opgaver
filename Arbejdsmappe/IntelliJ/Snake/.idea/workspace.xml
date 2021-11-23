@@ -7,13 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Snake/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Snake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Snake/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -59,7 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SnakeMain" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -72,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637609580241</updated>
       <workItem from="1637609581504" duration="4754000" />
+      <workItem from="1637650636318" duration="1786000" />
     </task>
     <servers />
   </component>
@@ -88,6 +100,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

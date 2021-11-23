@@ -7,8 +7,9 @@ import static java.awt.event.KeyEvent.*;
 public class Controller {
     private PApplet pApplet;
     private Snake s;
-    private int scale;
     private  Food food;
+    private UI ui;
+    private int scale;
     private boolean isPressed;
     private  boolean up = false;
     private boolean down = false;
@@ -25,6 +26,94 @@ public class Controller {
         this.scale = scale;
         s = new Snake(pApplet, this.scale);
         food = new Food(pApplet, this.scale);
+        ui = new UI(pApplet);
+    }
+
+    public void playGame() {
+        s.update();
+        s.display();
+        pApplet.delay(difficultySpeed);
+
+        if (s.eat(food.getpVector())) {
+            boundary();
+            this.score += 100 * difficultyModifier;
+        }
+        food.display();
+
+        if(s.collision()){
+            isGameOver = true;
+        }
+    }
+
+    private void boundary(){
+        while(s.getTail().contains(food.getpVector())){
+            food.pickLocation();
+        }
+    }
+
+    public void startGameScreen(){
+        ui.displayGameScreen("Press Enter to start", 0.3f,40 );
+        ui.displayGameScreen("Press S for settings", 0.5f,20 );
+        startGameOptions();
+    }
+
+    public void startGameOptions(){
+        if(pApplet.keyCode == VK_ENTER){
+            setPressed(true);
+        }
+
+        else if(pApplet.keyCode == VK_S){
+            setSetting(true);
+        }
+    }
+
+    public void settingsMenu(){
+        ui.displayGameScreen("Choose Speed:",0.3f, 40);
+        if(difficultyModifier == 1.5){
+            ui.displayGameScreen("1. Fast."+ " <-- Selected",0.4f, 20);
+        }
+        else {
+            ui.displayGameScreen("1. Fast.", 0.4f, 20);
+        }
+        if(difficultyModifier == 1){
+            ui.displayGameScreen("2. Medium."+ " <-- Selected",0.5f, 20);
+        }
+        else {
+            ui.displayGameScreen("2. Medium.", 0.5f, 20);
+        }
+        if(difficultyModifier == 0.5){
+            ui.displayGameScreen("3. Slow."+ " <-- Selected",0.6f, 20);
+        }
+        else {
+            ui.displayGameScreen("3. Slow", 0.6f, 20);
+        }
+        settingsOptions();
+    }
+
+    private void settingsOptions(){
+        if(pApplet.keyCode == VK_1 && isSetting){
+            this.difficultySpeed = 40;
+            this.difficultyModifier = 1.5f;
+            setSetting(false);
+        }
+        else if(pApplet.keyCode == VK_2 && isSetting){
+            this.difficultySpeed = 70;
+            this.difficultyModifier = 1f;
+            setSetting(false);
+        }
+        else if(pApplet.keyCode == VK_3 && isSetting){
+            this.difficultySpeed = 100;
+            this.difficultyModifier = 0.5f;
+            setSetting(false);
+        }
+    }
+
+    public void endgameScreen(){
+        ui.displayGameScreen("Game Over!",0.3f, 50);
+        ui.displayGameScreen("Score: "+score, 0.5f, 40);
+        ui.displayGameScreen("Play again? Y/N",0.65f,40);
+        ui.displayGameScreen("Press S for settings", 0.9f,20 );
+        endGameOptions();
     }
 
     private void endGameOptions(){
@@ -44,77 +133,6 @@ public class Controller {
         else if (pApplet.keyCode == VK_N && isGameOver){
             pApplet.exit();
         }
-    }
-
-    private void settingsOptions(){
-        if(pApplet.keyCode == VK_1 && isSetting){
-            this.difficultySpeed = 40;
-            this.difficultyModifier = 1.5f;
-            setSetting(false);
-        }
-        else if(pApplet.keyCode == VK_2 && isSetting){
-            this.difficultySpeed = 70;
-            this.difficultyModifier = 1f;
-            setSetting(false);
-        }
-        else if(pApplet.keyCode == VK_3 && isSetting){
-            this.difficultySpeed = 100;
-            this.difficultyModifier = 0.5f;
-            setSetting(false);
-        }
-
-    }
-
-    public void playGame() {
-        s.update();
-        s.display();
-        pApplet.delay(difficultySpeed);
-
-        if (s.eat(food.getpVector())) {
-            boundary();
-            this.score += 100 * difficultyModifier;
-        }
-
-        food.display();
-
-        if(s.collision()){
-            isGameOver = true;
-
-        }
-    }
-
-    private void boundary(){
-        while(s.getTail().contains(food.getpVector())){
-            food.pickLocation();
-        }
-    }
-
-    private void displayGameScreen(String s, float v, int size) {
-        pApplet.fill(255);
-        pApplet.textSize(size);
-        pApplet.textAlign(pApplet.CENTER);
-        pApplet.text(s, pApplet.width * 0.5f, pApplet.height * v);
-    }
-
-    public void endgameScreen(){
-        displayGameScreen("Game Over!",0.3f, 50);
-        displayGameScreen("Score: "+score, 0.5f, 40);
-        displayGameScreen("Play again? Y/N",0.65f,40);
-        displayGameScreen("Press S for settings", 0.9f,20 );
-        endGameOptions();
-    }
-
-    public void startGameScreen(){
-        displayGameScreen("Press Enter to start", 0.3f,40 );
-        displayGameScreen("Press S for settings", 0.5f,20 );
-    }
-
-    public void settingsMenu(){
-        displayGameScreen("Choose Speed:",0.3f, 40);
-        displayGameScreen("1. Fast",0.4f, 20);
-        displayGameScreen("2. Medium <- Default",0.5f, 20);
-        displayGameScreen("3. Slow",0.6f, 20);
-        settingsOptions();
     }
 
     public boolean isPressed() {
@@ -175,5 +193,9 @@ public class Controller {
 
     public void setSetting(boolean setting) {
         isSetting = setting;
+    }
+
+    public UI getUi() {
+        return ui;
     }
 }

@@ -85,13 +85,6 @@ public class Main extends PApplet {
             controller.setRight(false);
             controller.setLeft(true);
         }
-        else if(keyCode == ENTER){
-            controller.setPressed(true);
-        }
-
-        else if(keyCode == VK_S){
-            controller.setSetting(true);
-        }
     }
 
 }
