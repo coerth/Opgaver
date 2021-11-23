@@ -35,10 +35,6 @@ public class Food {
         pVector = new PVector(floor(rand.nextInt(cols)), floor(rand.nextInt(rows)));
         pVector.mult(scale);
 
-//        while (pVectorArrayList.contains(pVector)) {
-//            pVector = new PVector(floor(rand.nextInt(cols)), floor(rand.nextInt(rows)));
-//            pVector.mult(scale);
-//        }
         randomiseColor();
     }
 

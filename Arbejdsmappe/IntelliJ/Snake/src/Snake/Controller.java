@@ -6,15 +6,15 @@ import static java.awt.event.KeyEvent.*;
 
 public class Controller {
     private PApplet pApplet;
-    private Snake s;
-    private  Food food;
+    private Snake snake;
+    private Food food;
     private UI ui;
     private int scale;
     private boolean isPressed;
-    private  boolean up = false;
+    private boolean up = false;
     private boolean down = false;
-    private  boolean right = true;
-    private  boolean left = false;
+    private boolean right = true;
+    private boolean left = false;
     private int score = 0;
     private boolean isGameOver;
     private float difficultyModifier = 1;
@@ -24,29 +24,29 @@ public class Controller {
     public Controller(PApplet pApplet, int scale) {
         this.pApplet = pApplet;
         this.scale = scale;
-        s = new Snake(pApplet, this.scale);
+        snake = new Snake(pApplet, this.scale);
         food = new Food(pApplet, this.scale);
         ui = new UI(pApplet);
     }
 
     public void playGame() {
-        s.update();
-        s.display();
+        snake.update();
+        snake.display();
         pApplet.delay(difficultySpeed);
 
-        if (s.eat(food.getpVector())) {
+        if (snake.eat(food.getpVector())) {
             boundary();
             this.score += 100 * difficultyModifier;
         }
         food.display();
 
-        if(s.collision()){
+        if(snake.collision()){
             isGameOver = true;
         }
     }
 
     private void boundary(){
-        while(s.getTail().contains(food.getpVector())){
+        while(snake.getTail().contains(food.getpVector())){
             food.pickLocation();
         }
     }
@@ -119,7 +119,7 @@ public class Controller {
     private void endGameOptions(){
         if (pApplet.keyCode == VK_Y && isGameOver){
             this.score = 0;
-            s = new Snake(pApplet, scale);
+            snake = new Snake(pApplet, scale);
             isGameOver = false;
             food.pickLocation();
             up = false;
@@ -176,7 +176,7 @@ public class Controller {
     }
 
     public Snake getSnake() {
-        return s;
+        return snake;
     }
 
     public boolean isGameOver() {

@@ -8,7 +8,6 @@ public class Main extends PApplet {
 
     Controller controller;
 
-
     public static void main(String[] args) {
 
         PApplet.main(new String[] {Main.class.getName()});
