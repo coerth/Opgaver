@@ -15,7 +15,6 @@ public class SimpleListImpl implements SimpleList {
     @Override
     public void addFront(int value) {
         list.add(value);
-
     }
 
     @Override
