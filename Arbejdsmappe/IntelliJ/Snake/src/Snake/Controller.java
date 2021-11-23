@@ -3,7 +3,6 @@ package Snake;
 import processing.core.PApplet;
 
 import static java.awt.event.KeyEvent.*;
-import static processing.core.PConstants.*;
 
 public class Controller {
     private PApplet pApplet;
@@ -17,8 +16,8 @@ public class Controller {
     private  boolean left = false;
     private int score = 0;
     private boolean isGameOver;
-    private float difficulty = 1;
-    private int difficultyChoice = 70;
+    private float difficultyModifier = 1;
+    private int difficultySpeed = 70;
     private boolean isSetting;
 
     public Controller(PApplet pApplet, int scale) {
@@ -49,18 +48,18 @@ public class Controller {
 
     private void settingsOptions(){
         if(pApplet.keyCode == VK_1 && isSetting){
-            this.difficultyChoice = 40;
-            this.difficulty = 1.5f;
+            this.difficultySpeed = 40;
+            this.difficultyModifier = 1.5f;
             setSetting(false);
         }
         else if(pApplet.keyCode == VK_2 && isSetting){
-            this.difficultyChoice = 70;
-            this.difficulty = 1f;
+            this.difficultySpeed = 70;
+            this.difficultyModifier = 1f;
             setSetting(false);
         }
         else if(pApplet.keyCode == VK_3 && isSetting){
-            this.difficultyChoice = 100;
-            this.difficulty = 0.5f;
+            this.difficultySpeed = 100;
+            this.difficultyModifier = 0.5f;
             setSetting(false);
         }
 
@@ -69,11 +68,11 @@ public class Controller {
     public void playGame() {
         s.update();
         s.display();
-        pApplet.delay(difficultyChoice);
+        pApplet.delay(difficultySpeed);
 
         if (s.eat(food.getpVector())) {
             boundary();
-            this.score += 100 * difficulty;
+            this.score += 100 * difficultyModifier;
         }
 
         food.display();
