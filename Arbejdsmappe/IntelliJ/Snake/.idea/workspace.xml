@@ -7,49 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/ListNodeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/Tobias ekstra.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/Pair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/PairImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/PairImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/DataStructures.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/SimpleListImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/test/dk/cphbusiness/dat/datastructures/QueueImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/test/dk/cphbusiness/dat/datastructures/SimpleListImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/test/dk/cphbusiness/dat/datastructures/StackImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/dat1_datastructures-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/ListNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/Queue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/QueueImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/SimpleList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/SimpleListImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/StackImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/test/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/QueueTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/test/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/SimpleListImplTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/test/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/SimpleListTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/test/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/StackTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructures/out/production/DataStructures/dk/cphbusiness/dat/datastructures/Queueimpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructures/out/production/DataStructures/dk/cphbusiness/dat/datastructures/Queueimpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructures/out/production/DataStructures/dk/cphbusiness/dat/datastructures/SimpleListImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructures/out/production/DataStructures/dk/cphbusiness/dat/datastructures/SimpleListImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/Queueimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/Queueimpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/SimpleListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructures/src/dk/cphbusiness/dat/datastructures/SimpleListImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Sortering.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +81,7 @@
       <updated>1637609580241</updated>
       <workItem from="1637609581504" duration="4754000" />
       <workItem from="1637650636318" duration="4223000" />
+      <workItem from="1637760722919" duration="636000" />
     </task>
     <servers />
   </component>
