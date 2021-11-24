@@ -120,12 +120,14 @@ public class Controller {
         if (pApplet.keyCode == VK_Y && isGameOver){
             this.score = 0;
             snake = new Snake(pApplet, scale);
-            isGameOver = false;
             food.pickLocation();
             up = false;
             down = false;
             right = true;
             left = false;
+            isGameOver = false;
+            pApplet.keyCode = VK_ENTER;
+
         }
         else if(pApplet.keyCode == VK_S && isGameOver){
             setSetting(true);

@@ -6,54 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Sortering.java" afterDir="false" />
+    <list default="true" id="7b9d2fb9-0a7d-40d9-b098-4f2db15a8a29" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/heapSort/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/heapSort/HeapSortMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Snake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/PairImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/PairImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Main.java" afterDir="false" />
     </list>
-=======
-    <list default="true" id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="" />
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="21HsvdLK4VPXDiDltS6v79RC0Lw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="21NfiBdwQknzYP40x2zTGdvDXwT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Processing" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Morten\Documents\GitHub\Opgaver\Arbejdsmappe\IntelliJ\Snake\src" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -78,37 +59,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d156ecc-9379-4ce3-8a45-3a0280a63efe" name="Changes" comment="" />
-      <created>1637609580241</created>
+      <changelist id="7b9d2fb9-0a7d-40d9-b098-4f2db15a8a29" name="Changes" comment="" />
+      <created>1637770362676</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637609580241</updated>
-      <workItem from="1637609581504" duration="4754000" />
-      <workItem from="1637650636318" duration="4223000" />
-<<<<<<< Updated upstream
-      <workItem from="1637760722919" duration="636000" />
-=======
-      <workItem from="1637770310775" duration="8000" />
->>>>>>> Stashed changes
+      <updated>1637770362676</updated>
+      <workItem from="1637770370306" duration="1443000" />
+      <workItem from="1637786592936" duration="340000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
