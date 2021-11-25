@@ -8,14 +8,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Person[] people = new Person[6];
+        Person[] people = new Person[7];
 
-        people[0] = new Person("Allan", "Petersen", 00001);
-        people[1] = new Person("Allan", "Adamsen", 00004);
-        people[2] = new Person("John", "Jensen", 00002);
-        people[3] = new Person("Jens", "Jensen", 00050);
-        people[4] = new Person("Jens", "Jensen", 00006);
-        people[5] = new Person("Hans", "Allansen", 00010);
+        people[0] = new Person("Allan", "Petersen", 1);
+        people[1] = new Person("Allan", "Adamsen", 3);
+        people[2] = new Person("Allan", "Adamsen", 2);
+        people[3] = new Person("Wens", "Jensen", 50);
+        people[4] = new Person("Jens", "Jensen", 6);
+        people[5] = new Person("Hans", "Allansen", 10);
+        people[6] = new Person("Hans", "Bllansen", 9);
 
         System.out.println("Before sorting" + "\n");
         List<Comparator<Person>> list = new ArrayList<>();

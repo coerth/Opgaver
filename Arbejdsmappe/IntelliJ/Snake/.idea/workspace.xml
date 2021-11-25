@@ -7,42 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b9d2fb9-0a7d-40d9-b098-4f2db15a8a29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/CombinedComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonFirstNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonIDComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonLastNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/CountComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tobias ekstra/src/MyComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/haspMap/HashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/textio/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/textio/SimpleTextIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/textio/TextIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/textio/TextUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reference Projekt/src/Sorting/Obects_in_ArrayList/Object.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Reference Projekt/src/Sorting/Obects_in_ArrayList/Object.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Snake_jar/Snake.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Snake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Snake/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Snake/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Snake/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/HeapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/out/production/Tobias ekstra/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Sortering.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/Sortering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/heapSort/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dat1_datastructures-master/DataStructures/src/dk/cphbusiness/dat/datastructures/heapSort/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/Sortering.class" beforeDir="false" afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/Sortering.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/heapSort/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../dat1_datastructures-master/out/production/dat1_datastructures-master/dk/cphbusiness/dat/datastructures/heapSort/HeapSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/CombinedComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/CombinedComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonFirstNameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonFirstNameComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonLastNameComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/PersonLastNameComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +63,7 @@
       <workItem from="1637786592936" duration="355000" />
       <workItem from="1637815880565" duration="2078000" />
       <workItem from="1637824488425" duration="2885000" />
+      <workItem from="1637848493586" duration="678000" />
     </task>
     <servers />
   </component>
@@ -110,5 +80,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

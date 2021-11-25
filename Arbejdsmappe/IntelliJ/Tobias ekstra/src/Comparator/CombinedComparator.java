@@ -20,6 +20,7 @@ public class CombinedComparator<T> implements Comparator<T> {
     public int compare(T o1, T o2) {
         int c = 0;
         for(Comparator<T> comp : list){
+            c = comp.compare(o1,o2);
             if(c != 0) return c;
         }
         return c;
