@@ -29,29 +29,35 @@ public class Main extends PApplet {
         //her kaldes display funktionerne
         background(51);
         if(controller.isVictoryCondition() && controller.isGameOver()){
-            controller.victoryScreen();
+            controller.getUi().victoryScreen(controller.getScore());
+            controller.victoryOptions();
             if (controller.isSetting()) {
                 background(51);
-                controller.settingsMenu();
+                controller.getUi().settingsScreen(controller.getDifficultyModifier());
+                controller.settingsOptions();
             }
         }
 
         //background(51);
         else if (controller.isGameOver()) {
-            controller.endgameScreen();
+            controller.getUi().endgameScreen(controller.getScore());
+            controller.endGameOptions();
             if (controller.isSetting()) {
                 background(51);
-                controller.settingsMenu();
+                controller.getUi().settingsScreen(controller.getDifficultyModifier());
+                controller.settingsOptions();
             }
         }
 
             if (!controller.isPressed() && !controller.isGameOver()) {
                 background(51);
 
-                controller.startGameScreen();
+                controller.getUi().startGameScreen();
+                controller.startGameOptions();
                 if (controller.isSetting()) {
                     background(51);
-                    controller.settingsMenu();
+                    controller.getUi().settingsScreen(controller.getDifficultyModifier());
+                    controller.settingsOptions();
                 }
 
             } else if (controller.isPressed() && !controller.isGameOver()) {

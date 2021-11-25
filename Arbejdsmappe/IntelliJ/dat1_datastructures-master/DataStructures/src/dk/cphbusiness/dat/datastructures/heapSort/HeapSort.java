@@ -37,18 +37,18 @@ public class HeapSort<T> {
         if(left < 0){
             return;
         }
-        int largestChild = left;
+        int largest = left;
 
         int right = (2*x+2 < treeSize) ? 2*x+2 : -1;;
         if(right > 0 && array[right] > array[left]){
         //if(right > 0 && comparator.compare(array[right],array[left] ) > 0){
-            largestChild = right;
+            largest = right;
         }
 
-        if(array[largestChild] > array[x]){
+        if(array[largest] > array[x]){
         //if(comparator.compare(array[largestChild],array[x]) > 0){
-            swap(largestChild, x);
-            heapifyNode(largestChild); // skal kaldes for at rykke den mindre værdi længere ned i systemet
+            swap(largest, x);
+            heapifyNode(largest); // skal kaldes for at rykke den mindre værdi længere ned i systemet
 
         }
 

@@ -6,10 +6,16 @@ public class Main {
 
         int[] numbers = {7,9,12,3,6,42,68,8,5};
 
-        Sortering sortering = new Sortering();
-        int[] newNumbers = sortering.sortNumbers(numbers);
+        System.out.println("Før sortering");
+        for (Integer i : numbers){
 
-        for(Integer i : newNumbers){
+        }
+
+        Sortering sortering = new Sortering();
+        sortering.sortNumbers(numbers);
+
+        System.out.println("\n" + "Efter sortering");
+        for(Integer i : numbers){
             System.out.println(i);
         }
     }

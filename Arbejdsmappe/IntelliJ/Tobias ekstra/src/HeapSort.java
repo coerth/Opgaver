@@ -12,7 +12,10 @@ public class HeapSort<T> {
         this.comparator = comparator;
     }
 
-    public void sort(){
+    public T[] sort(){
+
+        if(array.length <= 1) return array;
+
         initialHeapify();
 
        while (treeSize > 0){
@@ -20,6 +23,7 @@ public class HeapSort<T> {
            swap(0, treeSize-1);
            treeSize--;
         }
+       return array;
     }
 
     private void initialHeapify(){
@@ -36,21 +40,17 @@ public class HeapSort<T> {
         if(left < 0){
             return;
         }
-        int largestChild = left;
+        int largest = left;
 
         int right = (2*x+2 < treeSize) ? 2*x+2 : -1;;
-        //if(right > 0 && array[right] > array[left]){
         if(right > 0 && comparator.compare(array[right],array[left] ) > 0){
-            largestChild = right;
+            largest = right;
         }
 
-        //if(array[largestChild] > array[x]){
-        if(comparator.compare(array[largestChild],array[x]) > 0){
-            swap(largestChild, x);
-            heapifyNode(largestChild); // skal kaldes for at rykke den mindre værdi længere ned i systemet
-
+        if(comparator.compare(array[largest],array[x]) > 0){
+            swap(largest, x);
+            heapifyNode(largest); // skal kaldes for at rykke den mindre værdi længere ned i systemet
         }
-
     }
 
     private void swap(int a, int b) {
@@ -59,6 +59,4 @@ public class HeapSort<T> {
         array[a] =  array[b];
         array[b] = tmp;
     }
-
-
 }

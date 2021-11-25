@@ -58,12 +58,6 @@ public class Controller {
         }
     }
 
-    public void startGameScreen(){
-        ui.displayGameScreen("Press Enter to start", 0.3f,40 );
-        ui.displayGameScreen("Press S for settings", 0.5f,20 );
-        startGameOptions();
-    }
-
     public void startGameOptions(){
         if(pApplet.keyCode == VK_ENTER){
             setPressed(true);
@@ -76,30 +70,7 @@ public class Controller {
         }
     }
 
-    public void settingsMenu(){
-        ui.displayGameScreen("Choose Speed:",0.3f, 40);
-        if(difficultyModifier == 1.5){
-            ui.displayGameScreen("1. Fast."+ " <-- Selected",0.4f, 20);
-        }
-        else {
-            ui.displayGameScreen("1. Fast.", 0.4f, 20);
-        }
-        if(difficultyModifier == 1){
-            ui.displayGameScreen("2. Medium."+ " <-- Selected",0.5f, 20);
-        }
-        else {
-            ui.displayGameScreen("2. Medium.", 0.5f, 20);
-        }
-        if(difficultyModifier == 0.5){
-            ui.displayGameScreen("3. Slow."+ " <-- Selected",0.6f, 20);
-        }
-        else {
-            ui.displayGameScreen("3. Slow", 0.6f, 20);
-        }
-        settingsOptions();
-    }
-
-    private void settingsOptions(){
+    public void settingsOptions(){
         if(pApplet.keyCode == VK_1 && isSetting){
             this.difficultySpeed = 40;
             this.difficultyModifier = 1.5f;
@@ -117,15 +88,7 @@ public class Controller {
         }
     }
 
-    public void endgameScreen(){
-        ui.displayGameScreen("Game Over!",0.3f, 50);
-        ui.displayGameScreen("Score: "+score, 0.5f, 40);
-        ui.displayGameScreen("Play again? Y/N",0.65f,40);
-        ui.displayGameScreen("Press S for settings", 0.9f,20 );
-        endGameOptions();
-    }
-
-    private void endGameOptions(){
+    public void endGameOptions(){
         if (pApplet.keyCode == VK_Y && isGameOver){
             this.score = 0;
             snake = new Snake(pApplet, scale);
@@ -136,8 +99,8 @@ public class Controller {
             left = false;
             isGameOver = false;
             pApplet.keyCode = VK_ENTER;
-
         }
+
         else if(pApplet.keyCode == VK_S && isGameOver){
             setSetting(true);
         }
@@ -145,24 +108,8 @@ public class Controller {
             pApplet.exit();
         }
     }
-    private boolean victoryCondition() {
-        int amountNeeded = (pApplet.width / scale) * (pApplet.height / scale);
-        if (snake.getTail().size() == amountNeeded) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
-        public void victoryScreen() {
-            ui.displayGameScreen("You Win!",0.3f, 50);
-            ui.displayGameScreen("Score: "+score, 0.5f, 40);
-            ui.displayGameScreen("Play again? Y/N",0.65f,40);
-            ui.displayGameScreen("Press S for settings", 0.9f,20 );
-            victoryOptions();
-        }
-
-    private void victoryOptions() {
+    public void victoryOptions() {
         if (pApplet.keyCode == VK_Y && isVictoryCondition){
             this.score = 0;
             snake = new Snake(pApplet, scale);
@@ -181,6 +128,15 @@ public class Controller {
         }
         else if (pApplet.keyCode == VK_N && isGameOver){
             pApplet.exit();
+        }
+    }
+
+    private boolean victoryCondition() {
+        int amountNeeded = (pApplet.width / scale) * (pApplet.height / scale);
+        if (snake.getTail().size() == amountNeeded) {
+            return true;
+        } else {
+            return false;
         }
     }
 
@@ -245,5 +201,15 @@ public class Controller {
         return isVictoryCondition;
     }
 
+    public UI getUi() {
+        return ui;
+    }
 
+    public float getDifficultyModifier() {
+        return difficultyModifier;
+    }
+
+    public int getScore() {
+        return score;
+    }
 }
