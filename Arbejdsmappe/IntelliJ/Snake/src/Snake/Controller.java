@@ -20,6 +20,7 @@ public class Controller {
     private float difficultyModifier = 1;
     private int difficultySpeed = 70;
     private boolean isSetting;
+    private boolean isVictoryCondition;
 
     public Controller(PApplet pApplet, int scale) {
         this.pApplet = pApplet;
@@ -38,6 +39,12 @@ public class Controller {
             boundary();
             this.score += 100 * difficultyModifier;
         }
+
+        if(victoryCondition()){
+            isVictoryCondition = true;
+            isGameOver = true;
+        }
+
         food.display();
 
         if(snake.collision()){
@@ -60,6 +67,8 @@ public class Controller {
     public void startGameOptions(){
         if(pApplet.keyCode == VK_ENTER){
             setPressed(true);
+            pApplet.keyCode = VK_RIGHT;
+            getSnake().dir(1,0);
         }
 
         else if(pApplet.keyCode == VK_S){
@@ -136,6 +145,45 @@ public class Controller {
             pApplet.exit();
         }
     }
+    private boolean victoryCondition() {
+        int amountNeeded = (pApplet.width / scale) * (pApplet.height / scale);
+        if (snake.getTail().size() == amountNeeded) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+        public void victoryScreen() {
+            ui.displayGameScreen("You Win!",0.3f, 50);
+            ui.displayGameScreen("Score: "+score, 0.5f, 40);
+            ui.displayGameScreen("Play again? Y/N",0.65f,40);
+            ui.displayGameScreen("Press S for settings", 0.9f,20 );
+            victoryOptions();
+        }
+
+    private void victoryOptions() {
+        if (pApplet.keyCode == VK_Y && isVictoryCondition){
+            this.score = 0;
+            snake = new Snake(pApplet, scale);
+            food.pickLocation();
+            up = false;
+            down = false;
+            right = true;
+            left = false;
+            isVictoryCondition = false;
+            isGameOver = false;
+            pApplet.keyCode = VK_ENTER;
+
+        }
+        else if(pApplet.keyCode == VK_S && isGameOver){
+            setSetting(true);
+        }
+        else if (pApplet.keyCode == VK_N && isGameOver){
+            pApplet.exit();
+        }
+    }
+
 
     public boolean isPressed() {
         return isPressed;
@@ -192,5 +240,10 @@ public class Controller {
     public void setSetting(boolean setting) {
         isSetting = setting;
     }
+
+    public boolean isVictoryCondition() {
+        return isVictoryCondition;
+    }
+
 
 }

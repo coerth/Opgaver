@@ -2,7 +2,7 @@ package Snake;
 
 import processing.core.PApplet;
 
-import static java.awt.event.KeyEvent.VK_S;
+import static java.awt.event.KeyEvent.*;
 
 public class Main extends PApplet {
 
@@ -28,7 +28,16 @@ public class Main extends PApplet {
     public void draw() {
         //her kaldes display funktionerne
         background(51);
-        if (controller.isGameOver()) {
+        if(controller.isVictoryCondition() && controller.isGameOver()){
+            controller.victoryScreen();
+            if (controller.isSetting()) {
+                background(51);
+                controller.settingsMenu();
+            }
+        }
+
+        //background(51);
+        else if (controller.isGameOver()) {
             controller.endgameScreen();
             if (controller.isSetting()) {
                 background(51);
@@ -55,7 +64,8 @@ public class Main extends PApplet {
     public void keyPressed() {
 
 
-        if ( keyCode == UP && !controller.isDown()){
+        if ( keyCode == UP && !controller.isDown() ||
+             keyCode == VK_W && !controller.isDown()){
             controller.getSnake().dir(0,-1);
             controller.setUp(true);
             controller.setDown(false);
@@ -63,21 +73,24 @@ public class Main extends PApplet {
             controller.setLeft(false);
 
         }
-        else if (keyCode == DOWN && !controller.isUp()){
+        else if (keyCode == DOWN && !controller.isUp() ||
+                keyCode == VK_S && !controller.isUp()){
             controller.getSnake().dir(0,1);
             controller.setUp(false);
             controller.setDown(true);
             controller.setRight(false);
             controller.setLeft(false);
         }
-        else if (keyCode == RIGHT && !controller.isLeft()){
+        else if (keyCode == RIGHT && !controller.isLeft() ||
+                keyCode == VK_D && !controller.isLeft()){
             controller.getSnake().dir(1,0);
             controller.setUp(false);
             controller.setDown(false);
             controller.setRight(true);
             controller.setLeft(false);
         }
-        else if (keyCode == LEFT && !controller.isRight()){
+        else if (keyCode == LEFT && !controller.isRight() ||
+                keyCode == VK_A && !controller.isRight()){
             controller.getSnake().dir(-1,0);
             controller.setUp(false);
             controller.setDown(false);

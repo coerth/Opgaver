@@ -13,16 +13,6 @@ public class HeapSort<T> {
         //this.comparator = comparator;
     }
 
-    private  int leftChild(int x){
-        int res = 2*x+1;
-        return (res < treeSize) ? res : -1;
-    }
-
-    private  int rightChild(int x){
-        int res = 2*x+2;
-        return (res < treeSize) ? res : -1;
-    }
-
     public void sort(){
         initialHeapify();
 
@@ -43,13 +33,13 @@ public class HeapSort<T> {
 
     private void heapifyNode(int x){
 
-        int left = leftChild(x);
+        int left = (2*x+1 < treeSize) ? 2*x+1 : -1;
         if(left < 0){
             return;
         }
         int largestChild = left;
 
-        int right = rightChild(x);
+        int right = (2*x+2 < treeSize) ? 2*x+2 : -1;;
         if(right > 0 && array[right] > array[left]){
         //if(right > 0 && comparator.compare(array[right],array[left] ) > 0){
             largestChild = right;
