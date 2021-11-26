@@ -27,10 +27,10 @@ public class TextPopUpMain extends PApplet {
         PApplet.main(new String[] {TextPopUpMain.class.getName()});
 
 
-//        System.out.println("Her når vi til");
-//        while(!userInput.equals("Q".toLowerCase(Locale.ROOT).trim())) {
-//            userInput = scan.nextLine();
-//        }
+        System.out.println("Her når vi til");
+        while(!userInput.equals("Q".toLowerCase(Locale.ROOT).trim())) {
+            userInput = scan.nextLine();
+
 
         }
 
@@ -56,20 +56,20 @@ public class TextPopUpMain extends PApplet {
     public void draw() {
         //her kaldes display funktionerne
 
-//        background(255);
+        background(255);
+
+        fill(0);
+        textSize(50);
+        textAlign(CENTER);
+        text(userInput, width / 2f, height / 2f);
+
+//        for (int i = 0; i < matches.size(); i++){
+//            matches.get(i).processMatch();
+//            matches.get(i).display();
+//            }
 //
-//        fill(0);
-//        textSize(50);
-//        textAlign(CENTER);
-//        text(userInput, width / 2f, height / 2f);
-
-        for (int i = 0; i < matches.size(); i++){
-            matches.get(i).processMatch();
-            matches.get(i).display();
-            }
-
-
-       }
+//
+//       }
 
 
 
