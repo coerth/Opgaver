@@ -9,6 +9,10 @@
     <list default="true" id="7b9d2fb9-0a7d-40d9-b098-4f2db15a8a29" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/TextPopup/TextPopUpMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/TextPopup/TextPopUpMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/CombinedComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tobias ekstra/src/Comparator/CombinedComparator.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,11 @@
       <workItem from="1637815880565" duration="2078000" />
       <workItem from="1637824488425" duration="2885000" />
       <workItem from="1637848493586" duration="678000" />
+<<<<<<< Updated upstream
       <workItem from="1637914030075" duration="1195000" />
+=======
+      <workItem from="1637851023249" duration="615000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

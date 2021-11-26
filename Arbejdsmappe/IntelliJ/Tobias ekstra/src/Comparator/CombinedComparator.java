@@ -15,7 +15,6 @@ public class CombinedComparator<T> implements Comparator<T> {
         this.list = list;
     }
 
-
     @Override
     public int compare(T o1, T o2) {
         int c = 0;
