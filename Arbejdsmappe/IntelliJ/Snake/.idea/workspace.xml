@@ -8,7 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/FirstNameComparator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/LastNameComparator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/UserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Eksamensforberedelse/out/production/Eksamensforberedelse/ordLeg/OrdLeg.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Eksamensforberedelse/out/production/Eksamensforberedelse/ordLeg/OrdLeg.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Spot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Spot/Main.java" afterDir="false" />
@@ -77,5 +76,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
