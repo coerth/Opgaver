@@ -26,7 +26,8 @@ public class Spot {
         this.radius = radius;
     }
 
-    //display funktionen som skal kaldes i draw
+    //grafisk funktion som kaldes i draw
+    //det som ligger i processing kan findes via at skrive pApplet.
     void display(){
         pApplet.ellipse(xPos, yPos, radius*2, radius*2);
 

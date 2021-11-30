@@ -1,6 +1,5 @@
 package Spot;
 
-import Image.LoadDisplayImage;
 import processing.core.PApplet;
 
 public class Main extends PApplet {
@@ -24,8 +23,9 @@ public class Main extends PApplet {
     @Override
     public void setup() {
         background(204);
-        noLoop();
+        noLoop(); //det gør at draw ikke køres igen, så fjern denne linje
 
+        //pApplet sendes videre til de klasser som skal have et grafisk element
         sp1 = new Spot(this);
         sp2 = new Spot(this, width * 0.5f, height * 0.25f, 120);
 
@@ -34,7 +34,8 @@ public class Main extends PApplet {
 
     @Override
     public void draw() {
-        //her kaldes display funktionerne
+        //det her er den "nye" main.
+
 
         sp1.display();
         sp2.display();
