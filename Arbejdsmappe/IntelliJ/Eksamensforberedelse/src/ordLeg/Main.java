@@ -14,21 +14,12 @@ public class Main {
         list.add("Det?  ");
         list.add("Virker");
 
-
         OrdLeg ordleg = new OrdLeg();
-
-//       list = ordleg.gentagOrd(list,2);
-//
-//       for(String s : list){
-//           System.out.println(s);
-//       }
 
         ordleg.sorteretOgTrimmet(list);
 
         for(String s : list){
            System.out.println(s);
        }
-
-
     }
 }

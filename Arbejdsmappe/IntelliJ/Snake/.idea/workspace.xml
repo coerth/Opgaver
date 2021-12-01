@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3f6ada6-37a5-40e8-9292-cc4385696d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/butik/Butik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/butik/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/CombinedComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/FirstNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/LastNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eksamensforberedelse/src/user/UserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Eksamensforberedelse/out/production/Eksamensforberedelse/ordLeg/OrdLeg.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Eksamensforberedelse/out/production/Eksamensforberedelse/ordLeg/OrdLeg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Spot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Spot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/Spot/Spot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/Spot/Spot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b3f6ada6-37a5-40e8-9292-cc4385696d16" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +59,7 @@
       <updated>1638261968389</updated>
       <workItem from="1638261974145" duration="4770000" />
       <workItem from="1638284998997" duration="1233000" />
+      <workItem from="1638351149044" duration="76000" />
     </task>
     <servers />
   </component>
@@ -87,5 +76,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

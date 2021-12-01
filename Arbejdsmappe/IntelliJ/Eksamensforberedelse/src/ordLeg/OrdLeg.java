@@ -12,7 +12,6 @@ public class OrdLeg {
         {
             throw new ArithmeticException("Number must be higher than 0");
         }
-
         if(list.isEmpty())
         {
             throw new NullPointerException("List must contain elements");
@@ -32,12 +31,8 @@ public class OrdLeg {
     {
         for(int j = 0; j < list.size(); j++)
         {
-
-
             for (int i = 0; i < list.size()-1; i++)
             {
-
-
                 if (list.get(i).trim().length() > list.get(j).trim().length())
                 {
                     String tmp = list.get(i);

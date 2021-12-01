@@ -12,7 +12,6 @@ public class GuessingGame {
         guessedNumber = (player.guessANumber(number + number));
         System.out.println(guessedNumber);
 
-
         if(guessedNumber == number){
             return true;
         }
