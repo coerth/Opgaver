@@ -1,4 +1,5 @@
-public interface Combat {
+public interface CombatI {
+
     int attack();
     void takeDMG(int dmg);
 }

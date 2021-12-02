@@ -4,18 +4,28 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public interface CombatTest {
-    Combat createNewCombat();
+    CombatI createNewCombat();
+
 
     @Test
-    default void attackRolls()
+    default void attackTest()
     {
-        Combat c  = createNewCombat();
+        CombatI c  = createNewCombat();
         assertEquals(4,c.attack());
     }
 
     @Test
+    default void takeDMGTest()
+    {
+        CombatI c = createNewCombat();
+        c.takeDMG(4);
+        //assertEquals(6, ((Entity)c).getHP());
+    }
+
+
+    @Test
     default void throwsArithmicException(){
-        Combat c = createNewCombat();
+        CombatI c = createNewCombat();
         assertThrows(ArithmeticException.class , () -> c.takeDMG(-1));
     }
 }
