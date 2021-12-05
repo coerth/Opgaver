@@ -1,6 +1,5 @@
-public interface PickupI extends InteractionI {
-    @Override
-    default void interact() {
+package Interfaces;
 
-    }
+public interface PickupI extends InteractionI {
+
 }

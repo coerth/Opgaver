@@ -1,9 +1,10 @@
+import Interfaces.CombatI;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public interface CombatTest {
+public interface CombatITest {
     CombatI createNewCombat();
 
 
@@ -19,7 +20,7 @@ public interface CombatTest {
     {
         CombatI c = createNewCombat();
         c.takeDMG(4);
-        //assertEquals(6, ((Entity)c).getHP());
+        assertEquals(6, ((Entity)c).getHP());
     }
 
 

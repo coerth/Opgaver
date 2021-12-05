@@ -24,15 +24,16 @@ public class TextPopUpMain extends PApplet {
     public static void main(String[] args) {
         //ved at bruge Main.class.getName() så sørger vi får at det altid er det navn, i tilfælde af vi refactorer main
 
-        PApplet.main(new String[] {TextPopUpMain.class.getName()});
+        PApplet.main(new String[]{TextPopUpMain.class.getName()});
 
 
         System.out.println("Her når vi til");
-        while(!userInput.equals("Q".toLowerCase(Locale.ROOT).trim())) {
+        while (!userInput.equals("Q".toLowerCase(Locale.ROOT).trim())) {
             userInput = scan.nextLine();
 
 
         }
+    }
 
 
     @Override
@@ -70,6 +71,7 @@ public class TextPopUpMain extends PApplet {
 //
 //
 //       }
+    }
 
 
 
