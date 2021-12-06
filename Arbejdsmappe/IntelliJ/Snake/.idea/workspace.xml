@@ -2,7 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3f6ada6-37a5-40e8-9292-cc4385696d16" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/Test/MovementIPlayerTestImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/Test/MovementITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Dungeon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Entitys/Enemies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Entitys/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Entitys/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/RoomI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Inventory/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Inventory/Loot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Rooms/Bed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Rooms/CombatRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Rooms/RestRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Rooms/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Rooms/ShopRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Rooms/StartRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/icon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/StarWarsText/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/out/production/ProcessingTest/StarWarsText/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProcessingTest/src/StarWarsText/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProcessingTest/src/StarWarsText/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/libraries/Processing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/libraries/Processing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/Processing/export.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/Processing/export.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/SP4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/SP4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/Test/CombatITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/Test/CombatITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/Test/CombatITestImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/Test/CombatITestImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Diagrams/Class Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Diagrams/Class Diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Diagrams/Domain Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Diagrams/Domain Diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Diagrams/Interface Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Diagrams/Interface Diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Interfaces/RoomsI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/production/SP4/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/test/SP4/CombatITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/out/test/SP4/CombatITest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/out/test/SP4/CombatITestImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/out/test/SP4/CombatITestImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Diagrams/Class Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Diagrams/Class Diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Diagrams/Domain Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Diagrams/Domain Diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Diagrams/Interface Diagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Diagrams/Interface Diagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/BuyI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/BuyI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/CombatI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/CombatI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/DisplayI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/DisplayI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/EnemiesI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/EnemiesI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/InteractionI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/InteractionI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/MovementI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/MovementI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/PickupI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/PickupI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/PlayerI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/PlayerI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/RoomsI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/SleepI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Interfaces/SleepI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SP4/SP4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SP4/SP4/src/Player.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +121,7 @@
       <workItem from="1638284998997" duration="1233000" />
       <workItem from="1638351149044" duration="76000" />
       <workItem from="1638518421396" duration="337000" />
+      <workItem from="1638787406918" duration="5060000" />
     </task>
     <servers />
   </component>

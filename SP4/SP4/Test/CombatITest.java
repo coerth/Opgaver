@@ -1,3 +1,4 @@
+import Entitys.Entity;
 import Interfaces.CombatI;
 import org.junit.jupiter.api.Test;
 
