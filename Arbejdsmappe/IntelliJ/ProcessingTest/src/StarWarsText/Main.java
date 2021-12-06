@@ -31,10 +31,10 @@ public class Main extends PApplet {
         //det her er den "nye" main.
         background(0);
         fill(255,255,0);
-        translate(width/2f-400, height);
-        rotateX(PI/3.0f);
+        translate(width/2f-400, height); //sætter x og y koordinaternes nulpunkter til det man skriver
+        rotateX(PI/3.0f); //gør at teksten vinkles ind af i takt med at teksten afvikles
         textSize(75);
-        text(crawl, 0, textY, 1100, 3600);
+        text(crawl, 0, textY, 1100, 3600); //x er width/2f-400 translated, y er height translated, x2 og y2 er størrelsen på textboksen
         textY -= 1;
 
     }
