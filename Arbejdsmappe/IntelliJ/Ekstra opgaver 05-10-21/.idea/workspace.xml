@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38ad25c0-ba15-424b-aa42-a8fd82edbf2c" name="Changes" comment="" />
+    <list default="true" id="38ad25c0-ba15-424b-aa42-a8fd82edbf2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse1/MyStringComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse1/Ordleg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse2/ComputerSpiller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse2/GætteSpil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse2/MenneskeSpiller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse2/Spiller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse3/CombinedComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse3/FirstNameComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse3/LastNameComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse3/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse3/UserList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse4/Butik.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../øvelse/src/øvelse4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Reference Projekt/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +128,7 @@
       <workItem from="1633436149136" duration="17657000" />
       <workItem from="1633461684976" duration="3398000" />
       <workItem from="1633587137154" duration="46000" />
+      <workItem from="1641149218760" duration="683000" />
     </task>
     <servers />
   </component>
