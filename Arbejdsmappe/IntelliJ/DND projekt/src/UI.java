@@ -53,19 +53,38 @@ public class UI {
 
     public void displayLootTable(LootTable lootTable)
     {
+        int j = 1;
+        int minValue = 1;
 
-        if(lootTable instanceof SimpleLootTable)
-        {
 
-            for(int i = 0 ; i < ((SimpleLootTable)lootTable).getTableEntries().size(); i++)
+            for(int i = 0 ; i < lootTable.getTableEntries().size(); i++)
             {
-                if(((SimpleLootTable)lootTable).getTableEntries().get(i) == null)
+
+
+                if(lootTable.getTableEntries().get(i) == null)
                 {
                     continue;
                 }
-                displayText(((SimpleLootTable)lootTable).getTableEntries().get(i).getText());
+                if(lootTable instanceof WeightedLootTable)
+                {
+                    if(i == 0)
+                    {
+                        displayText(minValue +"-"+ lootTable.getTableEntries().get(i).getRollValue()+": "+ lootTable.getTableEntries().get(i).getText());
+                        minValue = lootTable.getTableEntries().get(i).getRollValue();
+                    }
+                    else
+                    {
+                        displayText(minValue+1 +"-"+ lootTable.getTableEntries().get(i).getRollValue()+": "+ lootTable.getTableEntries().get(i).getText());
+                        minValue = lootTable.getTableEntries().get(i).getRollValue();
+                    }
+                }
+                else
+                {
+                    displayText(j+": "+lootTable.getTableEntries().get(i).getText());
+                    j++;
+                }
             }
-        }
+
 
     }
 

@@ -1,0 +1,6 @@
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("5000 gp Gemstones", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Black sapphire (translucent lustrous black with glowing highlights)", 20);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Diamond (transparent blue-white, canary, pink, brown, or blue)", 20);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Jacinth (transparent fiery orange)", 20);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Ruby (transparent clear red to deep crimson)", 20);

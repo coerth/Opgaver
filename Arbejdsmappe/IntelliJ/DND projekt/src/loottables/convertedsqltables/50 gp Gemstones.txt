@@ -1,0 +1,14 @@
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("50 gp Gemstones", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Bloodstone (opaque dark gray with red flecks)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Carnelian (opaque orange to red-brown)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Chalcedony (opaque white)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Chrysoprase (translucent green)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Citrine (transparent pale yellow-brown)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Jasper (opaque blue, black, or brown)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Moonstone (translucent white with pale blue glow)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Onyx (opaque bands of black and white, or pure black or white)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Quartz (transparent white, smoky gray, or yellow)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Sardonyx (opaque bands of red and white)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Star rose quartz (translucent rosy stone with white star-shaped center)", 16);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Zircon (transparent pale blue-green)", 16);

@@ -1,3 +1,1 @@
-Test, Test
-25 gp Art Objects, Loot
-10 gp Gemstones, Loot
+Potion Miscibility,true,1

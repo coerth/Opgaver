@@ -4,37 +4,42 @@ import java.util.Random;
 
 public class WeightedLootTable extends LootTable {
 
-    private ArrayList<TableEntry> tableEntries = new ArrayList<>();
 
-    public WeightedLootTable(String lootTableName, String category) {
+
+    public WeightedLootTable(String lootTableName, String category)
+    {
         super(lootTableName, category);
-    }
-
-
-    public void insertTableEntry(int rollValue, String s) {
-
-        tableEntries.add(new TableEntry(rollValue, s));
-
     }
 
     @Override
     public String rollOnTable() {
-        String returnString = null;
+        //String returnString = null;
         Random rand = new Random();
         Integer i = rand.nextInt(1, 100 + 1);
 
-        for (int j = 0; j < tableEntries.size(); j++) {
+        System.out.println(i);
 
-            if (j == 0 && i <= tableEntries.get(j).getRollValue()) {
-                returnString = tableEntries.get(j).getText();
-            } else {
-                if (i <= tableEntries.get(j).getRollValue() && i > tableEntries.get(j - 1).getRollValue()) {
-                    returnString = tableEntries.get(j).getText();
+        for(int j = 0 ; j < super.getTableEntries().size() ; j ++)
+        {
+            if (j == 0)
+            {
+                if(i <= super.getTableEntries().get(j).getRollValue())
+                {
+                    return super.getTableEntries().get(j).getText();
                 }
-            }
 
+            }
+            else
+            {
+                if(i <= super.getTableEntries().get(j).getRollValue() && i > super.getTableEntries().get(j-1).getRollValue())
+                {
+                  return super.getTableEntries().get(j).getText();
+
+                }
+
+            }
         }
 
-        return returnString;
+        return "What";
     }
 }

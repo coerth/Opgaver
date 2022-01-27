@@ -1,0 +1,10 @@
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("1000 gp Gemstones", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Black opal (translucent dark green with black mottling and golden flecks)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Blue sapphire (transparent blue-white to medium blue)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Emerald (transparent deep bright green)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Fire opal (translucent fiery red)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Opal (translucent pale blue with green and golden mottling)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Star ruby (translucent ruby with white star-shaped center)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Star sapphire (translucent blue sapphire with white star-shaped center)", 19);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Yellow sapphire (transparent fiery yellow or yellow-green)", 19);

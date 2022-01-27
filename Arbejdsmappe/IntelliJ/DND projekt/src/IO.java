@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public interface IO {
 
     ArrayList<LootTable> readLootTables() throws FileNotFoundException;
-    void writeLootTable();
+    LootTable readLootTableContents(String name, String category, boolean isWeighted, int id) throws FileNotFoundException;
+    //void writeLootTable();
 
 }

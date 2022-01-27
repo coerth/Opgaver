@@ -1,0 +1,12 @@
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("750 gp Art Objects", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Silver chalice set with moonstones", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Silver-plated steel longsword with jet set in hilt", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Carved harp of exotic wood with ivory inlay and zircon gems", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Small gold idol", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Gold dragon comb set with red garnets as eyes", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Bottle stopper cork embossed with gold leaf and set with amethysts", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Ceremonial electrum dagger with a black pearl in the pommel", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Silver and gold brooch", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Obsidian statuette with gold fittings and inlay", 22);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Painted gold war mask", 22);

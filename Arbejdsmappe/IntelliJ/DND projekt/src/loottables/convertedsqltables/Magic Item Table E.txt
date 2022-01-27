@@ -1,0 +1,9 @@
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("Magic Item Table E", true, 1);
+
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Spell scroll (8th level)", 30, 11);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of storm giant strength", 55, 11);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of healing (supreme)", 70, 11);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Spell scroll (9th level)", 85, 11);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Universal solvent", 93, 11);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Arrow of slaying", 98, 11);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Sovereign glue", 100, 11);

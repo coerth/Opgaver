@@ -1,10 +1,12 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Controller {
 
     private ArrayList<LootTable> list = new ArrayList<>();
     private FileManager fileManager = new FileManager();
+    private DBConnector dbConnector = new DBConnector();
     private UI ui = new UI();
 
 
@@ -14,12 +16,16 @@ public class Controller {
 
         try
         {
-            this.list = fileManager.readLootTables();
+            this.list = dbConnector.readLootTables();
         }
         catch (FileNotFoundException e)
         {
             System.out.println(e);
         }
+    }
+
+    public void convertTextFilestoSQLFiles() throws IOException {
+        fileManager.convertLootTableListToSQL(list.size()+1);
     }
 
     public void addLootTableToList(LootTable lootTable)
@@ -70,4 +76,7 @@ public class Controller {
         return list;
     }
 
+    public FileManager getFileManager() {
+        return fileManager;
+    }
 }

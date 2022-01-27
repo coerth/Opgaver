@@ -1,0 +1,18 @@
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("Magic Item Table D", true, 1);
+
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of healing (supreme)", 20, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of invisibility", 30, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of speed", 40, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Spell scroll (6th level)", 50, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Spell scroll (7th level)", 57, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Ammunition", 62, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Oil of sharpness", 67, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of flying", 72, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of cloud giant strength", 77, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of longevity", 82, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Potion of vitality", 87, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Spell scroll (8th level)", 92, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Horseshoes of a zephyr", 95, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Nolzur’s marvelous pigments", 98, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Bag of devouring", 99, 10);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Portable hole", 100, 10);
