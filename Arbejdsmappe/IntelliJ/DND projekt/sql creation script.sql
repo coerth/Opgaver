@@ -694,3 +694,79 @@ INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALU
 INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("The numerical effects and duration of one potion are doubled. If neither potion has anything to double in this way", 99, 25);
 INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Only one potion works", 100, 25);
 
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("Scroll Mishap", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("A surge of magical energy deals the caster 1d6 force damage per level of the spell.", 26);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("The spell affects the caster or an ally (determined randomly) instead of the intended target, or it affects a random target nearby if the caster was the intended target.", 26);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("The spell affects a random location within the spell’s range.", 26);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("The spell’s effect is contrary to its normal one, but neither harmful nor beneficial. For instance, a fireball might produce an area of harmless cold.", 26);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("The caster suffers a minor but bizarre effect related to the spell. Such effects last only as long as the original spell’s duration, or 1d10 minutes for spells that take effect instantaneously. For example, a fireball might cause smoke to billow from the caster’s ears for 1d10 minutes.", 26);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("The spell activates after 1d12 hours. If the caster was the intended target, the spell takes effect normally. If the caster was not the intended target, the spell goes off in the general direction of the intended target, up to the spell’s maximum range, if the target has moved away.", 26);
+
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("Who Created It or Was Intended to Use It", true, 1);
+
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Aberration. The item was created by aberrations in ancient times", 1, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Human. The item was created during the heyday of a fallen human kingdom", 4, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Celestial. The weapon is half the normal weight and inscribed with feathered wings", 5, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Dragon. This item is made from scales and talons shed by a dragon. Perhaps it incorporates precious metals and gems from the dragon’s hoard. It grows slightly warm when within 120 feet of a dragon.", 6, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Drow. The item is half the normal weight. It is black and inscribed with spiders and webs in honor of Lolth. It might function poorly", 7, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Dwarf. The item is durable and has Dwarven runes worked into its design. It might be associated with a clan that would like to see it returned to their ancestral halls.", 9, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Elemental Air. The item is half the normal weight and feels hollow. If it’s made of fabric", 10, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Elemental Earth. This item might be crafted from stone. Any cloth or leather elements are studded with finely polished rock.", 11, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Elemental Fire. This item is warm to the touch", 12, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Elemental Water. Lustrous fish scales replace leather or cloth on this item", 13, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Elf. The item is half the normal weight. It is adorned with symbols of nature: leaves", 15, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Fey. The item is exquisitely crafted from the finest materials and glows with a pale radiance in moonlight", 16, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Fiend. The item is made of black iron or horn inscribed with runes", 17, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Giant. The item is larger than normal and was crafted by giants for use by their smaller allies.", 18, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Gnome. The item is crafted to appear ordinary", 19, 27);
+INSERT INTO entrytable(entrytable_text, entrytable_rollvalue, loottable_id) VALUES("Undead. The item incorporates imagery of death", 20, 27);
+
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("What Is a Detail from Its History", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Arcane. This item was created for an ancient order of spellcasters and bears the order’s symbol.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Bane. This item was created by the foes of a particular culture or kind of creature. If the culture or creatures are still around, they might recognize the item and single out the bearer as an enemy.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Heroic. A great hero once wielded this item. Anyone who’s familiar with the item’s history expects great deeds from the new owner.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Ornament. The item was created to honor a special occasion. Inset gemstones, gold or platinum inlays, and gold or silver filigree adorn its surface.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Prophecy. The item features in a prophecy: its bearer is destined to play a key role in future events. Someone else who wants to play that role might try to steal the item, or someone who wants to prevent the prophecy from being fulfilled might try to kill the item’s bearer.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Religious. This item was used in religious ceremonies dedicated to a particular deity. It has holy symbols worked into it. The god’s followers might try to persuade its owner to donate it to a temple, steal the item for themselves, or celebrate its use by a cleric or paladin of the same deity.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Sinister. This item is linked to a deed of great evil, such as a massacre or an assassination. It might have a name or be closely associated with a villain who used it. Anyone familiar with the item’s history is likely to treat it and its owner with suspicion.", 28);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Symbol of Power. This item was once used as part of royal regalia or as a badge of high office. Its former owner or that person’s descendants might desire it, or someone might mistakenly assume its new owner is the item’s legitimate inheritor.", 28);
+
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("What Quirk Does It Have", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Blissful. While in possession of the item, the bearer feels fortunate and optimistic about what the future holds. Butterflies and other harmless creatures might frolic in the item’s presence.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Confident. The item helps its bearer feel self-assured.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Covetous. The item’s bearer becomes obsessed with material wealth.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Frail. The item crumbles, frays, chips, or cracks slightly when wielded, worn, or activated. This quirk has no effect on its properties, but if the item has seen much use, it looks decrepit.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Hungry. This item’s magical properties function only if fresh blood from a humanoid has been applied to it within the past 24 hours. It needs only a drop to activate.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Loud. The item makes a loud noise—such as a clang, a shout, or a resonating gong—when used.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Metamorphic. The item periodically and randomly alters its appearance in slight ways. The bearer has no control over these minor alterations, which have no effect on the item’s use.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Muttering. The item grumbles and mutters. A creature who listens carefully to the item might learn something useful.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Painful. The bearer experiences a harmless flash of pain when using the item.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Possessive. The item demands attunement when first wielded or worn, and it doesn’t allow its bearer to attune to other items. (Other items already attuned to the bearer remain so until their attunement ends.)", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Repulsive. The bearer feels a sense of distaste when in contact with the item, and continues to sense discomfort while bearing it.", 29);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Slothful. The bearer of this item feels slothful and lethargic. While attuned to the item, the bearer requires 10 hours to finish a long rest.", 29);
+
+INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("What Minor Property Does It Have", false, 1);
+
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Beacon. The bearer can use a bonus action to cause the item to shed bright light in a 10-foot radius and dim light for an additional 10 feet, or to extinguish the light.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Compass. The wielder can use an action to learn which way is north.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Conscientious. When the bearer of this item contemplates or undertakes a malevolent act, the item enhances pangs of conscience.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Delver. While underground, the bearer of this item always knows the item’s depth below the surface and the direction to the nearest staircase, ramp, or other path leading upward.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Gleaming. This item never gets dirty.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Guardian. The item whispers warnings to its bearer, granting a +2 bonus to initiative if the bearer isn’t incapacitated.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Harmonious. Attuning to this item takes only 1 minute.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Hidden Message. A message is hidden somewhere on the item. It might be visible only at a certain time of the year, under the light of one phase of the moon, or in a specific location.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Key. The item is used to unlock a container, chamber, vault, or other entryway.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Language. The bearer can speak and understand a language of the DM’s choice while the item is on the bearer’s person.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Sentinel. Choose a kind of creature that is an enemy of the item’s creator. This item glows faintly when such creatures are within 120 feet of it.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Song Craft. Whenever this item is struck or is used to strike a foe, its bearer hears a fragment of an ancient song.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Strange Material. The item was created from a material that is bizarre given its purpose. Its durability is unaffected.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Temperate. The bearer suffers no harm in temperatures as cold as −20 degrees Fahrenheit or as warm as 120 degrees Fahrenheit.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Unbreakable. The item can’t be broken. Special means must be used to destroy it.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("War Leader. The bearer can use an action to cause his or her voice to carry clearly for up to 300 feet until the end of the bearer’s next turn.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Waterborne. This item floats on water and other liquids. Its bearer has advantage on Strength (Athletics) checks to swim.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Wicked. When the bearer is presented with an opportunity to act in a selfish or malevolent way, the item heightens the bearer’s urge to do so.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Illusion. The item is imbued with illusion magic, allowing its bearer to alter the item’s appearance in minor ways. Such alterations don’t change how the item is worn, carried, or wielded, and they have no effect on its other magical properties. For example, the wearer could make a red robe appear blue, or make a gold ring look like it’s made of ivory. The item reverts to its true appearance when no one is carrying or wearing it.", 30);
+INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Roll twice, rerolling any additional 20s.", 30);

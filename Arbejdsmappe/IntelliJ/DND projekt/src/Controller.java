@@ -48,27 +48,34 @@ public class Controller {
 
     public void startOptions()
     {
-       int userChoice = -1;
+       int userChoice;
 
         LootTable lootTable = ui.displayLootTables(list);
         ui.displayLootTable(lootTable);
 
-        userChoice = ui.userInputYesNoOption("Would you like to roll on the table?");
+        userChoice = ui.userInputYesNoMultipleOptions("Would you like to roll on the table?");
+
+        while(userChoice != 0)
+        {
+            if(userChoice > 1)
+            {
+                ui.displayText(lootTable.rollOnTable(userChoice));
+            }
+            else
+            {
+                ui.displayText(lootTable.rollOnTable());
+            }
+
+            userChoice = ui.userInputYesNoMultipleOptions("Would you like to roll again on the table?");
+        }
+
+        userChoice = ui.userInputYesNoOption("Would you like to return to the main list?");
 
         if(userChoice == 1)
         {
-            ui.displayText(lootTable.rollOnTable());
+            startOptions();
         }
-        else
-        {
-           userChoice = ui.userInputYesNoOption("Would you like to return to the main list?");
 
-           if(userChoice == 1)
-           {
-               startOptions();
-           }
-
-        }
 
     }
 

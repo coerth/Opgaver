@@ -6,8 +6,18 @@ import java.util.Scanner;
 public class UI {
 
     public void displayText(String s)
+
     {
         System.out.println(s);
+    }
+
+    public void displayText(String[] strings)
+
+    {
+        for(String s : strings)
+        {
+            System.out.println(s);
+        }
     }
 
     public String userInput()
@@ -88,13 +98,15 @@ public class UI {
 
     }
 
-    public int userInputYesNoOption(String s)
+    public int userInputYesNoMultipleOptions(String s)
     {
         int userChoice = -1;
         String userInput = null;
 
         displayText("\n"+s);
         displayText("\nYes / No ? \n");
+        displayText("Alternatively type the amount you want the action to be done.\n");
+
 
         while (userChoice == -1)
         {
@@ -103,21 +115,57 @@ public class UI {
             if(userInput.equals("yes") || userInput.equals("y"))
             {
                 userChoice = 1;
+                break;
             }
             else if(userInput.equals("no") || userInput.equals("n"))
             {
                 userChoice = 0;
-            }
-
-            if(userChoice != -1)
-            {
                 break;
             }
 
-            displayText("Please enter a valid option.");
+            else if(Integer.parseInt(userInput) > 1)
+            {
+                userChoice = Integer.parseInt(userInput);
+                break;
+            }
+
+                displayText("Please enter a valid option.");
+
         }
 
 
         return userChoice;
     }
+
+    public int userInputYesNoOption(String s)
+    {
+        int userChoice = -1;
+        String userInput = null;
+
+        displayText("\n"+s);
+        displayText("\nYes / No ? \n");
+
+
+        while (userChoice == -1)
+        {
+            userInput = userInput().toLowerCase(Locale.ROOT).trim();
+
+            if(userInput.equals("yes") || userInput.equals("y"))
+            {
+                userChoice = 1;
+                break;
+            }
+            else if(userInput.equals("no") || userInput.equals("n"))
+            {
+                userChoice = 0;
+                break;
+            }
+
+            displayText("Please enter a valid option.");
+
+        }
+
+        return userChoice;
+    }
+
 }

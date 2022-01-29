@@ -24,8 +24,6 @@ public class FileManager implements IO{
         return null;
     }
 
-
-
     private LootTable importLootTable(String[] values) throws FileNotFoundException
     {
         LootTable lootTable = new SimpleLootTable(values[0], values[1]);
@@ -55,11 +53,13 @@ public class FileManager implements IO{
 
 
     public void writeLootTable(String name, boolean isweighted, int category, int lootTableID) throws IOException {
-        FileWriter writer = new FileWriter("src/loottables/convertedsqltables/"+name+".txt");
+        //FileWriter writer = new FileWriter("src/loottables/convertedsqltables/"+name+".txt");
+        FileWriter writer = new FileWriter("src/loottables/convertedsqltables/SQLConvertedText.txt",true);
         File file = new File("src/loottables/"+name+".txt");
         BufferedWriter buffer = new BufferedWriter(writer);
         Scanner scan = new Scanner(file);
 
+        buffer.newLine();
         buffer.write(sqlLootTableWrapper("\""+name+"\"",isweighted,category)+";");
         buffer.newLine();
         buffer.newLine();
@@ -71,11 +71,13 @@ public class FileManager implements IO{
                 String[] valueArray = scan.nextLine().trim().split(",");
                 buffer.write(sqlEntryWrapper(Integer.parseInt(valueArray[0]), "\""+valueArray[1].trim()+"\"", lootTableID)+";");
                 buffer.newLine();
+
             }
             else
             {
                 buffer.write(sqlEntryWrapper("\""+scan.nextLine().trim()+"\"", lootTableID)+";");
                 buffer.newLine();
+
             }
         }
         buffer.close();

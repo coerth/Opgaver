@@ -2,13 +2,20 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Controller controller = new Controller();
 
-       controller.convertTextFilestoSQLFiles();
+        /*try
+        {
+            controller.convertTextFilestoSQLFiles();
+        }
+        catch (IOException e)
+        {
+            System.out.println(e);
+        }*/
 
-        //controller.startOptions();
+        controller.startOptions();
 
 
 

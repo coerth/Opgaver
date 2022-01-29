@@ -18,7 +18,22 @@ public class SimpleLootTable extends LootTable {
         int i = rand.nextInt(1, super.getTableEntries().size()+1);
 
 
-        return super.getTableEntries().get(i).getText();
+        return i+": "+super.getTableEntries().get(i-1).getText();
+    }
+
+    @Override
+    public String[] rollOnTable(int amount) {
+        Random rand = new Random();
+        String[] strings = new String[amount];
+
+
+        for(int j = 0; j < amount; j++)
+        {
+            int i = rand.nextInt(1, super.getTableEntries().size()+1);
+            strings[j] = i+": "+super.getTableEntries().get(i-1).getText();
+        }
+
+        return strings;
     }
 
 

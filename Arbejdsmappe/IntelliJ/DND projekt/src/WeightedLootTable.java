@@ -5,9 +5,7 @@ import java.util.Random;
 public class WeightedLootTable extends LootTable {
 
 
-
-    public WeightedLootTable(String lootTableName, String category)
-    {
+    public WeightedLootTable(String lootTableName, String category) {
         super(lootTableName, category);
     }
 
@@ -15,25 +13,17 @@ public class WeightedLootTable extends LootTable {
     public String rollOnTable() {
         //String returnString = null;
         Random rand = new Random();
-        Integer i = rand.nextInt(1, 100 + 1);
+        int i = rand.nextInt(1, 100 + 1);
 
-        System.out.println(i);
-
-        for(int j = 0 ; j < super.getTableEntries().size() ; j ++)
-        {
-            if (j == 0)
-            {
-                if(i <= super.getTableEntries().get(j).getRollValue())
-                {
-                    return super.getTableEntries().get(j).getText();
+        for (int j = 0; j < super.getTableEntries().size(); j++) {
+            if (j == 0) {
+                if (i <= super.getTableEntries().get(j).getRollValue()) {
+                    return i + ": " + super.getTableEntries().get(j).getText();
                 }
 
-            }
-            else
-            {
-                if(i <= super.getTableEntries().get(j).getRollValue() && i > super.getTableEntries().get(j-1).getRollValue())
-                {
-                  return super.getTableEntries().get(j).getText();
+            } else {
+                if (i <= super.getTableEntries().get(j).getRollValue() && i > super.getTableEntries().get(j - 1).getRollValue()) {
+                    return i + ": " + super.getTableEntries().get(j).getText();
 
                 }
 
@@ -41,5 +31,32 @@ public class WeightedLootTable extends LootTable {
         }
 
         return "What";
+    }
+
+    @Override
+    public String[] rollOnTable(int amount) {
+        Random rand = new Random();
+        String[] strings = new String[amount];
+
+        for (int k = 0; k < amount; k++) {
+            int i = rand.nextInt(1, 100 + 1);
+
+            for (int j = 0; j < super.getTableEntries().size(); j++) {
+                if (j == 0) {
+                    if (i <= super.getTableEntries().get(j).getRollValue()) {
+                        strings[k] = i + ": " + super.getTableEntries().get(j).getText();
+                    }
+
+                } else {
+                    if (i <= super.getTableEntries().get(j).getRollValue() && i > super.getTableEntries().get(j - 1).getRollValue()) {
+                        strings[k] = i + ": " + super.getTableEntries().get(j).getText();
+
+                    }
+
+                }
+            }
+        }
+
+        return strings;
     }
 }
