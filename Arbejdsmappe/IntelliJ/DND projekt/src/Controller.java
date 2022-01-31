@@ -22,9 +22,11 @@ public class Controller {
         {
             System.out.println(e);
         }
+
+        list.sort(new LootTableComparator());
     }
 
-    public void convertTextFilestoSQLFiles() throws IOException {
+    public void convertTextFilesToSQLFiles() throws IOException {
         fileManager.convertLootTableListToSQL(list.size()+1);
     }
 
