@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args)
     {
 
-        Controller controller = new Controller();
+        //Controller controller = new Controller();
 
         /*try
         {
@@ -16,7 +16,20 @@ public class Main {
             System.out.println(e);
         }*/
 
-        controller.startOptions();
+        //controller.startOptions();
+
+
+        ProgressBar progressBar = new ProgressBar(30);
+
+
+       while (!progressBar.isComplete())
+       {
+           progressBar.displayProgressBar();
+           progressBar.addProgress();
+
+       }
+
+        progressBar.displayProgressBar();
 
     }
 }
