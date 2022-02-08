@@ -1,8 +1,0 @@
-INSERT INTO loottable(loottable_name, loottable_weighted, category_id) VALUES("500 gp Gemstones", false, 1);
-
-INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Alexandrite (transparent dark green)", 18);
-INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Aquamarine (transparent pale blue-green)", 18);
-INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Black pearl (opaque pure black)", 18);
-INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Blue spinel (transparent deep blue)", 18);
-INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Peridot (transparent rich olive green)", 18);
-INSERT INTO entrytable(entrytable_text, loottable_id) VALUES("Topaz (transparent golden yellow)", 18);

@@ -1,5 +1,0 @@
-Scroll Mishap,false,1
-Who Created It or Was Intended to Use It,true,1
-What Is a Detail from Its History,false,1
-What Quirk Does It Have,false,1
-What Minor Property Does It Have,false,1
