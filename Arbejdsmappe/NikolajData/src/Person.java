@@ -5,10 +5,12 @@ public class Person implements Comparator<Person>
 
     private String navn;
     private Integer skoStørrelse;
+    private int højde;
 
-    public Person(String navn, Integer skoStørrelse) {
+    public Person(String navn, Integer skoStørrelse, int højde) {
         this.navn = navn;
         this.skoStørrelse = skoStørrelse;
+        this.højde = højde;
     }
 
 

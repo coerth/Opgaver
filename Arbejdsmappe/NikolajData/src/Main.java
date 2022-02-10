@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -69,20 +70,40 @@ public class Main {
 
         List<Person> personList = new ArrayList<>();
 
-        personList.add(new Person("Michael", 42));
-        personList.add(new Person("Nicolai", 45));
-        personList.add(new Person("Muneeb", 43));
-        personList.add(new Person("Kristoffer", 41));
-        personList.add(new Person("Morten", 43));
+        personList.add(new Person("Michael", 42, 190));
+        personList.add(new Person("Nicolai", 45,192));
+        personList.add(new Person("Muneeb", 43,185));
+        personList.add(new Person("Kristoffer", 41,180));
+        personList.add(new Person("Morten", 43,185));
 
 
-        personList.sort((o1, o2) -> o1.getSkoStørrelse() - o2.getSkoStørrelse());
+        List under43 = personList.stream().filter(person -> person.getSkoStørrelse() < 43).collect(Collectors.toList());
 
-        for (Person person : personList)
-        {
-            System.out.println(person);
+        //personList.sort((o1, o2) -> o1.getSkoStørrelse() - o2.getSkoStørrelse());
+
+        udskrivListe(under43);
+
+        ArrayList<Integer> ints = new ArrayList<>();
+
+        ints.add(1);
+        ints.add(100);
+        ints.add(30);
+        ints.add(50);
+        ints.add(45);
+        ints.add(33);
+        ints.add(25);
+
+        udskrivListe(ints);
+
+    }
+
+
+
+    public static <T> void udskrivListe(List<T> list)
+    {
+        for (T t : list) {
+            System.out.println(t);
         }
-
     }
 
         //System.out.println(getInt("skriv et tal"));
